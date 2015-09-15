@@ -21,9 +21,14 @@ You can run the local Octopress Documentation
 2. run `octopress docs`
 3. go to localhost:4444
 
+## CSS
+It's a simple BEM style like [this](https://github.com/airbnb/css)
+
+## JS
+There isn't any js yet.
 
 ## Members Data
-Feel free to change your user data is in _data/members.yml
+Feel free to change your **user data** in _data/members.yml
 
 ## To be done
 See Trello board **Shaka Code Website**
