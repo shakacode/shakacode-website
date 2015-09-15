@@ -1,0 +1,50 @@
+---
+layout: default
+title: ShakaCode Blog
+---
+<div class="blog-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+        <div class="blog__post-list">
+
+          {% for post in paginator.posts %}
+            <section class="blog-post">
+              <h2 class="text-center">
+                <a class="blog-post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+              <header class="blog-post__meta">
+                <span class="blog-post__meta-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </header>
+              <article class="blog-post__content">
+                {{ post.content }}
+              </article>
+
+              <div class="blog-post__separator text-center">
+                <img src="{{ site.url | prepend: site.baseurl }}/assets/outline-gem.png" alt="Outline Gem Separator">
+              </div>
+            </section>
+          {% endfor %}
+
+          <nav class="pagination clearfix">
+            {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path }}" class="pagination__previous"><i class="fa fa-caret-left"></i>Newer Articles</a>
+            {% else %}
+              <span class="pagination__previous hidden">Newer Articles</span>
+            {% endif %}
+            <span class="pagination__page-number hidden">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path }}" class="pagination__next">Older Articles<i class="fa fa-caret-right"></i></a>
+            {% else %}
+              <span class="pagination__next hidden">Older Articles</span>
+            {% endif %}
+          </nav>
+
+        </div><!-- end .post-list -->
+      </div>
+    </div><!-- end .row-->
+  </div><!-- end .container -->
+</div>
+
+{% include get-in-contact.html %}

@@ -1,0 +1,85 @@
+---
+layout: default
+title: Shaka Code Team
+---
+<div class="about-page">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <header class="about__header">
+          <h1 class="about__title text-center">Shaka Code Team</h1>
+          <div class="blog-post__separator text-center">
+            <img src="{{ site.url | prepend: site.baseurl }}/assets/outline-gem.png" alt="Outline Gem Separator">
+          </div>
+        </header>
+      </div>
+    </div><!-- end .row for header -->
+
+    <div class="hidden">
+      <p>Justin Gordon</p>
+      <p>Dylan Grafmyre</p>
+      <p>Samnang Chhun</p>
+      <p>Alex Feedoseev</p>
+      <p>Blaine Hatab</p>
+      <p>Renan Aguiar</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        <div class="row shaka-member-row">
+
+          {% for member in site.data.members %}
+
+            <div class="col-md-6">
+              <div class="row shaka-member">
+                <div class="col-md-5">
+                  <img src="{{ site.url | prepend: site.baseurl }}/assets/members/{{ member.thumb }}" alt="{{ member.name }}">
+                  <div class="shaka-member__social-links">
+                    <ul>
+                      {{ if member.email != null }}
+                        <li><a href="mailto:{{ member.email }}" class="shaka-member__email"><i class="fa fa-envelope"></i></a></li>
+                      {{ endif }}
+
+                      {{ if member.facebook }}
+                        <li><a href="" class="shaka-member__facebook"><i class="fa fa-facebook"></i></a></li>
+                      {{ endif }}
+
+                      {{ if member.twitter }}
+                        <li><a href="" class="shaka-member__twitter"><i class="fa fa-twitter"></i></a></li>
+                      {{ endif }}
+
+                      {{ if member.github }}
+                        <li><a href="" class="shaka-member__github"><i class="fa fa-github"></i></a></li>
+                      {{ endif }}
+
+                      {{ if member.linkedin }}
+                        <li><a href="" class="shaka-member__linkedin"><i class="fa fa-linkedin"></i></a></li>
+                      {{ endif }}
+
+                      {{ if member.personal }}
+                        <li><a href="" class="shaka-member__personal"><i class="fa fa-user"></i></a></li>
+                      {{ endif }}
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <h3 class="shaka-member__name">{{ member.name }}</h3>
+                  <p class="shaka-member__bio">{{ member.bio }}</p>
+                </div>
+              </div>
+            </div><!-- end member -->
+
+          {% endfor %}
+
+        </div><!-- end .shaka-member-row -->
+
+      </div>
+    </div><!-- end .row for members -->
+
+  </div><!-- end .container -->
+</div><!-- end .post-page -->
+
+{% include get-in-contact.html %}

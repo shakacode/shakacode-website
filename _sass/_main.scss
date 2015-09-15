@@ -1,0 +1,592 @@
+// Site Main
+
+// ---------------------------
+
+// #-Colors
+// #-Fonts
+// #-Miscellaneous
+// #-Rebase
+// #-Site Header
+// #-Site Footer
+// #-Home
+// #-Blog Home
+// #-Blog Pagination
+// #-Partial Get in Contact
+// #-Post Page
+// #-About
+
+// ----------------------------
+
+// #-Colors
+
+$color-333: #333;
+$color-vivid-red: #c92626;
+$color-fcfcfc: #fcfcfc;
+$color-fff: #fff;
+$color-000: #000;
+
+$color-envelope: $color-vivid-red !default;
+$color-facebook: #3b5998;
+$color-twitter: #00aced;
+$color-github: $color-333 !default;
+$color-linkedin: #007bb5;
+$color-personal: $color-333 !default;
+
+// #-Fonts
+
+$font-open-sans: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;
+$font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica, sans-serif;
+
+// #-Miscellaneous
+
+// tbd = to be done
+.tbd {
+  color: $color-333;
+  background-color: #f1ada1;
+}
+
+// #-Rebase
+
+ul {
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-source-sans-pro;
+}
+
+// #-Site Header
+
+.site-header {
+  padding: 20px;
+  border-bottom: 1px solid lighten($color-333, 70%);
+
+  @at-root #{&}__site-nav {
+    ul {
+      li {
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .nav-link {
+    color: lighten($color-333, 20%);
+    font-family: $font-source-sans-pro;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: border-bottom .1s;
+
+    &:hover {
+      border-bottom: 4px solid $color-vivid-red;
+    }
+  }
+}
+
+// #-Site Footer
+
+.site-footer {
+  padding: 20px;
+  background-color: $color-333;
+
+  @at-root #{&}__site-nav {
+    margin-top: 30px;
+    margin-bottom: 150px;
+
+    ul {
+      li {
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+  }
+
+  @at-root #{&}__copyright-text {
+    margin-top: 30px;
+    color: darken($color-fff, 15%);
+    font-family: $font-source-sans-pro;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  .nav-link {
+    color: $color-fff;
+    text-transform: uppercase;
+    font-family: $font-source-sans-pro;
+    font-size: 16px;
+    font-weight: 400;
+    transition: border-bottom .1s;
+
+    &:hover {
+      border-bottom: 3px solid $color-fff;
+    }
+  }
+}
+
+// #-Home
+
+.home-we-build {
+  background-color: $color-fcfcfc;
+  height: 660px;
+  padding-top: 200px;
+
+  @at-root #{&}__title {
+    color: lighten($color-vivid-red, 15%);
+    font-size: 55px;
+    font-weight:300;
+  }
+
+  @at-root #{&}__separator::after {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: 5px;
+    display: inline-block;
+    height: 1px;
+    width: 15%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator::before {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: -5px;
+    display: inline-block;
+    height: 1px;
+    width: 15%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+}
+
+.home-we-are {
+  background-color: $color-vivid-red;
+  height: 600px;
+  padding-top: 110px;
+  color: $color-fff;
+
+  a {
+    color: $color-fff;
+  }
+
+  @at-root #{&}__title {
+    margin-bottom: 80px;
+    font-size: 55px;
+    font-weight: 300;
+  }
+
+  @at-root #{&}__statement {
+    margin-bottom: 80px;
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+
+  @at-root #{&}__meet-team {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    transition: border-bottom .2s ease;
+    display: inline-block;
+    margin: auto;
+
+    &:hover {
+      border-bottom: 3px solid $color-fff;
+    }
+  }
+}
+
+.home-we-do {
+  background-color: $color-fcfcfc;
+  height: 600px;
+  padding-top: 100px;
+  border-bottom: 1px solid lighten($color-333, 70%);
+
+
+  @at-root #{&}__title {
+    color: $color-vivid-red;
+    margin-bottom: 40px;
+    font-size: 55px;
+    font-weight: 300;
+  }
+
+  @at-root #{&}__prepare-statement {
+    color: $color-000;
+    margin-bottom: 60px;
+    font-weight: 100;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  @at-root #{&}__statement {
+    color: $color-000;
+    margin-bottom: 40px;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 2px;
+
+    a {
+      border-bottom: 5px solid $color-vivid-red;
+      color: $color-333;
+      transition: border-bottom .6s ease;
+
+      &:hover {
+        border-bottom: 5px solid $color-333;
+      }
+    }
+  }
+}
+
+.home-get-touch {
+  background-color: $color-fff;
+  border-bottom: 1px solid lighten($color-333, 70%);
+
+  @at-root #{&}__title {
+    font-size: 50px;
+    font-weight: 400;
+    color: $color-333;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  @at-root #{&}__email {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 400;
+    color: lighten($color-vivid-red, 15%);
+    letter-spacing: 2px;
+    margin-bottom: 110px;
+    border-bottom: 4px solid $color-fff;
+    transition: border-bottom .2s ease;
+
+    &:hover {
+      color: $color-vivid-red;
+      border-bottom: 4px solid $color-vivid-red;
+    }
+  }
+}
+
+// #-Blog Home
+
+.blog-page {
+  background-color: $color-fcfcfc;
+  padding-top: 90px;
+  min-height: 800px;
+}
+
+// .blog__post-list {
+//
+// }
+
+.blog-post {
+
+  @at-root #{&}__link {
+    color: $color-vivid-red;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    border-bottom: 3px solid $color-fcfcfc;
+    transition: border-bottom .3s ease;
+
+    &:hover {
+      color: $color-vivid-red;
+      border-bottom: 3px solid $color-vivid-red;
+    }
+
+    &:visited {
+      color: $color-vivid-red;
+    }
+  }
+
+  @at-root #{&}__meta {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @at-root #{&}__meta-date {
+    font-family: $font-source-sans-pro;
+    font-weight: 600;
+    font-size: 15px;
+    color: $color-333;
+    text-transform: uppercase;
+  }
+
+  @at-root #{&}__content {
+    font-size: 18px;
+    font-family: $font-open-sans;
+    font-weight: 300;
+    line-height: 32px;
+    color: lighten($color-333, 10%);
+    margin-bottom: 80px;
+  }
+
+  @at-root #{&}__separator {
+    margin-bottom: 80px;
+  }
+
+  @at-root #{&}__separator::after {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: 5px;
+    display: inline-block;
+    height: 1px;
+    width: 46%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator::before {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: -5px;
+    display: inline-block;
+    height: 1px;
+    width: 46%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+}
+
+// #-Blog Pagination
+
+.pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.pagination__previous {
+  font-size: 20px;
+  font-family: $font-source-sans-pro;
+  font-weight: 400;
+  color: blue;
+  float: left;
+  transition: color .2s ease;
+
+  &:visited {
+    color: $color-333;
+  }
+
+  &:hover {
+    color: $color-vivid-red;
+
+    i {
+      transform: translateX(-3px);
+    }
+  }
+
+  i {
+    margin-right: 10px;
+    font-size: 30px;
+    position: relative;
+      top: 4px;
+    transition: transform .3s ease;
+  }
+}
+
+.pagination__next {
+  font-size: 20px;
+  font-family: $font-source-sans-pro;
+  font-weight: 400;
+  color: $color-333;
+  float: right;
+
+  &:visited {
+    color: $color-333;
+  }
+
+  &:hover {
+    color: $color-vivid-red;
+
+    i {
+      transform: translateX(3px);
+    }
+  }
+
+  i {
+    margin-left: 10px;
+    font-size: 30px;
+    position: relative;
+      top: 4px;
+    transition: transform .3s ease;
+  }
+}
+
+// #-Partial Get in Contact
+
+.get-in-contact {
+  text-align: center;
+  border-top: 1px solid lighten($color-333, 70%);
+
+  @at-root #{&}__title {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    color: $color-333;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-right: 15px;
+  }
+
+  @at-root #{&}__email {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    color: lighten($color-vivid-red, 15%);
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    border-bottom: 4px solid $color-fff;
+    transition: border-bottom .2s ease;
+
+    &:hover {
+      color: $color-vivid-red;
+      border-bottom: 4px solid $color-vivid-red;
+    }
+  }
+}
+
+// #-Post Page
+
+.post-page {
+  padding-top: 90px;
+  background-color: $color-fcfcfc;
+  min-height: 650px; // prevent blank content above the fold
+}
+
+.blog-post {
+  @at-root #{&}__title {
+    color: $color-vivid-red;
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    transition: border-bottom .3s ease;
+  }
+
+  @at-root #{&}__content {
+    font-size: 18px;
+    font-family: $font-open-sans;
+    font-weight: 300;
+    line-height: 32px;
+    color: lighten($color-333, 10%);
+    margin-bottom: 80px;
+  }
+}
+
+
+// #-About
+.about-page {
+  padding-top: 90px;
+  background-color: $color-fcfcfc;
+  min-height: 650px; // prevent blank content above the fold
+}
+
+.about {
+  @at-root #{&}__title {
+    color: $color-vivid-red;
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-weight: 300;
+  }
+}
+
+.shaka-member-row {
+  margin-bottom: 30px;
+}
+
+.shaka-member {
+  // margin-bottom: 30px;
+  max-height: 400px;
+
+  @at-root #{&}__name {
+    margin-top: 0;
+    font-weight: 400;
+    color: $color-333;
+    font-size: 26px;
+  }
+
+  @at-root #{&}__bio {
+    font-family: $font-open-sans;
+    font-weight: 300;
+    color: $color-333;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @at-root #{&}__social-links {
+    margin-top: 10px;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      color: $color-333;
+      font-size: 20px;
+      margin-right: 7px;
+
+      // &:visited {
+      //   color: $color-333;
+      // }
+    }
+  }
+
+  @at-root #{&}__email {
+    transition: color .5s ease;
+
+    &:hover {
+      color: $color-vivid-red;
+    }
+  }
+
+  @at-root #{&}__facebook {
+    transition: color .5s ease;
+
+    &:hover {
+      color: $color-facebook;
+    }
+  }
+
+  @at-root #{&}__twitter {
+    transition: color .5s ease;
+
+    &:hover {
+      color: $color-twitter;
+    }
+  }
+
+  @at-root #{&}__github {
+    transition: color .5s ease;
+
+    &:hover {
+      color: $color-github;
+    }
+  }
+
+  @at-root #{&}__linkedin {
+    transition: color .5s ease;
+
+    &:hover {
+      color: $color-linkedin;
+    }
+  }
+
+  @at-root #{&}__personal {
+    transition: color .5s ease;
+
+    &:hover {
+      color: $color-personal;
+    }
+  }
+
+}

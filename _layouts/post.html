@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="post-page">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <header class="blog-post__header">
+          <h1 class="blog-post__title text-center">{{ page.title }}</h1>
+          <div class="blog-post__meta">
+            <span class="blog-post__meta-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+          </div>
+        </header>
+
+        <div class="tbd">placeholder: sharing - header</div>
+
+        <article class="blog-post__content">
+          {{ content }}
+        </article>
+
+        <div class="tbd">placeholder: sharing - footer</div>
+        <br>
+        <div class="tbd">placeholder: author info</div>
+
+        <div class="blog-post__separator text-center">
+          <img src="{{ site.url | prepend: site.baseurl }}/assets/outline-gem.png" alt="Outline Gem Separator">
+        </div>
+
+        <div class="tbd">
+          <p>placeholder: discourse comments</p>
+        </div>
+
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</div><!-- end .post-page -->
+
+{% include get-in-contact.html %}

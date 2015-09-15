@@ -1,0 +1,20 @@
+{
+  "name": "shakacode",
+  "version": "1.0.0",
+  "authors": [
+    "Renan Aguiar <rffaguiar@gmail.com>"
+  ],
+  "description": "shakacode bower",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}

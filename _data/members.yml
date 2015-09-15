@@ -1,0 +1,59 @@
+- name: Justin Gordon
+  id: 1
+  thumb: 'justin.jpg'
+  email: ""
+  facebook: 'https://facebook.com/justin'
+  twitter: 'https://twitter.com/justin'
+  github: 'https://github.com'
+  personal_website: 'https://google.com'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+
+- name: Dylan Grafmyre
+  id: 2
+  thumb: 'justin.jpg'
+  email: 'dylan@gmail.com'
+  facebook: 'https://facebook.com/dylan'
+  twitter: 'https://twitter.com/dylan'
+  github: 'https://github.com'
+  personal_website: 'https://google.com'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+
+- name: Samnang Chhun
+  id: 3
+  thumb: 'justin.jpg'
+  email: 'samnang@gmail.com'
+  facebook: 'https://facebook.com/samnang'
+  twitter: 'https://twitter.com/samnang'
+  github: 'https://github.com'
+  personal_website: 'https://google.com'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+
+- name: Alex Feedoseev
+  id: 4
+  thumb: 'justin.jpg'
+  email: 'alex@gmail.com'
+  facebook: 'https://facebook.com/alex'
+  twitter: 'https://twitter.com/alex'
+  github: 'https://github.com'
+  personal_website: 'https://google.com'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+
+- name: Blaine Hatab
+  id: 5
+  thumb: 'justin.jpg'
+  email: 'samnang@gmail.com'
+  facebook: 'https://facebook.com/blaine'
+  twitter: 'https://twitter.com/blaine'
+  github: 'https://github.com'
+  personal_website: 'https://google.com'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+
+- name: Renan Aguiar
+  id: 6
+  thumb: 'justin.jpg'
+  email: 'renan@gmail.com'
+  facebook: 'https://facebook.com/renan'
+  twitter: 'https://twitter.com/renan'
+  github: 'https://github.com'
+  personal_website: 'https://google.com'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
