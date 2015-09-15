@@ -65,7 +65,7 @@ h6 {
 // #-Site Header
 
 .site-header {
-  padding: 20px;
+  padding: 15px;
   border-bottom: 1px solid lighten($color-333, 70%);
 
   @at-root #{&}__site-nav {
@@ -75,6 +75,10 @@ h6 {
         display: inline-block;
       }
     }
+  }
+
+  @at-root #{&}__links {
+    margin-top: 13px;
   }
 
   .nav-link {
