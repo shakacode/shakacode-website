@@ -10,8 +10,8 @@ title: Shaka Code Team
       <div class="col-md-10 col-md-offset-1">
         <header class="about__header">
           <h1 class="about__title text-center">Shaka Code Team</h1>
-          <div class="blog-post__separator text-center">
-            <img src="{{ site.url | prepend: site.baseurl }}/assets/outline-gem.png" alt="Outline Gem Separator">
+          <div class="about__separator text-center">
+            <img width="45" height="36" src="{{ site.url | prepend: site.baseurl }}/assets/shaka-sign.svg" alt="Shaka Sign Separator">
           </div>
         </header>
       </div>
@@ -27,8 +27,11 @@ title: Shaka Code Team
             <div class="col-md-6">
               <div class="row shaka-member">
                 <div class="col-md-5">
-                  <img src="{{ site.url | prepend: site.baseurl }}/assets/members/{{ member.thumb }}" alt="{{ member.name }}">
-                  <div class="shaka-member__social-links">
+                  <div class="shaka-member__photo">
+                    <img src="{{ site.url | prepend: site.baseurl }}/assets/members/{{ member.thumb }}" alt="{{ member.name }}">
+                  </div>
+
+                  <div class="shaka-member__social-links text-center">
                     <ul>
                       {{ if member.email != null }}
                         <li><a href="mailto:{{ member.email }}" class="shaka-member__email"><i class="fa fa-envelope"></i></a></li>
@@ -72,5 +75,3 @@ title: Shaka Code Team
 
   </div><!-- end .container -->
 </div><!-- end .post-page -->
-
-{% include get-in-contact.html %}

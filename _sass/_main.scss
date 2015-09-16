@@ -24,6 +24,7 @@ $color-vivid-red: #c92626;
 $color-fcfcfc: #fcfcfc;
 $color-fff: #fff;
 $color-000: #000;
+$color-light-logo: #FC5D51;
 
 $color-envelope: $color-vivid-red !default;
 $color-facebook: #3b5998;
@@ -63,40 +64,62 @@ h6 {
 }
 
 // #-Site Header
+// .shaka-logo {
+//   transition: transform .3s ease;
+//   &:hover {
+//     transform: scale(1.05);
+//   }
+// }
 
 .site-header {
+  background-color: $color-333;
   padding: 15px;
   border-bottom: 1px solid lighten($color-333, 70%);
 
   @at-root #{&}__site-nav {
-    ul {
-      li {
-        margin-right: 20px;
-        display: inline-block;
+    li {
+      margin-right: 20px;
+      display: inline-block;
+
+      &:last-child {
+        margin-right: 0; // the last child doesn't need margin-right, it brakes centralization
       }
     }
   }
 
   @at-root #{&}__links {
-    margin-top: 13px;
+    margin-top: 13px; // alignment
   }
 
   .nav-link {
-    color: lighten($color-333, 20%);
+    color: $color-fcfcfc;
     font-family: $font-source-sans-pro;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     transition: border-bottom .1s;
 
+    @at-root #{&}--highlight {
+      color: $color-light-logo;
+      font-family: $font-source-sans-pro;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      transition: border-bottom .3s;
+
+      &:hover {
+        border-bottom: 4px solid $color-light-logo;
+      }
+    }
+
     &:hover {
-      border-bottom: 4px solid $color-vivid-red;
+      border-bottom: 4px solid $color-light-logo;
     }
   }
 }
 
 // #-Site Footer
-
+// not used yet
 .site-footer {
   padding: 20px;
   background-color: $color-333;
@@ -140,13 +163,47 @@ h6 {
 
 .home-we-build {
   background-color: $color-fcfcfc;
-  height: 660px;
-  padding-top: 200px;
+  height: 540px;
+  padding-top: 70px;
 
   @at-root #{&}__title {
-    color: lighten($color-vivid-red, 15%);
-    font-size: 55px;
-    font-weight:300;
+    color: $color-vivid-red;
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  @at-root #{&}__subtitle {
+    color: $color-333;
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  @at-root #{&}__statement {
+    color: $color-000;
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 1px;
+
+    a {
+      border-bottom: 5px solid $color-vivid-red;
+      color: $color-333;
+      transition: border-bottom .6s ease;
+
+      &:hover {
+        border-bottom: 5px solid $color-333;
+      }
+    }
+  }
+
+  @at-root #{&}__shaka-sign {
+    opacity: 0.8;
+  }
+
+  @at-root #{&}__separator {
+    margin-top: 25px;
+    margin-bottom: 20px;
   }
 
   @at-root #{&}__separator::after {
@@ -173,10 +230,11 @@ h6 {
 }
 
 .home-we-are {
-  background-color: $color-vivid-red;
-  height: 600px;
-  padding-top: 110px;
-  color: $color-fff;
+  background: $color-vivid-red url( $site-url + "/assets/we-are-bg.jpg") 100% 90% no-repeat;
+  // background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: $color-fcfcfc;
 
   a {
     color: $color-fff;
@@ -186,9 +244,11 @@ h6 {
     margin-bottom: 80px;
     font-size: 55px;
     font-weight: 300;
+    color: $color-fcfcfc;
   }
 
   @at-root #{&}__statement {
+    color: $color-fcfcfc;
     margin-bottom: 80px;
     font-size: 28px;
     line-height: 50px;
@@ -197,86 +257,16 @@ h6 {
   }
 
   @at-root #{&}__meet-team {
+    color: $color-fcfcfc;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1.5px;
     transition: border-bottom .2s ease;
     display: inline-block;
-    margin: auto;
+    border-bottom: 3px solid rgba(255,255,255, 0.2);
 
     &:hover {
       border-bottom: 3px solid $color-fff;
-    }
-  }
-}
-
-.home-we-do {
-  background-color: $color-fcfcfc;
-  height: 600px;
-  padding-top: 100px;
-  border-bottom: 1px solid lighten($color-333, 70%);
-
-
-  @at-root #{&}__title {
-    color: $color-vivid-red;
-    margin-bottom: 40px;
-    font-size: 55px;
-    font-weight: 300;
-  }
-
-  @at-root #{&}__prepare-statement {
-    color: $color-000;
-    margin-bottom: 60px;
-    font-weight: 100;
-    font-size: 22px;
-    letter-spacing: 1px;
-  }
-
-  @at-root #{&}__statement {
-    color: $color-000;
-    margin-bottom: 40px;
-    font-weight: 100;
-    font-size: 24px;
-    letter-spacing: 2px;
-
-    a {
-      border-bottom: 5px solid $color-vivid-red;
-      color: $color-333;
-      transition: border-bottom .6s ease;
-
-      &:hover {
-        border-bottom: 5px solid $color-333;
-      }
-    }
-  }
-}
-
-.home-get-touch {
-  background-color: $color-fff;
-  border-bottom: 1px solid lighten($color-333, 70%);
-
-  @at-root #{&}__title {
-    font-size: 50px;
-    font-weight: 400;
-    color: $color-333;
-    letter-spacing: 2px;
-    margin-top: 80px;
-    margin-bottom: 50px;
-  }
-
-  @at-root #{&}__email {
-    display: inline-block;
-    font-size: 35px;
-    font-weight: 400;
-    color: lighten($color-vivid-red, 15%);
-    letter-spacing: 2px;
-    margin-bottom: 110px;
-    border-bottom: 4px solid $color-fff;
-    transition: border-bottom .2s ease;
-
-    &:hover {
-      color: $color-vivid-red;
-      border-bottom: 4px solid $color-vivid-red;
     }
   }
 }
@@ -502,15 +492,48 @@ h6 {
     font-size: 55px;
     font-weight: 300;
   }
+
+  @at-root #{&}__separator {
+    margin-bottom: 80px;
+  }
+
+  @at-root #{&}__separator::after {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: 5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator::before {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: -5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
 }
 
+// not used yet
 .shaka-member-row {
   margin-bottom: 30px;
 }
 
 .shaka-member {
-  // margin-bottom: 30px;
-  max-height: 400px;
+  margin-bottom: 40px;
+  max-height: 350px;
+  height: 350px;
+  overflow: hidden;
+
+  // @at-root #{&}__photo {
+  //
+  // }
 
   @at-root #{&}__name {
     margin-top: 0;

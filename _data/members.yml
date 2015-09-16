@@ -6,7 +6,7 @@
   twitter: 'https://twitter.com/justin'
   github: 'https://github.com'
   personal_website: 'https://google.com'
-  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur consectueur ipsum dolor sit amet lorem dolor sit consectueur consectueur'
 
 - name: Dylan Grafmyre
   id: 2
@@ -16,7 +16,7 @@
   twitter: 'https://twitter.com/dylan'
   github: 'https://github.com'
   personal_website: 'https://google.com'
-  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur dolor sit amet lorem dolor sit consectueur'
 
 - name: Samnang Chhun
   id: 3
@@ -26,7 +26,7 @@
   twitter: 'https://twitter.com/samnang'
   github: 'https://github.com'
   personal_website: 'https://google.com'
-  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor ipsum dolor sit amet lorem dolor sit consectueur  dolor sit amet lorem dolor sit consectueur'
 
 - name: Alex Feedoseev
   id: 4
@@ -36,7 +36,7 @@
   twitter: 'https://twitter.com/alex'
   github: 'https://github.com'
   personal_website: 'https://google.com'
-  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur  ipsum dolor sit amet lorem dolor sit consectueur'
+  bio: 'Lorem ipsum dolor sit amet consectueur lore ipsum dolor sit amet lorem ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur ipsum dolor sit amet lorem dolor sit consectueur'
 
 - name: Blaine Hatab
   id: 5

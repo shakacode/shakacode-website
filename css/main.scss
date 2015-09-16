@@ -42,7 +42,8 @@ $on-laptop:        800px;
     }
 }
 
-
+// Liquid vars
+$site-url: '{{ site.url | prepend: site.baseurl }}';
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
