@@ -163,8 +163,8 @@ h6 {
 
 .home-we-build {
   background-color: $color-fcfcfc;
-  height: 540px;
   padding-top: 70px;
+  padding-bottom: 90px;
 
   @at-root #{&}__title {
     color: $color-vivid-red;
