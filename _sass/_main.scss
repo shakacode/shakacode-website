@@ -230,11 +230,16 @@ h6 {
 }
 
 .home-we-are {
-  background: $color-vivid-red url( $site-url + "/assets/we-are-bg.jpg") 100% 90% no-repeat;
-  // background-size: cover;
+  background-color: $color-vivid-red;
   padding-top: 50px;
   padding-bottom: 100px;
   color: $color-fcfcfc;
+
+  @media (min-width: $screen-md-min) {
+    // show image only on tablets and up
+    background: $color-vivid-red url( $site-url + "/assets/we-are-bg.jpg") 100% 90% no-repeat;
+    // background-size: cover;
+  }
 
   a {
     color: $color-fff;
