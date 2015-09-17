@@ -1,5 +1,25 @@
 ---
 layout: default
+title: Shaka Code Contact
 ---
+<div class="contact-page">
 
-<p>index.html</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-sm-12">
+        <header class="contact__header">
+          <h1 class="contact__title text-center">Get in Contact</h1>
+          <div class="contact__separator text-center">
+            <img width="45" height="36" src="{{ site.url | prepend: site.baseurl }}/assets/shaka-sign.svg" alt="Shaka Sign Separator">
+          </div>
+        </header>
+      </div>
+    </div><!-- end .row for header -->
+
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-sm-12 text-center">
+        <a href="mailto:{{ site.contact_email }}" class="contact__email">{{ site.contact_email }}</a>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</div><!-- end .contact-page -->

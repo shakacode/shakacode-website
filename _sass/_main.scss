@@ -14,6 +14,7 @@
 // #-Partial Get in Contact
 // #-Post Page
 // #-About
+// #-Contact
 
 // ----------------------------
 
@@ -479,7 +480,7 @@ h6 {
 }
 
 // #-Partial Get in Contact
-
+// not used yet: probably will be deleted
 .get-in-contact {
   text-align: center;
   border-top: 1px solid lighten($color-333, 70%);
@@ -705,6 +706,88 @@ h6 {
 
     &:hover {
       color: $color-personal;
+    }
+  }
+}
+
+// #-Contact
+.contact-page {
+  background-color: $color-fcfcfc;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  min-height: 650px; // prevent blank content above the fold
+
+  @media (max-width: $screen-sm-max) {
+    min-height: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.contact {
+  @at-root #{&}__title {
+    color: $color-vivid-red;
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-weight: 300;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+  }
+
+  @at-root #{&}__separator {
+    margin-bottom: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @at-root #{&}__separator::after {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: 5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator::before {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: -5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__email {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    color: lighten($color-vivid-red, 15%);
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    border-bottom: 4px solid $color-fff;
+    transition: border-bottom .2s ease;
+
+    &:visited {
+      color: lighten($color-vivid-red, 15%);
+    }
+
+    &:hover {
+      color: $color-vivid-red;
+      border-bottom: 4px solid $color-vivid-red;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 22px;
     }
   }
 }
