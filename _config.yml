@@ -1,6 +1,6 @@
 # Site settings
-title: Your awesome title #not used yet
-email: your-email@domain.com #not used yet
+title: Your awesome title #not used
+email: your-email@domain.com #not used
 contact_email: contact@shakacode.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this

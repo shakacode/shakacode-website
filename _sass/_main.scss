@@ -517,13 +517,20 @@ h6 {
   padding-top: 90px;
   background-color: $color-fcfcfc;
   min-height: 700px; // prevent blank content above the fold
-  
+
   @media (max-width: $screen-sm-max) {
     padding-top: 40px;
   }
 }
 
 .blog-post {
+
+  @at-root #{&}__share--header {
+    height: 25px; // fixed height to avoid "html building" when fb share is loading
+    margin-bottom: 5px;
+    margin-bottom: 17px;
+  }
+
   @at-root #{&}__title {
     color: $color-vivid-red;
     font-size: 40px;

@@ -1,3 +1,8 @@
 (function() {
-  alert('hellow');
+  'use strict';
+  
+  function init() {
+
+  }
+  init();
 }());
