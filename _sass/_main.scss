@@ -166,10 +166,19 @@ h6 {
   padding-top: 70px;
   padding-bottom: 90px;
 
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
   @at-root #{&}__title {
     color: $color-vivid-red;
     font-size: 45px;
     font-weight: 600;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 30px;
+    }
   }
 
   @at-root #{&}__subtitle {
@@ -177,12 +186,16 @@ h6 {
     margin-bottom: 40px;
     font-size: 35px;
     font-weight: 600;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 21px;
+    }
   }
 
   @at-root #{&}__statement {
     color: $color-000;
     margin-bottom: 30px;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 24px;
     letter-spacing: 1px;
 
@@ -193,6 +206,17 @@ h6 {
 
       &:hover {
         border-bottom: 5px solid $color-333;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      line-height: 30px;
+
+      a {
+        border-bottom-width: 3px;
       }
     }
   }
@@ -241,6 +265,10 @@ h6 {
     // background-size: cover;
   }
 
+  @media (max-width: $screen-sm-max) {
+    padding-bottom: 50px;
+  }
+
   a {
     color: $color-fff;
   }
@@ -250,6 +278,11 @@ h6 {
     font-size: 55px;
     font-weight: 300;
     color: $color-fcfcfc;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
 
   @at-root #{&}__statement {
@@ -259,6 +292,12 @@ h6 {
     line-height: 50px;
     font-weight: 100;
     letter-spacing: 1px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
   }
 
   @at-root #{&}__meet-team {
@@ -272,6 +311,11 @@ h6 {
 
     &:hover {
       border-bottom: 3px solid $color-fff;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+      font-weight: 300;
     }
   }
 }
