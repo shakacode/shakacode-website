@@ -516,7 +516,11 @@ h6 {
 .post-page {
   padding-top: 90px;
   background-color: $color-fcfcfc;
-  min-height: 650px; // prevent blank content above the fold
+  min-height: 700px; // prevent blank content above the fold
+  
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+  }
 }
 
 .blog-post {
