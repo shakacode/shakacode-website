@@ -325,11 +325,11 @@ h6 {
   background-color: $color-fcfcfc;
   padding-top: 90px;
   min-height: 800px;
-}
 
-// .blog__post-list {
-//
-// }
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+  }
+}
 
 .blog-post {
 
@@ -387,6 +387,10 @@ h6 {
     height: 1px;
     width: 46%;
     border-bottom: 1px solid lighten($color-333, 50%);
+
+    @media (max-width: $screen-sm-max) {
+      width: 40%;
+    }
   }
 
   @at-root #{&}__separator::before {
@@ -398,6 +402,10 @@ h6 {
     height: 1px;
     width: 46%;
     border-bottom: 1px solid lighten($color-333, 50%);
+
+    @media (max-width: $screen-md-max) {
+      width: 40%;
+    }
   }
 }
 
@@ -406,6 +414,11 @@ h6 {
 .pagination {
   display: block;
   margin-bottom: 100px;
+
+  @media (max-width: $screen-sm-max) {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }
 
 .pagination__previous {
