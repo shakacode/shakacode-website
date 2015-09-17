@@ -15,6 +15,7 @@
 // #-Post Page
 // #-About
 // #-Contact
+// #-Products
 
 // ----------------------------
 
@@ -790,4 +791,89 @@ h6 {
       font-size: 22px;
     }
   }
+}
+
+// #-Products
+
+.products-page {
+  padding-top: 40px;
+  background-color: $color-fcfcfc;
+  min-height: 650px; // prevent blank content above the fold
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+  }
+}
+
+.products {
+  @at-root #{&}__title {
+    color: $color-vivid-red;
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-weight: 300;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+  }
+
+  @at-root #{&}__separator {
+    margin-bottom: 40px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @at-root #{&}__separator::after {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: 5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator::before {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: -5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__member {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @at-root #{&}__fng {
+
+  }
+
+  @at-root #{&}__fng-logo {
+    background-color: $color-333;
+    padding: 30px;
+    border-radius: 5px;
+
+    @media (max-width: $screen-sm-max) {
+      border-radius: 0;
+    }
+  }
+
+  @at-root #{&}__member-title {
+    font-size: 26px;
+  }
+
+  @at-root #{&}__more-info-soon {
+    color: $color-vivid-red;
+  }
+
 }
