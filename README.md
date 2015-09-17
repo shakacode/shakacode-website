@@ -17,6 +17,7 @@ This is an In Progress Shaka Code Website.
 [Jekyll Docs](http://jekyllrb.com/docs/home/)
 ### Local Octopress Documentation
 You can run the local Octopress Documentation
+
 1. go to shakacode-website folder
 2. run `octopress docs`
 3. go to localhost:4444
