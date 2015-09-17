@@ -5,9 +5,8 @@ title: Shaka Code Team
 <div class="about-page">
 
   <div class="container">
-
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
+      <div class="col-lg-10 col-lg-offset-1 col-sm-12">
         <header class="about__header">
           <h1 class="about__title text-center">Shaka Code Team</h1>
           <div class="about__separator text-center">
@@ -18,16 +17,16 @@ title: Shaka Code Team
     </div><!-- end .row for header -->
 
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
+      <div class="col-lg-10 col-lg-offset-1 col-sm-12">
 
         <div class="row shaka-member-row">
 
           {% for member in site.data.members %}
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <div class="row shaka-member">
-                <div class="col-md-5">
-                  <div class="shaka-member__photo">
+                <div class="col-md-5 col-sm-12">
+                  <div class="shaka-member__photo text-center">
                     <img src="{{ site.url | prepend: site.baseurl }}/assets/members/{{ member.thumb }}" alt="{{ member.name }}">
                   </div>
 
@@ -59,8 +58,9 @@ title: Shaka Code Team
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-7">
-                  <h3 class="shaka-member__name">{{ member.name }}</h3>
+                <div class="col-md-7 col-sm-12">
+                  <h3 class="shaka-member__name hidden-sm hidden-xs">{{ member.name }}</h3>
+                  <h3 class="shaka-member__name text-center visible-sm visible-xs">{{ member.name }}</h3>
                   <p class="shaka-member__bio">{{ member.bio }}</p>
                 </div>
               </div>
@@ -69,9 +69,7 @@ title: Shaka Code Team
           {% endfor %}
 
         </div><!-- end .shaka-member-row -->
-
       </div>
     </div><!-- end .row for members -->
-
   </div><!-- end .container -->
 </div><!-- end .post-page -->

@@ -64,11 +64,10 @@ h6 {
 }
 
 // #-Site Header
+
+// not used yet
 // .shaka-logo {
-//   transition: transform .3s ease;
-//   &:hover {
-//     transform: scale(1.05);
-//   }
+//
 // }
 
 .site-header {
@@ -532,6 +531,10 @@ h6 {
   padding-top: 90px;
   background-color: $color-fcfcfc;
   min-height: 650px; // prevent blank content above the fold
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+  }
 }
 
 .about {
@@ -540,10 +543,19 @@ h6 {
     margin-bottom: 20px;
     font-size: 55px;
     font-weight: 300;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
   }
 
   @at-root #{&}__separator {
     margin-bottom: 80px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 30px;
+    }
   }
 
   @at-root #{&}__separator::after {
@@ -580,9 +592,11 @@ h6 {
   height: 350px;
   overflow: hidden;
 
-  // @at-root #{&}__photo {
-  //
-  // }
+  @media (max-width: $screen-sm-max) {
+    max-height: initial;
+    height: initial;
+    overflow: initial;
+  }
 
   @at-root #{&}__name {
     margin-top: 0;
@@ -602,6 +616,11 @@ h6 {
   @at-root #{&}__social-links {
     margin-top: 10px;
 
+    @media (max-width: $screen-sm-max) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
     li {
       display: inline;
     }
@@ -611,9 +630,9 @@ h6 {
       font-size: 20px;
       margin-right: 7px;
 
-      // &:visited {
-      //   color: $color-333;
-      // }
+      @media (max-width: $screen-sm-max) {
+        font-size: 25px;
+      }
     }
   }
 
