@@ -613,6 +613,8 @@ body {
     transition: border-bottom .3s ease;
   }
 
+  // very important rules
+  // post formatting
   @at-root #{&}__content {
     font-size: 18px;
     font-family: $font-open-sans;
@@ -620,6 +622,42 @@ body {
     line-height: 32px;
     color: lighten($color-333, 10%);
     margin-bottom: 80px;
+
+    img {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: $color-333;
+      border-bottom: 2px solid $color-light-logo;
+      transition: border-bottom-width .3s;
+
+      &:visited {
+        color: $color-333;
+      }
+    }
+
+    blockquote {
+      border-left-color: lighten($color-333, 50%);
+      color: $color-333;
+      font-style: normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
   }
 }
 
