@@ -9,7 +9,12 @@ layout: default
         <header class="blog-post__header">
           <h1 class="blog-post__title text-center">{{ page.title }}</h1>
           <div class="blog-post__meta">
-            <span class="blog-post__meta-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+            <p>
+              <span>by </span>
+              <span class="blog-post__meta-author">{{ page.author }}</span>
+              <span>in </span>
+              <span class="blog-post__meta-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+            </p>
           </div>
         </header>
 
@@ -21,14 +26,8 @@ layout: default
           {{ content }}
         </article>
 
-        <div class="tbd">placeholder: author info</div>
-
         <div class="blog-post__separator text-center">
           <img width="45" height="36" src="{{ site.url | prepend: site.baseurl }}/assets/shaka-sign.svg" alt="Shaka Sign Separator">
-        </div>
-
-        <div class="tbd">
-          <p>placeholder: discourse comments</p>
         </div>
 
       </div>

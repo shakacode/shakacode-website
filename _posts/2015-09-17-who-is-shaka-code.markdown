@@ -2,6 +2,7 @@
 layout: post
 title: "Who Is Shaka Code?"
 date: 2015-09-17T23:14:15-03:00
+author: Justin Gordon
 ---
 
 {:.text-center}
