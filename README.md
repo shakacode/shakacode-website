@@ -26,10 +26,17 @@ You can run the local Octopress Documentation
 It's a simple BEM style like [this](https://github.com/airbnb/css)
 
 ## JS
-There isn't any js yet.
+The [octopress-asset-pipeline](https://github.com/octopress/asset-pipeline) gem takes care of javascript. It combine, compress and fingerprint CSS and JS (and/or Coffescript). You can define precedence on _config.yml like this:
+
+
+    asset_pipeline:
+      order_js:
+        - jquery.js
+        - main.js
+
 
 ## Members Data
-Feel free to change your **user data** in _data/members.yml
+Feel free to change your **user data** in _data/members.yml. You bio should not be longer than 255 characters.
 
 ## To be done
 See Trello board **Shaka Code Website**

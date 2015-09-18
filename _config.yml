@@ -24,3 +24,8 @@ sass:
 # plugins
 gems:
   - octopress-asset-pipeline
+
+asset_pipeline:
+  order_js:
+    - jquery.js
+    - main.js
