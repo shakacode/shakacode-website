@@ -13,6 +13,7 @@
 // #-Blog Pagination
 // #-Partial Get in Contact
 // #-Post Page
+// #-Page Page
 // #-About
 // #-Contact
 // #-Products
@@ -669,6 +670,81 @@ body {
   }
 }
 
+// #-Page Page
+
+.page-page {
+  padding-top: 90px;
+  background-color: $color-fcfcfc;
+  min-height: 700px; // prevent blank content above the fold
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+  }
+}
+
+.page {
+
+  @at-root #{&}__share--header {
+    height: 25px; // fixed height to avoid "html building" when fb share is loading
+    margin-bottom: 5px;
+    margin-bottom: 17px;
+  }
+
+  @at-root #{&}__title {
+    color: $color-vivid-red;
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    transition: border-bottom .3s ease;
+  }
+
+  // very important rules
+  // post formatting
+  @at-root #{&}__content {
+    font-size: 18px;
+    font-family: $font-open-sans;
+    font-weight: 300;
+    line-height: 32px;
+    color: lighten($color-333, 10%);
+    margin-bottom: 80px;
+
+    img {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: $color-333;
+      border-bottom: 2px solid $color-light-logo;
+      transition: border-bottom-width .3s;
+
+      &:visited {
+        color: $color-333;
+      }
+    }
+
+    blockquote {
+      border-left-color: lighten($color-333, 50%);
+      color: $color-333;
+      font-style: normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+  }
+}
 
 // #-About
 .about-page {
