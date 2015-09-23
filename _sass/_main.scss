@@ -17,6 +17,7 @@
 // #-About
 // #-Contact
 // #-Work: Products and Consulting
+// #-Open Source
 
 // ----------------------------
 
@@ -50,6 +51,10 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica, sans-seri
 }
 
 // #-Rebase
+
+p {
+  font-family: $font-source-sans-pro;
+}
 
 ul {
   margin-bottom: 0;
@@ -1009,7 +1014,7 @@ body {
 
     @media (max-width: $screen-sm-max) {
       margin-bottom: 10px;
-      font-size: 40px;
+      font-size: 26px;
     }
   }
 
@@ -1050,6 +1055,7 @@ body {
   @at-root #{&}__member-title {
     font-size: 26px;
     color: $color-333;
+    transition: color .3s;
 
     &:visited {
       color: $color-333;
@@ -1061,11 +1067,11 @@ body {
   }
 
   @at-root #{&}__member-text {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   @at-root #{&}__consulting-text {
-    font-size: 24px;
+    font-size: 26px;
 
     @media (max-width: $screen-sm-max) {
       font-size: 18px;
@@ -1073,10 +1079,14 @@ body {
 
     a {
       color: $color-vivid-red;
-      transition: border-bottom-width .3s;
+      transition: color .3s;
 
       &:visited {
         color: $color-vivid-red;
+      }
+
+      &:hover {
+        color: $color-333;
       }
     }
   }
@@ -1085,11 +1095,11 @@ body {
     color: $color-fff;
     background-color: $color-vivid-red;
     padding: 7px 20px;
-    text-transform: uppercase;
     display: inline-block;
-    margin-top: 16px;
-    font-size: 17px;
+    margin-top: 20px;
+    font-size: 18px;
     border-radius: 3px;
+    transition: color .3s;
 
     &:visited {
       color: $color-fff;
@@ -1107,6 +1117,115 @@ body {
 
     @media (max-width: $screen-sm-max) {
       border-radius: 0;
+    }
+  }
+
+}
+
+// #-Open Source
+
+.opensource-page {
+  padding-top: 40px;
+  background-color: $color-fcfcfc;
+  min-height: 650px; // prevent blank content above the fold
+  padding-bottom: 150px;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+  }
+}
+
+.opensource {
+  @at-root #{&}__title {
+    color: $color-vivid-red;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+  }
+
+  @at-root #{&}__separator {
+    margin-bottom: 40px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @at-root #{&}__separator::after {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: 5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator::before {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: -5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__project {
+    margin-bottom: 30px;
+  }
+
+  @at-root #{&}__project-title {
+    font-size: 26px;
+    color: $color-333;
+    transition: color .3s;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+    }
+
+    &:visited{
+      color: $color-333;
+    }
+
+    &:hover {
+      color: $color-vivid-red;
+    }
+  }
+
+  @at-root #{&}__project-text {
+    font-size: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+  }
+
+  @at-root #{&}__more-projects {
+    display: inline-block;
+    font-family: $font-source-sans-pro;
+    color: $color-vivid-red;
+    font-size: 24px;
+    margin-top: 20px;
+    transition: color .3s;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+    }
+
+    &:visited {
+      color: $color-vivid-red;
+    }
+
+    &:hover {
+      color: $color-333;
     }
   }
 
