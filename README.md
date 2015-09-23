@@ -9,7 +9,7 @@ This is an In Progress Shaka Code Website.
 1. `git clone git@github.com:shakacode/shakacode-website.git`
 2. `cd shakacode-website`
 3. `bower install`
-4. `jekyll serve`
+4. `jekyll serve` if this doesn't work try `bin/jekyll serve`
 5. go to localhost:4000
 
 ## Online and Local Documentation

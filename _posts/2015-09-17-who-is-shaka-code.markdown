@@ -13,7 +13,7 @@ Megan Denny, [www.padi.com](www.padi.com)
 
 by Justin Gordon with help from the Shaka Code Team, September, 2015
 
-## Who is Shaka Code?
+## <a name="whoisshakacode"></a> Who is Shaka Code?
 
 It’s the global web development software consultancy and product company started by Justin Gordon, AKA “railsonmaui” in the Ruby on Rails world. We’re focused on what we believe to be the best technologies for web development. Today, those are Ruby on Rails and React. But it’s not just us, we like to think that it’s the larger WE in the open source community that loves collaborating on beautiful code.
 
@@ -72,7 +72,7 @@ Goal #2, building a product, is a critical component for several reasons:
 
 >David Heinemeier Hansson (the driving force behind Ruby on Rails) is a huge believer in using extractions as a method to add functionality to your projects, typically in the context of a framework. You need some particular functionality, you write it, and if it's good enough you extract it from it's original context and make it generic enough that it can be used by other people. You could also call this "building stuff you need" instead of "building stuff you think you might need". It's part of the whole YAGNI philosophy of programming, I guess.
 
-6. It's fun to have our own project! Coding is our passion!
+6. <a name="fng-internal-project"></a> It's fun to have our own project! Coding is our passion!
 
 ## Our Internal Project: Friends and Guests
 
