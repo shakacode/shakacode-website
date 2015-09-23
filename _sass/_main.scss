@@ -567,30 +567,46 @@ body {
 }
 
 // #-Partial Get in Contact
-// not used yet: probably will be deleted
 .get-in-contact {
   text-align: center;
   border-top: 1px solid lighten($color-333, 70%);
+  padding: 50px 0;
+  background-color: $color-fff;
 
   @at-root #{&}__title {
     display: inline-block;
-    font-size: 30px;
-    font-weight: 400;
+    margin: 0 15px 0 0;
     color: $color-333;
+    font-family: $font-source-sans-pro;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 50px;
-    margin-right: 15px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
   }
 
   @at-root #{&}__email {
     display: inline-block;
-    font-size: 30px;
-    font-weight: 400;
-    color: lighten($color-vivid-red, 15%);
+    color: $color-vivid-red;
+    font-family: $font-source-sans-pro;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 50px;
     border-bottom: 4px solid $color-fff;
     transition: border-bottom .2s ease;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+    }
+
+    &:visited {
+      color: $color-vivid-red;
+    }
 
     &:hover {
       color: $color-vivid-red;
@@ -855,7 +871,7 @@ body {
 
 .shaka-member {
   margin-bottom: 20px;
-  
+
   @media (max-width: $screen-sm-max) {
     margin-bottom: 50px;
   }
