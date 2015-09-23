@@ -36,7 +36,7 @@ The [octopress-asset-pipeline](https://github.com/octopress/asset-pipeline) gem 
 
 
 ## Members Data
-Feel free to change your **user data** in _data/members.yml. You bio should not be longer than 255 characters.
+All user info is inside about/index.html, feel free to change your info.
 
 ## How to create posts
 1. Run the project locally

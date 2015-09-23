@@ -847,18 +847,17 @@ body {
 // not used yet
 .shaka-member-row {
   margin-bottom: 30px;
+
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: initial;
+  }
 }
 
 .shaka-member {
-  margin-bottom: 40px;
-  max-height: 350px;
-  height: 350px;
-  overflow: hidden;
-
+  margin-bottom: 20px;
+  
   @media (max-width: $screen-sm-max) {
-    max-height: initial;
-    height: initial;
-    overflow: initial;
+    margin-bottom: 50px;
   }
 
   @at-root #{&}__name {
@@ -866,10 +865,15 @@ body {
     font-weight: 400;
     color: $color-333;
     font-size: 26px;
+
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+    }
+
   }
 
   @at-root #{&}__temp-padding-fix {
-    padding-right: 15px;
+    padding-right: 20px;
 
     @media (max-width: $screen-sm-max) {
       padding-right: initial;
@@ -882,6 +886,14 @@ body {
     color: $color-333;
     font-size: 18px;
     line-height: 27px;
+
+    a {
+      color: $color-vivid-red;
+
+      &:visited {
+        color: $color-vivid-red;
+      }
+    }
   }
 
   @at-root #{&}__social-links {
