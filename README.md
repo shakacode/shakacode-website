@@ -38,5 +38,20 @@ The [octopress-asset-pipeline](https://github.com/octopress/asset-pipeline) gem 
 ## Members Data
 Feel free to change your **user data** in _data/members.yml. You bio should not be longer than 255 characters.
 
+## How to create posts
+1. Run the project locally
+2. go to the project folder
+3. run `octopress new post "<post name>"`. A post <post name> will be created prepended by time, for example: `octopress new post "My new Post"` will create a file 2015-09-21-my-new-post.markdown
+
+## How to deploy
+After you create your post/page or modify something you need to deploy
+1. to be defined
+
+## How to unpublish
+1. Run the project locally
+2. go to the project folder
+3. run `octopress unpublish "<post name>"`
+
+
 ## To be done
 See Trello board **Shaka Code Website**
