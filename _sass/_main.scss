@@ -748,12 +748,14 @@ body {
       margin-bottom: 30px;
     }
 
+
   }
 }
 
 // #-About
 .about-page {
   padding-top: 90px;
+  padding-bottom: 120px;
   background-color: $color-fcfcfc;
   min-height: 650px; // prevent blank content above the fold
 
@@ -771,7 +773,7 @@ body {
 
     @media (max-width: $screen-sm-max) {
       margin-bottom: 10px;
-      font-size: 40px;
+      font-size: 26px;
     }
   }
 
@@ -804,6 +806,42 @@ body {
     width: 12%;
     border-bottom: 1px solid lighten($color-333, 50%);
   }
+
+  @at-root #{&}__header {
+    margin-bottom: 50px;
+  }
+
+  @at-root #{&}__short-description {
+    font-size: 18px;
+    margin-bottom: 60px;
+
+    p {
+      margin-bottom: 18px;
+      line-height: 32px;
+      font-weight: 300;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: $color-333;
+      border-bottom: 2px solid $color-light-logo;
+      transition: border-bottom-width .3s;
+
+      &:visited {
+        color: $color-333;
+      }
+    }
+  }
+
 }
 
 // not used yet
@@ -830,12 +868,20 @@ body {
     font-size: 26px;
   }
 
+  @at-root #{&}__temp-padding-fix {
+    padding-right: 15px;
+
+    @media (max-width: $screen-sm-max) {
+      padding-right: initial;
+    }
+  }
+
   @at-root #{&}__bio {
-    font-family: $font-open-sans;
+    font-family: $font-source-sans-pro;
     font-weight: 300;
     color: $color-333;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 27px;
   }
 
   @at-root #{&}__social-links {

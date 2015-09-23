@@ -13,7 +13,7 @@ Megan Denny, [www.padi.com](www.padi.com)
 
 by Justin Gordon with help from the Shaka Code Team, September, 2015
 
-## Who is Shaka Code?
+## <a name="who-is-shaka-code"></a> Who is Shaka Code?
 
 It’s the global web development software consultancy and product company started by Justin Gordon, AKA “railsonmaui” in the Ruby on Rails world. We’re focused on what we believe to be the best technologies for web development. Today, those are Ruby on Rails and React. But it’s not just us, we like to think that it’s the larger WE in the open source community that loves collaborating on beautiful code.
 
