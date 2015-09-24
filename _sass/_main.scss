@@ -5,7 +5,6 @@
 // #-Colors
 // #-Fonts
 // #-Miscellaneous
-// #-JS Helpers
 // #-Rebase
 // #-Site Header
 // #-Site Footer
@@ -19,6 +18,7 @@
 // #-Contact
 // #-Work: Products and Consulting
 // #-Open Source
+// #-JS Helpers
 
 // ----------------------------
 
@@ -49,11 +49,6 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica, sans-seri
 .tbd {
   color: $color-333;
   background-color: #f1ada1;
-}
-
-// #-JS Helpers
-.js-highlight-link {
-  border-bottom: 4px solid $color-light-logo !important;
 }
 
 // #-Rebase
@@ -176,13 +171,21 @@ body {
     }
   }
 
-  .nav-link {
+  @at-root #{&}__nav-link {
     color: $color-fcfcfc;
     font-family: $font-source-sans-pro;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     transition: border-bottom .1s;
+
+    &:visited {
+      color: $color-fcfcfc;
+    }
+
+    &:hover {
+      border-bottom: 4px solid $color-light-logo;
+    }
 
     @at-root #{&}--highlight {
       color: $color-light-logo;
@@ -192,13 +195,14 @@ body {
       text-transform: uppercase;
       transition: border-bottom .3s;
 
+      &:visited {
+        color: $color-light-logo;
+      }
+
       &:hover {
+        color: $color-light-logo;
         border-bottom: 4px solid $color-light-logo;
       }
-    }
-
-    &:hover {
-      border-bottom: 4px solid $color-light-logo;
     }
   }
 }
@@ -209,7 +213,6 @@ body {
   background-color: $color-333;
 
   @at-root #{&}__site-nav {
-    // margin-bottom: 50px;
     margin-bottom: 30px;
 
     ul {
@@ -238,12 +241,20 @@ body {
     font-size: 15px;
   }
 
-  .nav-link {
+  @at-root #{&}__nav-link {
     color: darken($color-fff, 20%);
     font-family: $font-source-sans-pro;
     font-size: 16px;
     font-weight: 300;
     transition: border-bottom .1s;
+
+    &:visited {
+      color: darken($color-fff, 20%);
+    }
+
+    &:hover {
+      border-bottom: 3px solid $color-fff;
+    }
 
     @media (max-width: $screen-sm-max) {
       color: $color-fcfcfc;
@@ -252,14 +263,6 @@ body {
       font-weight: 500;
       text-transform: uppercase;
     }
-
-    &:hover {
-      border-bottom: 3px solid $color-fff;
-    }
-  }
-
-  @at-root #{&}__social-links {
-
   }
 
   @at-root #{&}__social-link {
@@ -1363,5 +1366,9 @@ body {
       color: $color-333;
     }
   }
+}
 
+// #-JS Helpers
+.js-highlight-link {
+  border-bottom: 4px solid $color-light-logo;
 }
