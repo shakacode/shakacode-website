@@ -8,17 +8,13 @@
 
   <div class="col-md-8 col-sm-12 site-header__links js-mobile-links">
     <ul class="text-center">
-      <li><a class="nav-link" href="{{ site.url | prepend: site.baseurl }}/blog/">Blog</a></li>
-      <li><a class="nav-link" href="{{ site.forum_url }}" target="_blank">Forum</a></li>
-      <li><a class="nav-link" href="{{ site.url | prepend: site.baseurl }}/opensource/">Open Source</a></li>
-      <li><a class="nav-link" href="{{ site.url | prepend: site.baseurl }}/work/">Work</a></li>
-      <li><a class="nav-link" href="{{ site.url | prepend: site.baseurl }}/about/">About</a></li>
+      {% include regular-links.html %}
     </ul>
   </div>
 
   <div class="col-md-2 col-sm-12 site-header__links--highlight js-mobile-links">
     <ul>
-      <li><a class="nav-link--highlight" href="{{ site.url | prepend: site.baseurl }}/contact/">Contact</a></li>
+      {% include contact-link.html class="nav-link--highlight" %}
     </ul>
   </div>
 </nav>

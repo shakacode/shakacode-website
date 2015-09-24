@@ -8,9 +8,10 @@ This is an In Progress Shaka Code Website.
 ## Run Locally
 1. `git clone git@github.com:shakacode/shakacode-website.git`
 2. `cd shakacode-website`
-3. `bower install`
-4. `jekyll serve` if this doesn't work try `bin/jekyll serve`
-5. go to localhost:4000
+3. `bundle`
+4. `bower install`
+5. `jekyll serve` if this doesn't work try `bin/jekyll serve`
+6. go to localhost:4000
 
 ## Online and Local Documentation
 [Octopress Docs](https://github.com/octopress/octopress) and

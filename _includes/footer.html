@@ -2,6 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
+        <nav class="site-footer__site-nav">
+          <ul class="text-center">
+            {% include regular-links.html %}
+            {% include contact-link.html class="nav-link" %}
+          </ul>
+        </nav>
         <p class="site-footer__copyright-text">Copyright {{ site.time | date: '%Y' }} Shaka Code</p>
       </div>
     </div>
