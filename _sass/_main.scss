@@ -203,7 +203,8 @@ body {
   background-color: $color-333;
 
   @at-root #{&}__site-nav {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 30px;
 
     ul {
       li {
@@ -248,6 +249,27 @@ body {
 
     &:hover {
       border-bottom: 3px solid $color-fff;
+    }
+  }
+
+  @at-root #{&}__social-links {
+
+  }
+
+  @at-root #{&}__social-link {
+    color: $color-333;
+    font-size: 16px;
+    background-color: darken($color-fff, 20%);
+    padding: 4px 8px;
+    border-radius: 30px;
+    transition: background-color .3s;
+
+    &:visited {
+      color: $color-333;
+    }
+
+    &:hover {
+      background-color: $color-fff;
     }
   }
 }
@@ -1156,6 +1178,7 @@ body {
 
   @at-root #{&}__member-text {
     font-size: 20px;
+    text-align: center;
   }
 
   @at-root #{&}__consulting-text {
@@ -1201,6 +1224,7 @@ body {
   @at-root #{&}__fng-logo {
     background-color: $color-333;
     padding: 30px;
+    margin-bottom: 10px;
     border-radius: 5px;
 
     @media (max-width: $screen-sm-max) {
