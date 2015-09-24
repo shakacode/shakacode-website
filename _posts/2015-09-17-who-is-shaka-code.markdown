@@ -64,7 +64,7 @@ Goal #2, building a product, is a critical component for several reasons:
 
 2. We can work on the latest, often beta version of software. It's almost impossible to contribute meaningfully to open source when you're working on ancient versions of open source. Almost all the action and collaboration is happening on the leading edge, as it should be.
 
-3. We have a training ground for introducing team members into the ShakaCode style of development. We can interview prospective team members by pairing with them on open source. We can hire junior level engineers who are not ready to be placed in front of clients, and groom them into senior engineers.
+3. We have a training ground for introducing team members into the Shaka Code style of development. We can interview prospective team members by pairing with them on open source. We can hire junior level engineers who are not ready to be placed in front of clients, and groom them into senior engineers.
 
 4. Our internal project epitomizes how want our client code to look. It's sparkly, shiny, and fresh. It's how we believe code should be written and how projects should be organized. It's a living example of what we intend to do for our clients. There's no better "training" or "documentation" than a living example of a real software project.
 
