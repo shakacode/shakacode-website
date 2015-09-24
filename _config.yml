@@ -1,5 +1,5 @@
 # Site settings
-title: Your awesome title #not used
+title: Shaka Code
 email: your-email@domain.com #not used
 contact_email: contact@shakacode.com
 description: > # this means to ignore newlines until "baseurl:"
