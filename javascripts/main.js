@@ -12,6 +12,12 @@
     mobileNavLinks: '.js-mobile-links',
   };
 
+  // Object to store ids and classes used dynamically by JS
+  var JS = {
+    highlightLink: 'js-highlight-link'
+  };
+
+  // handle mobile navigation state and user interation
   function mobileNavigation() {
     $(ELS.mobileTrigger).on('click', function() {
 
@@ -25,9 +31,18 @@
     });
   }
 
+  // highlight link on navigation bar based on which page the user is in.
+  function highlightActiveLink() {
+    // strip "/" from pathnames: /blog/ -> blog
+    var path = document.location.pathname.replace(/\//g, '');
+    // we don't need to remove .js-highlight-link from the previous active link because this script runs on every page reload, then the nav bar is fresh.
+    $('[data-link-name='+ path +']').addClass(JS.highlightLink);
+  }
+
   function init() {
     $(document).ready(function() {
       mobileNavigation();
+      highlightActiveLink();
     });
   }
 

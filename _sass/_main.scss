@@ -5,6 +5,7 @@
 // #-Colors
 // #-Fonts
 // #-Miscellaneous
+// #-JS Helpers
 // #-Rebase
 // #-Site Header
 // #-Site Footer
@@ -48,6 +49,11 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica, sans-seri
 .tbd {
   color: $color-333;
   background-color: #f1ada1;
+}
+
+// #-JS Helpers
+.js-highlight-link {
+  border-bottom: 4px solid $color-light-logo !important;
 }
 
 // #-Rebase
@@ -920,7 +926,7 @@ body {
     &:hover {
       transform: scale(1.05);
     }
-    
+
     @media (max-width: $screen-sm-max) {
       &:hover {
         transform: scale(1);
