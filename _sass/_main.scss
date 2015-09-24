@@ -912,6 +912,22 @@ body {
     margin-bottom: 50px;
   }
 
+  @at-root #{&}__photo {
+    transform: scale(1);
+    transition: transform .3s;
+    backface-visibility: hidden;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+    
+    @media (max-width: $screen-sm-max) {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+
   @at-root #{&}__name {
     margin-top: 0;
     font-weight: 400;
