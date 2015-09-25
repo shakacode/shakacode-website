@@ -3,3 +3,4 @@ _site
 _bower_components
 .DS_Store
 .ink-cache
+.deploy

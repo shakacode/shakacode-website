@@ -9,7 +9,7 @@ author: Justin Gordon
 ![Shaka Sign]({{ site.url | prepend: site.baseurl }}/assets/posts/2015/09/shaka-sign.png)
 
 This gesture is more than just a mere wave or thumbs up. The shaka is a symbol of the “Aloha spirit,” which is the coordination of the mind and spirit to think and exude good feelings to others.
-Megan Denny, [www.padi.com](www.padi.com)
+Megan Denny, [www.padi.com](http://padi.com)
 
 by Justin Gordon with help from the ShakaCode Team, September, 2015
 

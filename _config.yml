@@ -6,6 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   We are a global team of developers and designers specializing in web applications built on top of Ruby on Rails and React.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000" # the base hostname & protocol for your site
+# url: "http://shakacode.github.io" # the base hostname & protocol for your site
 forum_url: "http://forum.railsonmaui.com/"
 github_shaka_opensource_url: "https://github.com/shakacode"
 twitter_username: jekyllrb
