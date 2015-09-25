@@ -903,6 +903,46 @@ body {
     }
   }
 
+  @at-root #{&}__work-with-us {
+    p {
+      font-size: 18px;
+    }
+
+    a {
+      color: $color-vivid-red;
+
+      &:visited {
+        color: $color-vivid-red;
+      }
+    }
+  }
+
+  @at-root #{&}__work-contact {
+    color: $color-fff !important; // important rule because there's a "a" rule above it to general links
+    background-color: $color-vivid-red;
+    padding: 7px 20px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: color .3s;
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+      width: 40%;
+      text-align: center;
+      margin: 30px auto 0px auto;
+    }
+
+    &:visited {
+      color: $color-fff;
+    }
+
+    &:hover {
+      color: $color-333;
+    }
+  }
+
 }
 
 // not used yet
