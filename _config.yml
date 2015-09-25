@@ -11,7 +11,8 @@ forum_url: "http://forum.railsonmaui.com/"
 github_shaka_opensource_url: "https://github.com/shakacode"
 twitter_username: jekyllrb
 github_username:  jekyll
-facebook_url: "https://www.facebook.com/shakacode"
+facebook_url: "https://facebook.com/shakacode"
+twitter_url: "https://twitter.com/shakacode"
 
 paginate: 4
 paginate_path: "/blog/page:num"

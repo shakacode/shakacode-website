@@ -265,6 +265,17 @@ body {
     }
   }
 
+  @at-root #{&}__social-links {
+    li {
+      display: inline-block;
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
   @at-root #{&}__social-link {
     color: $color-333;
     font-size: 16px;
@@ -272,6 +283,23 @@ body {
     padding: 4px 8px;
     border-radius: 30px;
     transition: background-color .3s;
+
+    @at-root #{&}--twitter {
+      color: $color-333;
+      font-size: 16px;
+      background-color: darken($color-fff, 20%);
+      padding: 4px 6px;
+      border-radius: 30px;
+      transition: background-color .3s;
+
+      &:visited {
+        color: $color-333;
+      }
+
+      &:hover {
+        background-color: $color-fff;
+      }
+    }
 
     &:visited {
       color: $color-333;
