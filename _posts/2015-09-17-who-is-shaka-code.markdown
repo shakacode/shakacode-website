@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Who Is Shaka Code?"
+title: "Who Is ShakaCode?"
 date: 2015-09-17T23:14:15-03:00
 author: Justin Gordon
 ---
@@ -11,9 +11,9 @@ author: Justin Gordon
 This gesture is more than just a mere wave or thumbs up. The shaka is a symbol of the “Aloha spirit,” which is the coordination of the mind and spirit to think and exude good feelings to others.
 Megan Denny, [www.padi.com](www.padi.com)
 
-by Justin Gordon with help from the Shaka Code Team, September, 2015
+by Justin Gordon with help from the ShakaCode Team, September, 2015
 
-## <a name="who-is-shaka-code"></a> Who is Shaka Code?
+## <a name="who-is-shaka-code"></a> Who is ShakaCode?
 
 It’s the global web development software consultancy and product company started by Justin Gordon, AKA “railsonmaui” in the Ruby on Rails world. We’re focused on what we believe to be the best technologies for web development. Today, those are Ruby on Rails and React. But it’s not just us, we like to think that it’s the larger WE in the open source community that loves collaborating on beautiful code.
 
@@ -21,15 +21,15 @@ It’s the global web development software consultancy and product company start
 
 We're **polyglots** and we're not just based in Maui. When Justin Gordon started out, he was focused on just Ruby on Rails, and "Rails On Maui" was the name he used for his Twitter handle and blog.
 
-## Why "Shaka Code"?
+## Why "ShakaCode"?
 
-The "shaka" is really the embodiment of the philosophy, culture, and team behind Shaka Code as well as our community of open source collaborators. In order to fully explain this, we’ll need to tell you a bit about the meaning of the “shaka symbol” as well as a lot more about us. Let’s first summarize the key points:
+The "shaka" is really the embodiment of the philosophy, culture, and team behind ShakaCode as well as our community of open source collaborators. In order to fully explain this, we’ll need to tell you a bit about the meaning of the “shaka symbol” as well as a lot more about us. Let’s first summarize the key points:
 
 We love open source collaboration (the friendliness of the Shaka meaning) and we love to code. These go hand in hand. We love code so much that we want to share it! And we only want team members that love it as much as us. With a team that loves to code, we don’t need to be handcuffed to an office. We need a good computer and a decent Internet connection anywhere in the world. The company was born in Hawaii, and all early company employees love surfing and tropical beach culture. Sunshine and surf perfectly balances intensely passionate coding!
 
 Read more if you’d like the details. Or go surfing! Or skiing, mountain biking, etc.
 
-## The Shaka Code Philosophy
+## The ShakaCode Philosophy
 
 Here's a bit more about us:
 
@@ -46,7 +46,7 @@ DHH's RailsConf 2014 keynote on "Writing Software" nicely summarizes this philos
 
 [Thus, Shaka + Code embodies who we are!](http://www.dish.com/dig/sports/why-one-of-the-best-athletes-in-the-world-refuses-to-compete/)
 
-## Is Shaka Code a Service or Product Company?
+## Is ShakaCode a Service or Product Company?
 
 We're both, and we're open source contributors! Our company role model is 37Signals. They started off as a web development shop. Out of their work, they developed the program ["Base Camp"](http://basecamp.com/) to address their own needs for more organized and effective client interaction. From that work, they extracted [Ruby on Rails](http://rubyonrails.org/), undoubtedly one of the most successful application frameworks ever created.
 
@@ -64,7 +64,7 @@ Goal #2, building a product, is a critical component for several reasons:
 
 2. We can work on the latest, often beta version of software. It's almost impossible to contribute meaningfully to open source when you're working on ancient versions of open source. Almost all the action and collaboration is happening on the leading edge, as it should be.
 
-3. We have a training ground for introducing team members into the Shaka Code style of development. We can interview prospective team members by pairing with them on open source. We can hire junior level engineers who are not ready to be placed in front of clients, and groom them into senior engineers.
+3. We have a training ground for introducing team members into the ShakaCode style of development. We can interview prospective team members by pairing with them on open source. We can hire junior level engineers who are not ready to be placed in front of clients, and groom them into senior engineers.
 
 4. Our internal project epitomizes how want our client code to look. It's sparkly, shiny, and fresh. It's how we believe code should be written and how projects should be organized. It's a living example of what we intend to do for our clients. There's no better "training" or "documentation" than a living example of a real software project.
 
@@ -82,7 +82,7 @@ We believe that the part of the enjoyment of a vacation home is to share it with
 
 ## Anti Discrimination Policy
 
-Part of Shaka Code is that we don't discriminate on:
+Part of ShakaCode is that we don't discriminate on:
 
 1. **Geography** and **Time Zone**
 2. All the normal stuff, like gender, race, age, tattoos, piercings, sexual preference, etc.
@@ -100,7 +100,7 @@ Here's some of our favorite influences:
 
 ### 37 Signals
 
-Definitely listen to this interview of [David Heinemeier Hanson on The Changelog](http://5by5.tv/changelog/145) for some great thoughts on the influence of David and Ruby on Rails on the Shaka Code philosophy. [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
+Definitely listen to this interview of [David Heinemeier Hanson on The Changelog](http://5by5.tv/changelog/145) for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
 
 ### Coding Horror
 

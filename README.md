@@ -1,5 +1,5 @@
-## Shaka Code Website
-This is an In Progress Shaka Code Website.
+## ShakaCode Website
+This is an In Progress ShakaCode Website.
 
 ## Dependencies to build
 1. Bower: `npm install -g bower`
@@ -55,4 +55,4 @@ After you create your post/page or modify something you need to deploy
 
 
 ## To be done
-See Trello board **Shaka Code Website**
+See Trello board **ShakaCode Website**
