@@ -7,7 +7,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000" # the base hostname & protocol for your site
 # url: "http://shakacode.github.io" # the base hostname & protocol for your site
-forum_url: "http://forum.railsonmaui.com/"
+# url: "http://www.shakacode.com" # the base hostname & protocol for your site
+forum_url: "http://forum.shakacode.com/"
 github_shaka_opensource_url: "https://github.com/shakacode"
 twitter_username: jekyllrb
 github_username:  jekyll
