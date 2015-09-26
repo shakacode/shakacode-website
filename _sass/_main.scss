@@ -195,7 +195,9 @@ body {
       text-transform: uppercase;
       transition: border-bottom .3s;
 
-      &:visited {
+      &:visited,
+      &:active,
+      &:link { // for some reason this solves the issue (https://github.com/shakacode/shakacode-website/issues/12) after clicking in a mailto anchor
         color: $color-light-logo;
       }
 
@@ -248,11 +250,13 @@ body {
     font-weight: 300;
     transition: border-bottom .1s;
 
-    &:visited {
+    &:visited,
+    &:link { // for some reason this solves the issue (https://github.com/shakacode/shakacode-website/issues/12) after clicking in a mailto anchor
       color: darken($color-fff, 20%);
     }
 
     &:hover {
+      color: darken($color-fff, 20%);
       border-bottom: 3px solid $color-fff;
     }
 
