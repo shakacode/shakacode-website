@@ -35,6 +35,7 @@
   function highlightActiveLink() {
     // strip "/" from pathnames: /blog/ -> blog
     var path = document.location.pathname.replace(/\//g, '');
+    if (!path) return false;
     // we don't need to remove .js-highlight-link from the previous active link because this script runs on every page reload, then the nav bar is fresh.
     $('[data-link-name='+ path +']').addClass(JS.highlightLink);
   }
