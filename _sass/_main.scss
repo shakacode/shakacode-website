@@ -681,8 +681,9 @@ body {
     letter-spacing: 2px;
 
     @media (max-width: $screen-sm-max) {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 7px;
+      letter-spacing: initial;
     }
   }
 
@@ -698,10 +699,12 @@ body {
     transition: border-bottom .2s ease;
 
     @media (max-width: $screen-sm-max) {
-      font-size: 20px;
+      font-size: 18px;
+      letter-spacing: initial;
     }
 
-    &:visited {
+    &:visited,
+    &:link {
       color: $color-vivid-red;
     }
 
