@@ -110,6 +110,25 @@ body {
     }
   }
 
+  @at-root #{&}__shaka-name {
+    font-size: 30px;
+    font-weight: 300;
+    color: $color-fcfcfc;
+    margin-top: 9px;
+    display: inline-block;
+    margin-left: 18px;
+    transition: color .3s ease;
+
+    &:hover {
+      // color: darken($color-fcfcfc, 20%);
+      color: $color-light-logo;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+    }
+  }
+
   @at-root #{&}__mobile-nav-trigger {
     float: right;
     display: none;
@@ -179,7 +198,8 @@ body {
     text-transform: uppercase;
     transition: border-bottom .1s;
 
-    &:visited {
+    &:visited,
+    &:link {
       color: $color-fcfcfc;
     }
 
@@ -190,7 +210,7 @@ body {
     @at-root #{&}--highlight {
       color: $color-light-logo;
       font-family: $font-source-sans-pro;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
       text-transform: uppercase;
       transition: border-bottom .3s;
