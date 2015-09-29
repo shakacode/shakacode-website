@@ -34,10 +34,12 @@
   // highlight link on navigation bar based on which page the user is in.
   function highlightActiveLink() {
     // strip "/" from pathnames: /blog/ -> blog
-    var path = document.location.pathname.replace(/\//g, '');
+    var path = document.location.pathname.replace(/\/|\./g, '');
     if (!path) return false;
+    var $link = $('[data-link-name='+ path +']');
+    if (!$link.length) return false;
     // we don't need to remove .js-highlight-link from the previous active link because this script runs on every page reload, then the nav bar is fresh.
-    $('[data-link-name='+ path +']').addClass(JS.highlightLink);
+    $link.addClass(JS.highlightLink);
   }
 
   function init() {
