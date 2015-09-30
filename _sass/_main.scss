@@ -1084,7 +1084,6 @@ body {
 
     a {
       color: $color-333;
-      font-size: 20px;
       margin-right: 7px;
 
       @media (max-width: $screen-sm-max) {
@@ -1094,6 +1093,7 @@ body {
   }
 
   @at-root #{&}__email {
+    font-size: 20px;
     transition: color .5s ease;
 
     &:hover {
@@ -1102,6 +1102,7 @@ body {
   }
 
   @at-root #{&}__facebook {
+    font-size: 19px;
     transition: color .5s ease;
 
     &:hover {
@@ -1110,6 +1111,7 @@ body {
   }
 
   @at-root #{&}__twitter {
+    font-size: 20px;
     transition: color .5s ease;
 
     &:hover {
@@ -1118,6 +1120,7 @@ body {
   }
 
   @at-root #{&}__github {
+    font-size: 20px;
     transition: color .5s ease;
 
     &:hover {
@@ -1126,6 +1129,7 @@ body {
   }
 
   @at-root #{&}__linkedin {
+    font-size: 20px;
     transition: color .5s ease;
 
     &:hover {
@@ -1133,7 +1137,17 @@ body {
     }
   }
 
+  @at-root #{&}__wikipedia {
+    font-size: 17px;
+    transition: color .5s ease;
+
+    &:hover {
+      color: $color-personal;
+    }
+  }
+
   @at-root #{&}__personal {
+    font-size: 20px;
     transition: color .5s ease;
 
     &:hover {
