@@ -46,6 +46,21 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica, sans-seri
 
 // #-Miscellaneous
 
+// very important class: you need to use it as the <a> class when this anchor is part of an URL, ex. shakacode.com/work/index.html#something
+// Otherwise, the fixed header will stay on top of it.
+// how to use it: put the following <a> just above the section you want to link properly:
+// HTML: <a class="offset-y-anchor" name="something"></a>
+// LINK: shakacode.com/path/page.html#something
+.offset-y-anchor {
+  display: block;
+  position: relative;
+  top: -130px;
+  visibility: hidden;
+  @media (max-width: $screen-sm-max) {
+    top: -80px;
+  }
+}
+
 // tbd = to be done
 .tbd {
   color: $color-333;
@@ -1241,7 +1256,6 @@ body {
 }
 
 // #-Work: Products, Clients and Consulting
-
 .work-page {
   background-color: $color-fcfcfc;
 }
@@ -1328,6 +1342,7 @@ body {
     border-radius: 3px;
     transition: color .3s;
 
+    &:link,
     &:visited {
       color: $color-fff;
     }
@@ -1359,6 +1374,7 @@ body {
     font-weight: 400;
     transition: border-bottom .2s;
 
+    &:link,
     &:visited {
       color: $color-vivid-red;
     }
@@ -1391,6 +1407,7 @@ body {
     color: $color-vivid-red;
     transition: border-bottom .3s;
 
+    &:link,
     &:visited {
       color: $color-vivid-red;
     }
