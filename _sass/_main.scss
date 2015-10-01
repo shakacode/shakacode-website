@@ -16,7 +16,7 @@
 // #-Page Page
 // #-About
 // #-Contact
-// #-Work: Products and Consulting
+// #-Work: Products, Clients and Consulting
 // #-Open Source
 // #-JS Helpers
 
@@ -25,6 +25,7 @@
 // #-Colors
 
 $color-333: #333;
+$color-aaa: #aaa;
 $color-vivid-red: #c92626;
 $color-fcfcfc: #fcfcfc;
 $color-fff: #fff;
@@ -1239,17 +1240,10 @@ body {
   }
 }
 
-// #-Work: Products and Consulting
+// #-Work: Products, Clients and Consulting
 
 .work-page {
-  padding-top: 40px;
   background-color: $color-fcfcfc;
-  min-height: 650px; // prevent blank content above the fold
-  padding-bottom: 150px;
-
-  @media (max-width: $screen-sm-max) {
-    padding-bottom: 40px;
-  }
 }
 
 .work {
@@ -1295,30 +1289,14 @@ body {
     border-bottom: 1px solid lighten($color-333, 50%);
   }
 
-  @at-root #{&}__consulting-container {
-    margin-bottom: 70px;
-  }
+}
 
-  @at-root #{&}__member-title {
-    font-size: 26px;
-    color: $color-333;
-    transition: color .3s;
+.work-consulting {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid lighten($color-333, 70%);
 
-    &:visited {
-      color: $color-333;
-    }
-
-    &:hover {
-      color: $color-vivid-red;
-    }
-  }
-
-  @at-root #{&}__member-text {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  @at-root #{&}__consulting-text {
+  @at-root #{&}__text {
     font-size: 26px;
 
     @media (max-width: $screen-sm-max) {
@@ -1327,25 +1305,26 @@ body {
 
     a {
       color: $color-vivid-red;
-      transition: color .3s;
+      transition: border-bottom .2s;
 
       &:visited {
         color: $color-vivid-red;
       }
 
       &:hover {
-        color: $color-333;
+        border-bottom: 3px solid $color-vivid-red;
       }
     }
   }
 
-  @at-root #{&}__consulting-contact {
+  @at-root #{&}__contact {
     color: $color-fff;
     background-color: $color-vivid-red;
     padding: 7px 20px;
     display: inline-block;
     margin-top: 20px;
     font-size: 18px;
+    font-weight: 400;
     border-radius: 3px;
     transition: color .3s;
 
@@ -1354,7 +1333,70 @@ body {
     }
 
     &:hover {
-      color: $color-333;
+      color: darken($color-fff, 10%);
+    }
+  }
+
+}
+
+.work-clients {
+  background-color: $color-fff;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @at-root #{&}__description {
+    font-size: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+  }
+
+  @at-root #{&}__link {
+    color: $color-vivid-red;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    transition: border-bottom .2s;
+
+    &:visited {
+      color: $color-vivid-red;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $color-vivid-red;
+    }
+  }
+
+  @at-root #{&}__img {
+    box-shadow: 0 0 1px 0 $color-aaa;
+    display: inline-block;
+    transition: all .6s;
+
+    &:hover {
+      box-shadow: 0 0 3px 0 darken($color-aaa, 10%);
+      filter:brightness(1.05);
+    }
+  }
+
+}
+
+.work-products {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border-top: 1px solid lighten($color-333, 70%);
+
+  @at-root #{&}__name {
+    font-size: 26px;
+    color: $color-vivid-red;
+    transition: border-bottom .3s;
+
+    &:visited {
+      color: $color-vivid-red;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $color-vivid-red;
     }
   }
 
@@ -1363,12 +1405,21 @@ body {
     padding: 30px;
     margin-bottom: 10px;
     border-radius: 5px;
+    transition: all .3s;
+
+    &:hover {
+      filter: brightness(1.15);
+    }
 
     @media (max-width: $screen-sm-max) {
       border-radius: 0;
     }
   }
 
+  @at-root #{&}__text {
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 // #-Open Source
