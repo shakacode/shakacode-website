@@ -976,6 +976,19 @@ body {
   }
 
   @at-root #{&}__work-with-us {
+
+    ul {
+      list-style: square;
+      font-family: $font-source-sans-pro;
+      margin-bottom: 10px;
+      margin-left: 20px;
+
+      li {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+
     p {
       font-size: 18px;
       line-height: 32px;
