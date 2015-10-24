@@ -86,7 +86,7 @@ Part of ShakaCode is that we don't discriminate on:
 
 1. **Geography** and **Time Zone**
 2. All the normal stuff, like gender, race, age, tattoos, piercings, sexual preference, etc.
-3. Degrees and credentials. Justin has degrees from Harvard, UC Berkeley, as well as a CFA credential. However, based on my experience working with great software engineers, education is only one of many signals. In fact, education is less important than passion and great taste.
+3. Degrees and credentials. Justin has degrees from Harvard, UC Berkeley, as well as a CFA credential. However, based on his experience working with great software engineers, education is only one of many signals. In fact, education is less important than passion and great taste.
 4. Working remotely (that's what we do!)
 
 We do discriminate against:
@@ -104,7 +104,7 @@ Definitely listen to this interview of [David Heinemeier Hanson on The Changelog
 
 ### Coding Horror
 
-I still remember reading [Jeff Atwood's](http://blog.codinghorror.com/about-me/) book where he describe how creating a programming blog was the best thing he ever did, and how it led to [Stack Overflow](http://stackoverflow.com/) and now [discourse.org](http://www.discourse.org/).
+Justin still remembers reading [Jeff Atwood's](http://blog.codinghorror.com/about-me/) book where he describe how creating a programming blog was the best thing he ever did, and how it led to [Stack Overflow](http://stackoverflow.com/) and now [discourse.org](http://www.discourse.org/).
 
 ## Aloha
 
