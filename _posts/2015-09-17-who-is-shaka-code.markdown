@@ -68,11 +68,11 @@ Goal #2, building a product, is a critical component for several reasons:
 
 4. Our internal project epitomizes how want our client code to look. It's sparkly, shiny, and fresh. It's how we believe code should be written and how projects should be organized. It's a living example of what we intend to do for our clients. There's no better "training" or "documentation" than a living example of a real software project.
 
-5. We intend to give back TONS to the open source community. And that requires "Extraction" rather than "Design" by itself. [Ruby on Rails](http://rubyonrails.org/) was an extraction of the 37Signals App, [Basecamp](https://basecamp.com/), and [Twitter Bootstrap](http://getbootstrap.com/) was an extract of the UI framework used by Twitter. This article [Extraction vs. Design](http://littlehart.net/atthekeyboard/2007/08/14/extraction-vs-design/) nicely sums this up:
+5. <a name="fng-internal-project"></a> It's fun to have our own project! Coding is our passion!
+
+6. We intend to give back TONS to the open source community. And that requires "Extraction" rather than "Design" by itself. [Ruby on Rails](http://rubyonrails.org/) was an extraction of the 37Signals App, [Basecamp](https://basecamp.com/), and [Twitter Bootstrap](http://getbootstrap.com/) was an extract of the UI framework used by Twitter. This article [Extraction vs. Design](http://littlehart.net/atthekeyboard/2007/08/14/extraction-vs-design/) nicely sums this up:
 
 >David Heinemeier Hansson (the driving force behind Ruby on Rails) is a huge believer in using extractions as a method to add functionality to your projects, typically in the context of a framework. You need some particular functionality, you write it, and if it's good enough you extract it from it's original context and make it generic enough that it can be used by other people. You could also call this "building stuff you need" instead of "building stuff you think you might need". It's part of the whole YAGNI philosophy of programming, I guess.
-
-6. <a name="fng-internal-project"></a> It's fun to have our own project! Coding is our passion!
 
 ## Our Internal Project: Friends and Guests
 
