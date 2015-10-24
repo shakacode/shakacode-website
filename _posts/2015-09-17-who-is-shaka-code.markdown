@@ -101,7 +101,7 @@ Here's some of our favorite influences:
 
 ### 37 Signals
 
-Definitely listen to this interview of [David Heinemeier Hanson on The Changelog](http://5by5.tv/changelog/145) for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
+Definitely listen to this interview of [David Heinemeier Hanson on The Changelog](http://5by5.tv/changelog/145) for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. Plus, see this article: [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
 
 ### Coding Horror
 
