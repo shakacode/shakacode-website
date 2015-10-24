@@ -41,8 +41,8 @@ Here's a bit more about us:
 
 4. Part of loving code is viewing it as an art. It's like creative writing. When you first see really beautiful code, what is it that you see that is special? It's a bit like looking at a random page of an Ernest Hemingway novel and seeing clear, short sentences. Great software is written such that it's simple and clear. It's easy to read.
 
->“Beautiful code is similar to beautiful prose: Succinct, it has flow and rhythm, and it’s an expression of clear thinking that doesn’t jump around different layers of abstraction all the time” [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
-DHH's RailsConf 2014 keynote on "Writing Software" nicely summarizes this philosophy: [https://www.youtube.com/watch?v=9LfmrkyP81M](https://www.youtube.com/watch?v=9LfmrkyP81M)
+>“Beautiful code is similar to beautiful prose: Succinct, it has flow and rhythm, and it’s an expression of clear thinking that doesn’t jump around different layers of abstraction all the time.” from the [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
+DHH's RailsConf 2014 keynote on "Writing Software", which nicely summarizes this philosophy: [https://www.youtube.com/watch?v=9LfmrkyP81M](https://www.youtube.com/watch?v=9LfmrkyP81M)
 
 [Thus, Shaka + Code embodies who we are!](http://www.dish.com/dig/sports/why-one-of-the-best-athletes-in-the-world-refuses-to-compete/)
 
