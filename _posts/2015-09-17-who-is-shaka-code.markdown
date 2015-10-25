@@ -37,12 +37,13 @@ Here's a bit more about us:
 
 2. We love open source and helping others. There's probably no movement that's changed software in the past 10 years like open source. Open source is not just about creating some well known project, like Linux or Ruby on Rails. It's about doing what you can in a system of freely sharing ideas and helping others. This might be writing blog articles, participating on Stack Overflow,or working on open source projects. We believe this open source philosophy complements the definition from Wikipedia of the shaka symbol: "Aloha Spirit", a concept of friendship, understanding, compassion”
 
-3. We almost all surf, and we all love to get outdoors and do fun, athletic things. In fact, Dylan met Justin from surfing in Maui, and Justin contacted Alex when he saw that his Facebook profile page featured a picture of him in Bali. Samnang does huge mountain bike rides around Cambodia. We want to structure our lives to pursue our passions, which is coding and doing fun sports like surfing.
+3. We almost all surf, and we all love to get outdoors and do fun, athletic things. In fact, Dylan met Justin from surfing in Maui, and Justin contacted Alex when he saw that his Facebook profile page featured a picture of him in Bali. Samnang does huge mountain bike rides around Cambodia. We want to structure our lives to pursue our passions, which is coding and doing fun sports like surfing. This is akin to how [37signals Works Remotely](https://vimeo.com/76063825).
 
 4. Part of loving code is viewing it as an art. It's like creative writing. When you first see really beautiful code, what is it that you see that is special? It's a bit like looking at a random page of an Ernest Hemingway novel and seeing clear, short sentences. Great software is written such that it's simple and clear. It's easy to read.
 
->“Beautiful code is similar to beautiful prose: Succinct, it has flow and rhythm, and it’s an expression of clear thinking that doesn’t jump around different layers of abstraction all the time” [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
-DHH's RailsConf 2014 keynote on "Writing Software" nicely summarizes this philosophy: [https://www.youtube.com/watch?v=9LfmrkyP81M](https://www.youtube.com/watch?v=9LfmrkyP81M)
+>“Beautiful code is similar to beautiful prose: Succinct, it has flow and rhythm, and it’s an expression of clear thinking that doesn’t jump around different layers of abstraction all the time.” from the article [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/).
+
+> DHH's [RailsConf 2014 keynote on "Writing Software"](https://www.youtube.com/watch?v=9LfmrkyP81M) nicely summarizes this philosophy.
 
 [Thus, Shaka + Code embodies who we are!](http://www.dish.com/dig/sports/why-one-of-the-best-athletes-in-the-world-refuses-to-compete/)
 
@@ -68,11 +69,11 @@ Goal #2, building a product, is a critical component for several reasons:
 
 4. Our internal project epitomizes how want our client code to look. It's sparkly, shiny, and fresh. It's how we believe code should be written and how projects should be organized. It's a living example of what we intend to do for our clients. There's no better "training" or "documentation" than a living example of a real software project.
 
-5. We intend to give back TONS to the open source community. And that requires "Extraction" rather than "Design" by itself. [Ruby on Rails](http://rubyonrails.org/) was an extraction of the 37Signals App, [Basecamp](https://basecamp.com/), and [Twitter Bootstrap](http://getbootstrap.com/) was an extract of the UI framework used by Twitter. This article [Extraction vs. Design](http://littlehart.net/atthekeyboard/2007/08/14/extraction-vs-design/) nicely sums this up:
+5. <a name="fng-internal-project"></a> It's fun to have our own project! Coding is our passion!
+
+6. We intend to give back TONS to the open source community. And that requires "Extraction" rather than "Design" by itself. [Ruby on Rails](http://rubyonrails.org/) was an extraction of the 37Signals App, [Basecamp](https://basecamp.com/), and [Twitter Bootstrap](http://getbootstrap.com/) was an extract of the UI framework used by Twitter. This article [Extraction vs. Design](http://littlehart.net/atthekeyboard/2007/08/14/extraction-vs-design/) nicely sums this up:
 
 >David Heinemeier Hansson (the driving force behind Ruby on Rails) is a huge believer in using extractions as a method to add functionality to your projects, typically in the context of a framework. You need some particular functionality, you write it, and if it's good enough you extract it from it's original context and make it generic enough that it can be used by other people. You could also call this "building stuff you need" instead of "building stuff you think you might need". It's part of the whole YAGNI philosophy of programming, I guess.
-
-6. <a name="fng-internal-project"></a> It's fun to have our own project! Coding is our passion!
 
 ## Our Internal Project: Friends and Guests
 
@@ -86,8 +87,8 @@ Part of ShakaCode is that we don't discriminate on:
 
 1. **Geography** and **Time Zone**
 2. All the normal stuff, like gender, race, age, tattoos, piercings, sexual preference, etc.
-3. Degrees and credentials. Justin has degrees from Harvard, UC Berkeley, as well as a CFA credential. However, based on my experience working with great software engineers, education is only one of many signals. In fact, education is less important than passion and great taste.
-4. Working remotely (that's what we do!)
+3. Degrees and credentials. Justin has degrees from Harvard, UC Berkeley, as well as a [CFA credential](https://www.cfainstitute.org/programs/cfaprogram/Pages/index.aspx?WPID=Programs&PageName=Homepage). However, based on his experience working with great software engineers, education is only one of many signals. In fact, education is less important than passion and great taste.
+4. Working remotely (that's what we do!).
 
 We do discriminate against:
 
@@ -100,11 +101,11 @@ Here's some of our favorite influences:
 
 ### 37 Signals
 
-Definitely listen to this interview of [David Heinemeier Hanson on The Changelog](http://5by5.tv/changelog/145) for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
+Definitely listen to this interview of [David Heinemeier Hanson on The Changelog](http://5by5.tv/changelog/145) for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. Plus, see this article: [David Heinemeier Hansson: Geek of the Week](https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/)
 
 ### Coding Horror
 
-I still remember reading [Jeff Atwood's](http://blog.codinghorror.com/about-me/) book where he describe how creating a programming blog was the best thing he ever did, and how it led to [Stack Overflow](http://stackoverflow.com/) and now [discourse.org](http://www.discourse.org/).
+Justin still remembers reading [Jeff Atwood's](http://blog.codinghorror.com/about-me/) book where he describe how creating a programming blog was the best thing he ever did, and how it led to [Stack Overflow](http://stackoverflow.com/) and now [discourse.org](http://www.discourse.org/).
 
 ## Aloha
 
