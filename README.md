@@ -60,5 +60,13 @@ octopress --help
 octopress new --help
 ```
 
+## Live Reload
+
+1. Add [Chrome Extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-). Here's the [Chrome Extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+2. Start Jekyll by running: `guard`
+
+For more details, see article [Jekyll Live Reload](http://dan.doezema.com/2014/01/setting-up-livereload-with-jekyll/)
+
+
 ## To be done
 See Trello board **ShakaCode Website**
