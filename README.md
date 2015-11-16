@@ -53,6 +53,12 @@ After you create your post/page or modify something you need to deploy
 2. go to the project folder
 3. run `octopress unpublish "<post name>"`
 
+## For more info:
+```
+jekyll --help
+octopress --help
+octopress new --help
+```
 
 ## To be done
 See Trello board **ShakaCode Website**
