@@ -373,6 +373,22 @@ body {
     }
   }
 
+  @at-root #{&}__title-link {
+    color: $color-vivid-red;
+    border-bottom: 5px solid $color-vivid-red;
+    transition: all .3s;
+
+    &:visited {
+      color: $color-vivid-red;
+      border-bottom: 5px solid $color-vivid-red;
+    }
+
+    &:hover {
+      color: $color-333;
+      border-bottom: 5px solid $color-333;
+    }
+  }
+
   @at-root #{&}__subtitle {
     color: $color-333;
     margin-bottom: 40px;
@@ -454,7 +470,6 @@ body {
   @media (min-width: $screen-md-min) {
     // show image only on tablets and up
     background: $color-vivid-red url( $site-url + "/assets/we-are-bg.jpg") 100% 90% no-repeat;
-    // background-size: cover;
   }
 
   @media (max-width: $screen-sm-max) {
@@ -474,6 +489,15 @@ body {
     @media (max-width: $screen-sm-max) {
       font-size: 30px;
       margin-bottom: 40px;
+    }
+  }
+
+  @at-root #{&}__title-link {
+    transition: border-bottom .2s;
+    border-bottom: 0px solid $color-fff;
+
+    &:hover {
+      border-bottom: 4px solid $color-fff;
     }
   }
 
