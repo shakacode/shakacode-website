@@ -1,16 +1,23 @@
 ---
 layout: post
-title: "For Happiness, Pursue Creative Expression, Not Winning"
+title: "Focus on Collaboration, Not Competition"
 date: 2015-11-22T14:41:38-08:00
 ---
 
-What is the goal in life? Is it to "win"? Or is it "happiness"? I suggest a
-focus on "winning" is counterproductive, compared to a focus on creativity,
-collaboration, and giving. If your definition of "winning" *is* "happiness",
-then the path is not by *defeating* others, but, instead, *helping* others!
+TODO: read
+https://www.ted.com/talks/margaret_heffernan_why_it_s_time_to_forget_the_pecking_order_at_work
 
-Competitive sports is all around us. We cherish the winners and berate the
-losers. It's part of America, right?
+Americans love competition. It's everywhere, in sports, in business, and in
+academics. We cherish the winners and berate the losers. And this mentality is
+counterproductive to success in your career and overall happiness! In the last
+few months, a couple heroes of mine, David Heinemeier Hanson and Laird Hamilton,
+have shared their perspectives of competition. This has inspired me to share how
+my switch in focus from competition to collaboration, has brought great success
+and made my company ShakaCode what it is today! While I think this topic can
+apply from individuals to businesses, it's probably most important for our
+youth, and their hyper-competitive parents.
+
+![David Racing]({{ site.url | prepend: site.baseurl }}/assets/posts/2015/11/lemans2013.jpg)
 
 To quote [David Heinemeier Hanson](http://david.heinemeierhansson.com/) in
 [I don't want to be a winner](https://signalvnoise.com/posts/3977-i-dont-want-to-be-a-winner):
@@ -21,7 +28,15 @@ To quote [David Heinemeier Hanson](http://david.heinemeierhansson.com/) in
 
 > The paradigm of competition is so ingrained as the basic business narrative
 > that we usually don’t even recognize it, much less question it. Well, of
-> course there are winners and losers! What are you, a fucking communist?!
+> course there are winners and losers! What are you, a f****** communist?!
+
+Instead of focusing on "winning", focus on creativity, collaboration, and
+giving. If your definition of "winning" *is* "happiness" and possibly material
+riches, then the path is not by *defeating* others, but, instead, by *helping*
+others!
+
+This sounds obvious, right? But it's a bit like saying a good diet, daily
+exercise, meditation, and 8 hours of sleep are obviously important.
 
 The importance of winning, sadly, starts off early for most youngsters. On the
 playground, kids play sports to "win". Have you ever seen hyper-competitive
@@ -37,18 +52,21 @@ Personally, I grew up with the pressure I had to be a pro level tennis player,
 
 The college grad may then go into corporate America and learn the meaning of
 [Stack Ranking](http://qz.com/320532/marissa-mayers-yahoo-is-a-case-study-in-the-toxic-nature-of-stack-ranking/).
-I've been in groups when the manager of can only give out a single "1"
-performance ranking, and has to give out a few "3's", where "1" means amazing,
-and "3" means you're being given a "performance plan", which really means "we're
-firing you and we don't want you to sue us." It's probably not surprising that
-this same stack-ranking company also deterred open source contributions. At this
-company, contributing to any open source project without 3 levels of management
-approval was grounds for firing! *Tip: don't work for such companies.*
+I've been in groups when the manager can only give out a single "1" performance
+ranking, and has to give out a few "3's", where "1" means amazing, and "3" means
+you're being given a "performance plan", which really means "we're firing you
+and we don't want you to sue us." It's probably not surprising that this same
+stack-ranking company also deterred open source contributions. At this company,
+contributing to any open source project without 3 levels of management approval
+was grounds for firing! *Tip: don't work for such companies.*
 
 I can say from direct personal experience, looking a my success in companies
 where I competed against my peers, versus a focus on simply collaborating and
 giving away best in the open source world. My biggest mistake is that I put up
 with this environment way too long.
+
+![Laird Competing Against Himself]({{ site.url | prepend: site.baseurl }}/assets/posts/2015/11/Laird_Hamilton_Teahupoo_2000.jpg)
+
 
 [Laird](https://en.wikipedia.org/wiki/Laird_Hamilton) is as much a legend in the
 surfing world as David is in the programming and start up worlds. He could have
@@ -73,7 +91,8 @@ source collaboration**:
 
 (INSERT LAIRD SURFING PICTURE)
 
-Interestingly, David has a parallel to Laird in that he loves race car driving:
+Interestingly, David has a parallel to Laird's surfing in that he loves race car
+driving:
 
 > The only competition I’ve come to love is the one against myself, and that’s
 > not really a competition, now is it? The progress of betterment. Playing your
@@ -138,4 +157,4 @@ For a more detailed perspective on the [ShakaCode's](http://www.shakacode.com/)
 philosophy, see [Who Is ShakaCode?](/2015/09/17/who-is-shaka-code.html)
 
 If this article resonates with you, please don't hesitate to
-[get in touch](mailto:contact@shakacode.com)!
+[get in touch](mailto:contact@shakacode.com)! Or comment!
