@@ -32,3 +32,5 @@ asset_pipeline:
   order_js:
     - jquery.js
     - main.js
+
+exclude: [Guardfile]
