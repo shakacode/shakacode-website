@@ -2,6 +2,7 @@
 layout: post
 title: "Success the ShakaCode Way!"
 date: 2015-11-26T14:41:38-08:00
+author: Justin Gordon
 ---
 
 It's Thanksgiving today! I'm taking a few minutes put down a few thoughts that I
@@ -16,6 +17,8 @@ I'd say it's happiness! Here's a picture of *part* of my definition of success,
 taken just a couple days ago:
 
 ![Justin Surfing Smiling]({{ site.url | prepend: site.baseurl }}/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg)
+
+Photo Credit: [Jimmie Hepp](https://www.facebook.com/jimmie.hepp2?fref=ts)
 
 Note, I said happiness is just a *part* of success. Balance in life is key to
 success. While I have the means to spend all my time surfing, I'd find greater
