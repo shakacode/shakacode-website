@@ -42,17 +42,19 @@ all do not matter to us. All of our team members share this philosophy and this
 is how we [find new team members](http://www.shakacode.com/about/#work-with-us).
 
 ## An Inspiring Story
+One of my first hires, Dylan, exemplifies ShakaCode's values.
 
-One of my first hires, Dylan, exemplifies ShakaCode's values. Dylan grew up in
-Maui, where his high school valued surfing more than anything academic!
-Immediately after high school, Dylan became a police officer and focused much of
-his energies on fun outdoor activities in Maui such as surfing, kite-surfing,
-and mountain biking. Luckily, the police force told Dylan that he needed a
-college degree to get promoted! Dylan quickly discovered that he **LOVED**
-computers! Dylan then pursued a successful career in providing support and
-management for computer networks. However, this did not satisfy Dylan's
-insatiable thirst and passion for technology. He told me that he could see that
-much of his job would be automated by software, so he had better learn to code!
+After coming out of high school on Maui, surfing was valued more than anything
+academic. Rather than attending college, Dylan got a job and focused most of his
+energies on fun outdoor activities in Maui such as surfing, kite surfing, and
+mountain biking. Dylan soon discovered his job required a college degree for
+promotion. At community college, Dylan quickly discovered he **LOVED**
+computers! After college, Dylan pursued a successful career in support and
+management of computer systems and networks.
+
+However, this did not satisfy Dylan's insatiable thirst and passion for
+technology. He told me that he could see that much of his job would be automated
+by software, so he had better learn to code!
 
 Over many years, I've offered to share my love for computer programming with
 friends, telling them that it's the best job ever for a surfer in that you can
