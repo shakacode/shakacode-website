@@ -18,7 +18,7 @@ taken just a couple days ago:
 ![Justin Surfing Smiling]({{ site.url | prepend: site.baseurl }}/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg)
 
 Note, I said happiness is just a *part* of success. Balance in life is key to
-success. While I have the means to spend my all time surfing, I'd find greater
+success. While I have the means to spend all my time surfing, I'd find greater
 happiness in striking a balance with my other passion, which is creating great
 software and an organization called "ShakaCode". ShakaCode is more than just a
 company; it's a community. A large part of what
@@ -44,7 +44,7 @@ One of my first hires, Dylan, exemplifies ShakaCode's values. Dylan grew up in
 Maui, where his high school valued surfing more than anything academic!
 Immediately after high school, Dylan became a police officer and focused much of
 his energies on fun outdoor activities in Maui such as surfing, kite-surfing,
-and mountain biking. Luckily, the police force told Dylan that he needed to a
+and mountain biking. Luckily, the police force told Dylan that he needed a
 college degree to get promoted! Dylan quickly discovered that he **LOVED**
 computers! Dylan then pursued a successful career in providing support and
 management for computer networks. However, this did not satisfy Dylan's
@@ -136,16 +136,17 @@ A Palo Alto student, Carolyn Walworth, gave the youth perspective:
 > continue?"
 
 The college grad may then go into corporate America and learn the meaning of
-"Stack Ranking", as portrayed [at Yahoo](http://qz.com/320532/marissa-mayers-yahoo-is-a-case-study-in-the-toxic-nature-of-stack-ranking/).
+"Stack Ranking", as portrayed
+[at Yahoo](http://qz.com/320532/marissa-mayers-yahoo-is-a-case-study-in-the-toxic-nature-of-stack-ranking/).
 I've personally worked for a company where the managers of a division could only
 award a single "1" performance ranking, regardless of how many excellent
-achievers in the group. At the same time, these managers were forced to award
-"3's". "1" means amazing, and "3" means you're being given a
-"performance plan", which really means "we're firing you and we don't want you
-to sue us." It's probably not surprising that this same stack-ranking company
-also deterred open source contributions. At this company, contributing to any
-open source project without 3 levels of management approval was grounds for
-firing! *Tip: don't work for such companies.*
+achievers were in the group. At the same time, these managers were forced to
+award "3's". "1" means amazing, and "3" means you're being given a "performance
+plan", which really means "we're firing you and we don't want you to sue us."
+It's probably not surprising that this same stack-ranking company also deterred
+open source contributions. At this company, contributing to any open source
+project without 3 levels of management approval was grounds for firing! *Tip:
+don't work for such companies.*
 
 ## Compete Against Yourself Only
 
