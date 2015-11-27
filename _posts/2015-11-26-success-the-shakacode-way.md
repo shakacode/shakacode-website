@@ -187,9 +187,9 @@ driving:
 > execution over the long term. 24 hours of testing your capability to avoid
 > mistake and fatigue. Winning is almost incidental to that.
 
-For me, the joy of surfing is to compete with myself. The primary
-goal is to become **connected to the energy of the ocean**. It challenges you
-both at the physical level, as you need strength and agility to ride waves. It
+For me, the joy of surfing is to compete with myself. The primary goal is to
+become **connected to the energy of the ocean**. It challenges you both at the
+physical and mental levels, as you need strength and agility to ride waves. It
 also challenges your judgment. Can you predict where the next wave will break?
 Are you the surfer best positioned for the next wave? What I love the most about
 surfing is the feeling that the learning process never ends. A combination of
@@ -212,7 +212,7 @@ At ShakaCode, there's no good or bad or code. Through constant collaboration and
 peer review, without fears of criticism or "looking dumb", we as a team deliver
 the best possible product, and we all improve our skills on a daily basis.
 Everything we do is based on open source, and we're doing our best to make
-meaningful contributions back to the community, such as our new Ruby Gem,
+meaningful contributions to the community, such as our new Ruby Gem,
 [react_on_rails](https://github.com/shakacode/react_on_rails), which provides a
 complete system for integrating React and Webpack into Rails apps.
 
