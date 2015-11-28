@@ -27,6 +27,7 @@ sass:
 # plugins
 gems:
   - octopress-asset-pipeline
+  - octopress-filters
 
 asset_pipeline:
   order_js:
@@ -34,3 +35,5 @@ asset_pipeline:
     - main.js
 
 exclude: [Guardfile]
+
+excerpt_separator: <!--more-->

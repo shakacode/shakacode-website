@@ -156,6 +156,7 @@ DEPENDENCIES
   jekyll (< 3)
   octopress (~> 3)
   octopress-asset-pipeline
+  octopress-filters
 
 BUNDLED WITH
    1.10.6

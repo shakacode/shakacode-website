@@ -8,14 +8,17 @@ author: Justin Gordon
 {:.text-center}
 ![Shaka Sign]({{ site.url | prepend: site.baseurl }}/assets/posts/2015/09/shaka-sign.png)
 
-This gesture is more than just a mere wave or thumbs up. The shaka is a symbol of the “Aloha spirit,” which is the coordination of the mind and spirit to think and exude good feelings to others.
-Megan Denny, [www.padi.com](http://padi.com)
+> This gesture is more than just a mere wave or thumbs up. The shaka is a symbol
+of the “Aloha spirit,” which is the coordination of the mind and spirit to think
+and exude good feelings to others. (by Megan Denny, www.padi.com)
 
 by Justin Gordon with help from the ShakaCode Team, September, 2015
 
 ## <a class="offset-y-anchor" name="who-is-shaka-code"></a> Who is ShakaCode?
 
 It’s the global web development software consultancy and product company started by Justin Gordon, AKA “railsonmaui” in the Ruby on Rails world. We’re focused on what we believe to be the best technologies for web development. Today, those are Ruby on Rails and React. But it’s not just us, we like to think that it’s the larger WE in the open source community that loves collaborating on beautiful code.
+
+<!--more-->
 
 ## Why Change the Name from "Rails on Maui?"
 

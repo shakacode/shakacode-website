@@ -567,6 +567,11 @@ body {
     &:visited {
       color: $color-vivid-red;
     }
+
+    &.blog-post__continue-reading {
+      font-size: 30px;
+      font-weight: bold;
+    }
   }
 
   @at-root #{&}__meta {

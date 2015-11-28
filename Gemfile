@@ -9,4 +9,5 @@ gem 'guard-livereload'
 
 group :jekyll_plugins do
   gem "octopress-asset-pipeline"
+  gem "octopress-filters"
 end
