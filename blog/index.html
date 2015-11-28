@@ -18,9 +18,15 @@ title: ShakaCode Blog
                 <span class="blog-post__meta-date">{{ post.date | date: "%b %-d, %Y" }}</span>
               </header>
               <article class="blog-post__content">
-                {{ post.content }}
+                {% if post.excerpted %}
+                  {{ post.excerpt }}
+                  <a class="blog-post__link blog-post__continue-reading" href="{{ post.url | prepend: site.baseurl }}">
+                    Continue reading →
+                  </a>
+                {% else %}
+                  {{ post.content }}
+                {% endif %}
               </article>
-
               <div class="blog-post__separator text-center">
                 <img class="home-we-build__shaka-sign" width="45" height="36" src="{{ site.url | prepend: site.baseurl }}/assets/shaka-sign.svg" alt="Shaka Sign Separator">
               </div>

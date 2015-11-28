@@ -5,20 +5,20 @@ date: 2015-11-26T14:41:38-08:00
 author: Justin Gordon
 ---
 
-It's Thanksgiving today! I'm taking a few minutes put down a few thoughts that I
-hope will bring you, your family, and your friends "success" in the coming year.
+It's Thanksgiving today! I'm taking a few minutes to put down a few thoughts
+that I hope will bring you, your family, and your friends "success" in the
+coming year.
 
 Success is ambiguous. Is it
 [being a millionaire](https://medium.com/@dhh/the-day-i-became-a-millionaire-55d7dc4d8293#.80b2anf29)?
 Being famous?
 [Winning competitions](https://medium.com/@dhh/i-don-t-want-to-be-a-winner-9858d0c32fa0#.7mwrh5asb)?
 
-I'd say it's happiness! Here's a picture of *part* of my definition of success,
-taken just a couple days ago:
+I'd say it's happiness! This image captures *part* of my definition of
+success. [Jimmie Hepp](https://www.facebook.com/jimmie.hepp2?fref=ts) took
+this picture just a couple days before I wrote this article.
 
 ![Justin Surfing Smiling]({{ site.url | prepend: site.baseurl }}/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg)
-
-Photo Credit: [Jimmie Hepp](https://www.facebook.com/jimmie.hepp2?fref=ts)
 
 Note, I said happiness is just a *part* of success. Balance in life is key to
 success. While I have the means to spend all my time surfing, I'd find greater
@@ -40,6 +40,8 @@ wasted commuting, or want to live at a ski resort or a remote surf break --
 that's all OK. Educational background, ethnicity, nationality, gender, age, etc.
 all do not matter to us. All of our team members share this philosophy and this
 is how we [find new team members](http://www.shakacode.com/about/#work-with-us).
+
+<!--more-->
 
 ## An Inspiring Story
 One of my first hires, Dylan, exemplifies ShakaCode's values.
