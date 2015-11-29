@@ -117,8 +117,8 @@ have to beat them on college entrance exams to get into the right university.
 Winning jocks are idolized. This continues into college, where you have to
 compete for grades, jobs, and seemingly just about anything.
 
-This recent, detailed article
-[The Silicon Valley Suicides: Why are so many kids with bright prospects killing themselves in Palo Alto?](http://www.theatlantic.com/magazine/archive/2015/12/the-silicon-valley-suicides/413140/)
+This recent, detailed article,
+[The Silicon Valley Suicides: Why are so many kids with bright prospects killing themselves in Palo Alto?](http://www.theatlantic.com/magazine/archive/2015/12/the-silicon-valley-suicides/413140/),
 highlights dangers of hyper-competitive parenting. Here's a quote that describes
 the pressure at these high achieving high schools:
 
@@ -239,4 +239,5 @@ For a more detailed perspective on the [ShakaCode's](http://www.shakacode.com/)
 philosophy, see [Who Is ShakaCode?](/2015/09/17/who-is-shaka-code.html)
 
 If this article resonates with you, please don't hesitate to
-[get in touch](mailto:contact@shakacode.com)! Or comment!
+[get in touch](mailto:contact@shakacode.com)! Or comment! We’re currently
+looking for more ShakaCoders to join us!
