@@ -1,0 +1,2 @@
+#!/bin/sh
+jekyll serve -c _config.yml,_localhost-config.yml

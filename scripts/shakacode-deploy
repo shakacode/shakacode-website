@@ -1,0 +1,16 @@
+
+# http://stackoverflow.com/questions/3231804/in-bash-how-to-add-are-you-sure-y-n-to-any-command-or-alias
+confirm () {
+    # call with a prompt string or use a default
+    read -r -p "${1:-Are you sure you want to deploy (please quit jekyll serve first)? [y/N]} " response
+    case $response in
+        [yY][eE][sS]|[yY])
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
+
+confirm && jekyll build && octopress deploy
