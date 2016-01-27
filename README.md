@@ -1,6 +1,18 @@
 ## ShakaCode Website
 This is the ShakaCode Website, http://www.shakacode.com
 
+## Starting Locally
+
+    scripts/shakacode-local
+
+## Deploying
+
+    scripts/shakacode-deploy
+
+## Creating a page or post
+See the [octopress readme](https://github.com/octopress/octopress).
+1. `octopress new post "The React on Rails Doctrine"`
+
 ## Dependencies to build
 1. Bower: `npm install -g bower`
 2. Gem Octopress: `gem install octopress`
@@ -10,7 +22,7 @@ This is the ShakaCode Website, http://www.shakacode.com
 2. `cd shakacode-website`
 3. `bundle`
 4. `bower install`
-5. `jekyll serve` if this doesn't work try `bin/jekyll serve`
+5. `scripts/shakacode-local`
 6. go to localhost:4000
 
 ## Online and Local Documentation
