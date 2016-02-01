@@ -602,6 +602,21 @@ body {
     line-height: 32px;
     color: lighten($color-333, 10%);
     margin-bottom: 80px;
+
+    ol {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: square;
+      margin-left: 1.3em;
+      margin-bottom: 30px;
+    }
+
+    li {
+      margin-bottom: 22px;
+    }
+
   }
 
   @at-root #{&}__separator {

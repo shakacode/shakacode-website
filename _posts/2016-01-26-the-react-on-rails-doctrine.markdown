@@ -7,7 +7,7 @@ By Justin Gordon, January 26, 2016
 
 This document is an extension and complement to [The Rails Doctrine](http://rubyonrails.org/doctrine/). If you haven't read that document, I suggest you do so first.
 
-As stated in the [React on Rails README](../README.md), the project objective is to provide an opinionated and optimal framework for integrating **Ruby on Rails** with modern JavaScript tooling and libraries. When considering what goes into **react_on_rails**, we ask ourselves, is the functionality related to the intersection of using Rails and with modern JavaScript? A good example is view helper integration of React components on a Rails view. If the answer is yes, then the functionality belongs right here. In other cases, we're releasing separate npm packages or Ruby gems. For example, we needed an easy way to integrate [Twitter Bootstrap](http://getbootstrap.com/) with Webpack, and we released the [npm bootstrap-loader](https://github.com/shakacode/bootstrap-loader/). 
+As stated in the [React on Rails README](../README.md), the project objective is to provide an opinionated and optimal framework for integrating **Ruby on Rails** with modern JavaScript tooling and libraries. When considering what goes into **react_on_rails**, we ask ourselves, is the functionality related to the intersection of using Rails and with modern JavaScript? A good example is view helper integration of React components on a Rails view. If the answer is yes, then the functionality belongs right here. In other cases, we're releasing separate npm packages or Ruby gems. For example, we needed an easy way to integrate [Twitter Bootstrap](http://getbootstrap.com/) with Webpack, and we released the [npm bootstrap-loader](https://github.com/shakacode/bootstrap-loader/).
 
 Besides the project objective, let's stick with the "Rails Doctrine" and keep the following in mind.
 
@@ -27,12 +27,13 @@ The React on Rails setup provides several key components related to front-end de
 9. Just because we're not relying on the Rails asset pipeline for ES6 conversion does not mean that we're deploying Rails apps in any different way. We still use the asset pipeline to include our Webpack compiled JavaScript. This only requires a few small modifications, as explained in our doc [Heroku Deployment](additional_reading/heroku_deployment.md).
 
 ## Convention over Configuration
-* React on Rails has taken the hard work out of figuring out the JavaScript tooling that works best with Rails. Not only could you spend lots of time researching different tooling, but then you'd have to figure out how to splice it all together. This is where a lot of "JavaScript fatigue" comes from. The following keep the code clean and consistent:
+React on Rails has taken the hard work out of figuring out the JavaScript tooling that works best with Rails. Not only could you spend lots of time researching different tooling, but then you'd have to figure out how to splice it all together. This is where a lot of "JavaScript fatigue" comes from. The following keep the code clean and consistent:
+
 * [Style Guide](coding-style/style.md)
 * [linters](coding-style/linters.md)
 * [Recommended Project Structure](recommended-project-structure.md)
 
-We're big believers in this quote from the Rails Doctrine: 
+We're big believers in this quote from the Rails Doctrine:
 
 > The same goes even when you understand how all the pieces go together. When there’s an obvious next step for every change, we can scoot through the many parts of an application that is the same or very similar to all the other applications that went before it. A place for everything and everything in its place. Constraints liberate even the most able minds.
 
@@ -81,4 +82,3 @@ React on Rails is definitely a part of the big tent of Rails. Plus, React on Rai
 
 ## Thanks!
 Thanks for reading and being a part of the React on Rails community. Feedback on this document and *anything* in React on Rails is welcome. Please [open an issue](https://github.com/shakacode/react_on_rails/issues/new) or a pull request. If you'd like to join our private Slack channel, please [email](mailto:contact@shakacode.com) us a request.
-
