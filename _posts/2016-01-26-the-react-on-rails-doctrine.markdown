@@ -31,7 +31,7 @@ React on Rails has taken the hard work out of figuring out the JavaScript toolin
 
 * [Style Guide](https://github.com/shakacode/react_on_rails/blob/master/docs%2Fcoding-style%2Fstyle.md)
 * [linters](https://github.com/shakacode/react_on_rails/blob/master/docs%2Fcoding-style%2Fstyle.md)
-* [Recommended Project Structure](https://github.com/shakacode/react_on_rails/blob/master/docs%2Frecommended-project-structure.md)
+* [Recommended Project Structure](https://github.com/shakacode/react_on_rails/blob/master/docs/additional-reading/recommended-project-structure.md)
 
 We're big believers in this quote from the Rails Doctrine:
 
