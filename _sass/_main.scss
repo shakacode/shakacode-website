@@ -1504,9 +1504,17 @@ body {
     }
   }
 
+  @at-root #{&}__screenshot {
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
   @at-root #{&}__fng-logo {
+    width: 140px;
     background-color: $color-333;
-    padding: 76px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 27px;
     margin-bottom: 10px;
     border-radius: 5px;
     transition: all .3s;
