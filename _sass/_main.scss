@@ -30,7 +30,7 @@ $color-vivid-red: #c92626;
 $color-fcfcfc: #fcfcfc;
 $color-fff: #fff;
 $color-000: #000;
-$color-light-logo: #FC5D51;
+$color-light-logo: #fc5d51;
 
 $color-envelope: $color-vivid-red !default;
 $color-facebook: #3b5998;
@@ -1106,6 +1106,22 @@ body {
     margin-bottom: 50px;
   }
 
+  @at-root #{&}__founder {
+    backface-visibility: hidden;
+    border-radius: 100%;
+    width: 130px;
+    height: auto;
+    margin-left: 50px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 10px;
+      margin-left: initial;
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+
   @at-root #{&}__photo {
     transform: scale(1);
     transition: transform .3s;
@@ -1378,9 +1394,40 @@ body {
 }
 
 .work-consulting {
-  padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid lighten($color-333, 70%);
+
+  @at-root #{&}__featured {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: $color-fff;
+    border-bottom: 1px solid $color-fcfcfc;
+
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+    }
+  }
+
+  @at-root #{&}__question {
+    color: $color-333;
+    font-weight: 500;
+    border-bottom: 5px solid $color-vivid-red;
+    font-size: 36px;
+    margin-bottom: 13px;
+    display: inline-block;
+
+    &:visited {
+      color: $color-333;
+    }
+
+    &:hover {
+      color: $color-vivid-red;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 22px;
+    }
+  }
 
   @at-root #{&}__text {
     font-size: 26px;
