@@ -1470,7 +1470,62 @@ body {
       color: darken($color-fff, 10%);
     }
   }
+}
 
+.work-testimonials {
+  border-bottom: 1px solid lighten($color-333, 70%);
+  padding-bottom: 40px;
+  padding-top: 30px;
+
+  a {
+    border-bottom: 1px solid $color-vivid-red;
+    color: $color-vivid-red;
+    transition: border-bottom .2s;
+
+    &:link,
+    &:visited {
+      color: $color-vivid-red;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-vivid-red;
+    }
+  }
+
+  @at-root #{&}__text {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  @at-root #{&}__client-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  @at-root #{&}__client-role {
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @at-root #{&}__smart-quote--opening {
+    color: $color-vivid-red;
+    font-size: 50px;
+    left: -3px;
+    line-height: 0;
+    position: relative;
+    top: 12px;
+  }
+
+  @at-root #{&}__smart-quote--closing {
+    color: $color-vivid-red;
+    font-size: 50px;
+    left: 3px;
+    line-height: 0;
+    position: relative;
+    top: 12px;
+  }
 }
 
 .work-clients {
