@@ -1348,6 +1348,10 @@ body {
 // #-Work: Products, Clients and Consulting
 .work-page {
   background-color: $color-fcfcfc;
+
+  li {
+    font-size: 20px;
+  }
 }
 
 .work {
@@ -1371,6 +1375,16 @@ body {
     }
   }
 
+  @at-root #{&}__separator-both {
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
   @at-root #{&}__separator::after {
     content: '';
     position: relative;
@@ -1383,6 +1397,28 @@ body {
   }
 
   @at-root #{&}__separator::before {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: -5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator-both::after {
+    content: '';
+    position: relative;
+      top: -5px;
+      left: 5px;
+    display: inline-block;
+    height: 1px;
+    width: 12%;
+    border-bottom: 1px solid lighten($color-333, 50%);
+  }
+
+  @at-root #{&}__separator-both::before {
     content: '';
     position: relative;
       top: -5px;
