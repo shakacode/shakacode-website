@@ -740,6 +740,40 @@ body {
   }
 }
 
+// #-Partial mailerlite
+.mailerlite-webform {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #333;
+
+  h4 {
+    font-size: 28px;
+    float: right;
+    color: #fff;
+    line-height: 58px;
+
+    @media (max-width: $screen-sm-max) {
+      float: none;
+      font-weight: 300;
+      text-align: center;
+      line-height: 30px;
+      font-size: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 20px;
+    position: relative;
+  }
+}
+
 // #-Partial Get in Contact
 .get-in-contact {
   text-align: center;
