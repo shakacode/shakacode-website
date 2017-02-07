@@ -742,7 +742,7 @@ body {
 
 // #-Partial mailerlite
 .mailerlite-webform {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -770,7 +770,6 @@ body {
 
   @media (max-width: $screen-sm-max) {
     padding-top: 20px;
-    position: relative;
   }
 }
 
