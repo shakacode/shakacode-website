@@ -28,6 +28,7 @@ $color-333: #333;
 $color-aaa: #aaa;
 $color-vivid-red: #c92626;
 $color-fcfcfc: #fcfcfc;
+$color-swhite: #f2f2f2;
 $color-fff: #fff;
 $color-000: #000;
 $color-light-logo: #fc5d51;
@@ -534,6 +535,134 @@ body {
     @media (max-width: $screen-sm-max) {
       font-size: 18px;
       font-weight: 300;
+    }
+  }
+}
+
+.home-react-rails {
+  background-color: $color-333;
+  padding-top: 50px;
+}
+
+.home-react-rails__title {
+  margin-bottom: 80px;
+  font-size: 55px;
+  font-weight: 300;
+  color: $color-swhite;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.home-react-rails__subtitle {
+  text-align: left;
+  font-weight: 400;
+  font-size: 25px;
+  color: #f2f2f2;
+  margin-bottom: 60px;
+
+  a {
+    color: $color-fff;
+    border-bottom: 1px solid $color-fff;
+    transition: border-bottom .2s;
+
+    &:link,
+    &:visited {
+      color: $color-fff;
+    }
+
+    &:hover {
+      color: $color-fff;
+      border-bottom: 2px solid $color-fff;
+    }
+  }
+}
+
+.home-react-rails__testimonial_text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+  color: $color-fff;
+}
+
+.home-react-rails__smart-quote--opening {
+  color: $color-fff;
+  font-size: 50px;
+  left: -3px;
+  line-height: 0;
+  position: relative;
+  top: 12px;
+}
+
+.home-react-rails__smart-quote--closing {
+  color: $color-fff;
+  font-size: 50px;
+  left: 3px;
+  line-height: 0;
+  position: relative;
+  top: 12px;
+}
+
+.home-react-rails__text-source {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+  color: $color-fff;
+}
+
+.home-react-rails__client-photo {
+  float: right;
+}
+
+.home-react-rails__client {
+  display: inline-block;
+  float: right;
+  margin-right: 19px;
+  padding-top: 23px;
+}
+
+.home-react-rails__client-name {
+  color: $color-fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+
+  a {
+    border-bottom: 1px solid $color-fff;
+    color: $color-vivid-red;
+    transition: border-bottom .2s;
+
+    &:link,
+    &:visited {
+      color: $color-fff;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-fff;
+    }
+  }
+}
+
+.home-react-rails__client-role {
+  font-size: 20px;
+  text-align: right;
+  color: #fff;
+
+  a {
+    border-bottom: 1px solid $color-fff;
+    color: $color-fff;
+    transition: border-bottom .2s;
+
+    &:link,
+    &:visited {
+      color: $color-fff;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-fff;
     }
   }
 }
