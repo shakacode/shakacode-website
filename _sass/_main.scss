@@ -1593,6 +1593,12 @@ body {
     }
   }
 
+  @at-root #{&}__text-source {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+  }
+
   @at-root #{&}__client {
     display: inline-block;
     float: right;
