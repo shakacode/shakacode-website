@@ -540,14 +540,15 @@ body {
 }
 
 .home-react-rails {
-  background-color: $color-333;
-  padding-top: 50px;
+  background-color: #3d3d3d;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 .home-react-rails__title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-size: 55px;
-  font-weight: 300;
+  font-weight: 500;
   color: $color-swhite;
 
   @media (max-width: $screen-sm-max) {
@@ -557,10 +558,11 @@ body {
 }
 
 .home-react-rails__subtitle {
-  text-align: left;
-  font-weight: 400;
+  text-align: center;
+  font-weight: 300;
   font-size: 25px;
-  color: #f2f2f2;
+  line-height: 1.6;
+  color: #d9d9d9;
   margin-bottom: 60px;
 
   a {
@@ -580,53 +582,99 @@ body {
   }
 }
 
+.home-react-rails__subtitle-b {
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.6;
+  color: #d9d9d9;
+  margin-bottom: 30px;
+}
+
+.home-react-rails__divider {
+  margin-top: 20px;
+  border: 0;
+  border-top: 1px solid hsla(0, 0%, 40%, 1);
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 54px;
+}
+
+.home-react-rails__testimonial-egghead-logo {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.home-react-rails__testimonial-group {
+  position: relative;
+  border-radius: 5px;
+  background-color: #454545;
+  padding: 20px;
+  margin-bottom: 45px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 26px;
+    border-left: 12px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 16px solid #454545;
+  }
+}
+
 .home-react-rails__testimonial_text {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: left;
-  color: $color-fff;
+  color: #d9d9d9;
 }
 
 .home-react-rails__smart-quote--opening {
-  color: $color-fff;
-  font-size: 50px;
+  color: #d9d9d9;
+  font-size: 30px;
   left: -3px;
   line-height: 0;
   position: relative;
-  top: 12px;
+  top: 5px;
 }
 
 .home-react-rails__smart-quote--closing {
-  color: $color-fff;
-  font-size: 50px;
+  color: #d9d9d9;
+  font-size: 30px;
   left: 3px;
   line-height: 0;
   position: relative;
-  top: 12px;
+  top: 5px;
 }
 
 .home-react-rails__text-source {
   font-size: 17px;
   font-weight: 500;
   text-align: left;
-  color: $color-fff;
+  color: #d9d9d9;
 }
 
 .home-react-rails__client-photo {
   float: right;
+  height: 80px;
+  width: auto;
 }
 
 .home-react-rails__client {
   display: inline-block;
   float: right;
   margin-right: 19px;
-  padding-top: 23px;
+  padding: 12px 0 0;
 }
 
 .home-react-rails__client-name {
+  margin-bottom: 0;
+  line-height: 1.6;
   color: $color-fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-align: right;
 
@@ -871,6 +919,7 @@ body {
 
 // #-Partial mailerlite
 .mailerlite-webform {
+  padding-top: 30px;
   position: relative;
   bottom: 0;
   left: 0;
