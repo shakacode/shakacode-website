@@ -32,6 +32,8 @@ $color-swhite: #f2f2f2;
 $color-fff: #fff;
 $color-000: #000;
 $color-light-logo: #fc5d51;
+$color-react-sec: #3d3d3d;
+$color-react-title: #d9d9d9;
 
 $color-envelope: $color-vivid-red !default;
 $color-facebook: #3b5998;
@@ -65,8 +67,8 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica, sans-seri
 
 // tbd = to be done
 .tbd {
-  color: $color-333;
   background-color: #f1ada1;
+  color: $color-333;
 }
 
 // #-Rebase
@@ -76,9 +78,9 @@ p {
 }
 
 ul {
+  list-style: none;
   margin-bottom: 0;
   margin-left: 0;
-  list-style: none;
 }
 
 h1,
@@ -93,9 +95,9 @@ h6 {
 // #-Site Header
 
 body {
-  padding-top: 85px; // compensate fixed navbar
   background-color: $color-fcfcfc;
   overflow-x: hidden;
+  padding-top: 85px; // compensate fixed navbar
 
   @media (max-width: $screen-sm-max) {
     padding-top: 55px; // compensate fixed navbar
@@ -104,17 +106,17 @@ body {
 
 .site-header {
   background-color: $color-333;
+  left: 0;
   padding: 15px;
-  width: 100%;
   position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
   z-index: 10;
 
   @media (max-width: $screen-sm-max) {
-    padding-top: 10px;
     padding-bottom: 7px;
+    padding-top: 10px;
   }
 
   @at-root #{&}__shaka-logo {
@@ -130,12 +132,12 @@ body {
   }
 
   @at-root #{&}__shaka-name {
+    color: $color-fcfcfc;
+    display: inline-block;
     font-size: 30px;
     font-weight: 600;
-    color: $color-fcfcfc;
-    margin-top: 9px;
-    display: inline-block;
     margin-left: 18px;
+    margin-top: 9px;
     transition: color .3s ease;
 
     &:hover {
@@ -149,13 +151,13 @@ body {
   }
 
   @at-root #{&}__mobile-nav-trigger {
-    float: right;
-    display: none;
-    height: 35px;
-    width: 40px;
     background-color: lighten($color-333, 5%);
     border: 1px solid lighten($color-333, 10%);
+    display: none;
+    float: right;
+    height: 35px;
     transition: all .3s ease;
+    width: 40px;
 
     &:hover,
     &:active {
@@ -163,8 +165,8 @@ body {
     }
 
     i {
-      font-size: 22px;
       color: $color-fcfcfc;
+      font-size: 22px;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -174,8 +176,8 @@ body {
 
   @at-root #{&}__site-nav {
     li {
-      margin-right: 36px;
       display: inline-block;
+      margin-right: 36px;
 
       &:last-child {
         margin-right: 0; // the last child doesn't need margin-right, it brakes centralization
@@ -183,8 +185,8 @@ body {
 
       @media (max-width: $screen-sm-max) {
         display: block;
-        margin-right: 0;
         line-height: 35px;
+        margin-right: 0;
       }
     }
   }
@@ -198,13 +200,13 @@ body {
   }
 
   @at-root #{&}__links--highlight {
-    margin-top: 13px;
     float: right;
+    margin-top: 13px;
 
     @media (max-width: $screen-sm-max) {
       display: none; // hide by default on mobile
-      margin-top: 0;
       float: none;
+      margin-top: 0;
       text-align: center;
     }
   }
@@ -241,8 +243,8 @@ body {
       }
 
       &:hover {
-        color: $color-light-logo;
         border-bottom: 4px solid $color-light-logo;
+        color: $color-light-logo;
       }
     }
   }
@@ -250,16 +252,16 @@ body {
 
 // #-Site Footer
 .site-footer {
-  padding: 30px;
   background-color: $color-333;
+  padding: 30px;
 
   @at-root #{&}__site-nav {
     margin-bottom: 30px;
 
     ul {
       li {
-        margin-right: 20px;
         display: inline-block;
+        margin-right: 20px;
 
         @media (max-width: $screen-sm-max) {
           display: block;
@@ -274,12 +276,12 @@ body {
   }
 
   @at-root #{&}__copyright-text {
-    margin-top: 30px;
     color: darken($color-fff, 15%);
     font-family: $font-source-sans-pro;
+    font-size: 15px;
     font-weight: 100;
     letter-spacing: 1px;
-    font-size: 15px;
+    margin-top: 30px;
   }
 
   @at-root #{&}__nav-link {
@@ -295,15 +297,15 @@ body {
     }
 
     &:hover {
-      color: darken($color-fff, 20%);
       border-bottom: 3px solid $color-fff;
+      color: darken($color-fff, 20%);
     }
 
     @media (max-width: $screen-sm-max) {
       color: $color-fcfcfc;
       font-size: 18px;
-      line-height: 32px;
       font-weight: 500;
+      line-height: 32px;
       text-transform: uppercase;
     }
   }
@@ -320,19 +322,19 @@ body {
   }
 
   @at-root #{&}__social-link {
+    background-color: darken($color-fff, 20%);
+    border-radius: 30px;
     color: $color-333;
     font-size: 16px;
-    background-color: darken($color-fff, 20%);
     padding: 4px 8px;
-    border-radius: 30px;
     transition: background-color .3s;
 
     @at-root #{&}--twitter {
+      background-color: darken($color-fff, 20%);
+      border-radius: 30px;
       color: $color-333;
       font-size: 16px;
-      background-color: darken($color-fff, 20%);
       padding: 4px 6px;
-      border-radius: 30px;
       transition: background-color .3s;
 
       &:visited {
@@ -358,12 +360,12 @@ body {
 
 .home-we-build {
   background-color: $color-fcfcfc;
-  padding-top: 70px;
   padding-bottom: 90px;
+  padding-top: 70px;
 
   @media (max-width: $screen-sm-max) {
-    padding-top: 40px;
     padding-bottom: 50px;
+    padding-top: 40px;
   }
 
   @at-root #{&}__title {
@@ -377,26 +379,26 @@ body {
   }
 
   @at-root #{&}__title-link {
-    color: $color-vivid-red;
     border-bottom: 5px solid $color-vivid-red;
+    color: $color-vivid-red;
     transition: all .3s;
 
     &:visited {
-      color: $color-vivid-red;
       border-bottom: 5px solid $color-vivid-red;
+      color: $color-vivid-red;
     }
 
     &:hover {
-      color: $color-333;
       border-bottom: 5px solid $color-333;
+      color: $color-333;
     }
   }
 
   @at-root #{&}__subtitle {
     color: $color-333;
-    margin-bottom: 40px;
     font-size: 35px;
     font-weight: 600;
+    margin-bottom: 40px;
 
     @media (max-width: $screen-sm-max) {
       font-size: 21px;
@@ -405,10 +407,10 @@ body {
 
   @at-root #{&}__statement {
     color: $color-000;
-    margin-bottom: 30px;
-    font-weight: 200;
     font-size: 24px;
+    font-weight: 200;
     letter-spacing: 1px;
+    margin-bottom: 30px;
 
     a {
       border-bottom: 5px solid $color-vivid-red;
@@ -423,8 +425,8 @@ body {
     @media (max-width: $screen-sm-max) {
       font-size: 20px;
       font-weight: 300;
-      margin-bottom: 20px;
       line-height: 30px;
+      margin-bottom: 20px;
 
       a {
         border-bottom-width: 3px;
@@ -433,46 +435,46 @@ body {
   }
 
   @at-root #{&}__shaka-sign {
-    opacity: 0.8;
+    opacity: .8;
   }
 
   @at-root #{&}__separator {
-    margin-top: 25px;
     margin-bottom: 20px;
+    margin-top: 25px;
   }
 
   @at-root #{&}__separator::after {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: 5px;
     display: inline-block;
     height: 1px;
+    left: 5px;
+    position: relative;
+    top: -5px;
     width: 15%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__separator::before {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: -5px;
     display: inline-block;
     height: 1px;
+    left: -5px;
+    position: relative;
+    top: -5px;
     width: 15%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 }
 
 .home-we-are {
   background-color: $color-vivid-red;
-  padding-top: 50px;
-  padding-bottom: 100px;
   color: $color-fcfcfc;
+  padding-bottom: 100px;
+  padding-top: 50px;
 
   @media (min-width: $screen-md-min) {
     // show image only on tablets and up
-    background: $color-vivid-red url( $site-url + "/assets/we-are-bg.jpg") 100% 90% no-repeat;
+    background: $color-vivid-red url($site-url + '/assets/we-are-bg.jpg') 100% 90% no-repeat;
   }
 
   @media (max-width: $screen-sm-max) {
@@ -484,10 +486,10 @@ body {
   }
 
   @at-root #{&}__title {
-    margin-bottom: 80px;
+    color: $color-fcfcfc;
     font-size: 55px;
     font-weight: 300;
-    color: $color-fcfcfc;
+    margin-bottom: 80px;
 
     @media (max-width: $screen-sm-max) {
       font-size: 30px;
@@ -496,8 +498,8 @@ body {
   }
 
   @at-root #{&}__title-link {
+    border-bottom: 0 solid $color-fff;
     transition: border-bottom .2s;
-    border-bottom: 0px solid $color-fff;
 
     &:hover {
       border-bottom: 4px solid $color-fff;
@@ -506,11 +508,11 @@ body {
 
   @at-root #{&}__statement {
     color: $color-fcfcfc;
-    margin-bottom: 80px;
     font-size: 27px;
-    line-height: 50px;
     font-weight: 100;
     letter-spacing: 1px;
+    line-height: 50px;
+    margin-bottom: 80px;
 
     @media (max-width: $screen-sm-max) {
       font-size: 20px;
@@ -520,13 +522,13 @@ body {
   }
 
   @at-root #{&}__meet-team {
+    border-bottom: 3px solid rgba(255, 255, 255, .2);
     color: $color-fcfcfc;
+    display: inline-block;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1.5px;
     transition: border-bottom .2s ease;
-    display: inline-block;
-    border-bottom: 3px solid rgba(255,255,255, 0.2);
 
     &:hover {
       border-bottom: 3px solid $color-fff;
@@ -540,16 +542,16 @@ body {
 }
 
 .home-react-rails {
-  background-color: #3d3d3d;
-  padding-top: 80px;
+  background-color: $color-react-sec;
   padding-bottom: 30px;
+  padding-top: 80px;
 }
 
 .home-react-rails__title {
-  margin-bottom: 40px;
+  color: $color-swhite;
   font-size: 55px;
   font-weight: 500;
-  color: $color-swhite;
+  margin-bottom: 40px;
 
   @media (max-width: $screen-sm-max) {
     font-size: 30px;
@@ -558,16 +560,16 @@ body {
 }
 
 .home-react-rails__subtitle {
-  text-align: center;
-  font-weight: 300;
+  color: $color-react-title;
   font-size: 25px;
+  font-weight: 300;
   line-height: 1.6;
-  color: #d9d9d9;
   margin-bottom: 60px;
+  text-align: center;
 
   a {
-    color: $color-fff;
     border-bottom: 1px solid $color-fff;
+    color: $color-fff;
     transition: border-bottom .2s;
 
     &:link,
@@ -576,29 +578,29 @@ body {
     }
 
     &:hover {
-      color: $color-fff;
       border-bottom: 2px solid $color-fff;
+      color: $color-fff;
     }
   }
 }
 
 .home-react-rails__subtitle-b {
-  text-align: center;
-  font-weight: 400;
+  color: $color-react-title;
   font-size: 25px;
+  font-weight: 400;
   line-height: 1.6;
-  color: #d9d9d9;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .home-react-rails__divider {
-  margin-top: 20px;
   border: 0;
   border-top: 1px solid hsla(0, 0%, 40%, 1);
-  width: 300px;
-  text-align: center;
   margin: auto;
   margin-bottom: 54px;
+  margin-top: 20px;
+  text-align: center;
+  width: 300px;
 }
 
 .home-react-rails__testimonial-egghead-logo {
@@ -607,33 +609,33 @@ body {
 }
 
 .home-react-rails__testimonial-group {
-  position: relative;
-  border-radius: 5px;
   background-color: #454545;
-  padding: 20px;
+  border-radius: 5px;
   margin-bottom: 45px;
+  padding: 20px;
+  position: relative;
 
   &::after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    right: 26px;
     border-left: 12px solid transparent;
     border-right: 15px solid transparent;
     border-top: 16px solid #454545;
+    bottom: -15px;
+    content: '';
+    position: absolute;
+    right: 26px;
   }
 }
 
 .home-react-rails__testimonial_text {
+  color: $color-react-title;
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: left;
-  color: #d9d9d9;
 }
 
 .home-react-rails__smart-quote--opening {
-  color: #d9d9d9;
+  color: $color-react-title;
   font-size: 30px;
   left: -3px;
   line-height: 0;
@@ -642,7 +644,7 @@ body {
 }
 
 .home-react-rails__smart-quote--closing {
-  color: #d9d9d9;
+  color: $color-react-title;
   font-size: 30px;
   left: 3px;
   line-height: 0;
@@ -651,10 +653,10 @@ body {
 }
 
 .home-react-rails__text-source {
+  color: $color-react-title;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
-  color: #d9d9d9;
 }
 
 .home-react-rails__client-photo {
@@ -671,11 +673,11 @@ body {
 }
 
 .home-react-rails__client-name {
-  margin-bottom: 0;
-  line-height: 1.6;
   color: $color-fff;
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 0;
   text-align: right;
 
   a {
@@ -695,9 +697,9 @@ body {
 }
 
 .home-react-rails__client-role {
+  color: $color-fff;
   font-size: 20px;
   text-align: right;
-  color: #fff;
 
   a {
     border-bottom: 1px solid $color-fff;
@@ -719,8 +721,8 @@ body {
 
 .blog-page {
   background-color: $color-fff;
-  padding-top: 90px;
   min-height: 800px;
+  padding-top: 90px;
 
   @media (max-width: $screen-sm-max) {
     padding-top: 40px;
@@ -732,30 +734,25 @@ body {
   margin-bottom: 32px;
 
   a {
-    color: $color-vivid-red;
     border-bottom: 2px solid $color-vivid-red;
+    color: $color-vivid-red;
   }
-}
-
-.blog-archived__header {
-
-
 }
 
 .blog-post {
 
   @at-root #{&}__link {
+    border-bottom: 3px solid $color-fcfcfc;
     color: $color-vivid-red;
     display: inline-block;
     font-size: 40px;
     font-weight: 200;
     margin-bottom: 10px;
-    border-bottom: 3px solid $color-fcfcfc;
     transition: border-bottom .3s ease;
 
     &:hover {
-      color: $color-vivid-red;
       border-bottom: 3px solid $color-vivid-red;
+      color: $color-vivid-red;
     }
 
     &:visited {
@@ -769,32 +766,32 @@ body {
   }
 
   @at-root #{&}__meta {
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   @at-root #{&}__meta-author {
-    font-family: $font-source-sans-pro;
-    font-weight: 600;
-    font-size: 15px;
     color: $color-333;
+    font-family: $font-source-sans-pro;
+    font-size: 15px;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
   @at-root #{&}__meta-date {
-    font-family: $font-source-sans-pro;
-    font-weight: 600;
-    font-size: 15px;
     color: $color-333;
+    font-family: $font-source-sans-pro;
+    font-size: 15px;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
   @at-root #{&}__content {
-    font-size: 18px;
+    color: lighten($color-333, 10%);
     font-family: $font-open-sans;
+    font-size: 18px;
     font-weight: 300;
     line-height: 32px;
-    color: lighten($color-333, 10%);
     margin-bottom: 80px;
 
     ol {
@@ -803,8 +800,8 @@ body {
 
     ul {
       list-style: square;
-      margin-left: 1.3em;
       margin-bottom: 30px;
+      margin-left: 1.3em;
     }
 
     li {
@@ -818,14 +815,14 @@ body {
   }
 
   @at-root #{&}__separator::after {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: 5px;
     display: inline-block;
     height: 1px;
+    left: 5px;
+    position: relative;
+    top: -5px;
     width: 46%;
-    border-bottom: 1px solid lighten($color-333, 50%);
 
     @media (max-width: $screen-sm-max) {
       width: 40%;
@@ -833,14 +830,14 @@ body {
   }
 
   @at-root #{&}__separator::before {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: -5px;
     display: inline-block;
     height: 1px;
+    left: -5px;
+    position: relative;
+    top: -5px;
     width: 46%;
-    border-bottom: 1px solid lighten($color-333, 50%);
 
     @media (max-width: $screen-md-max) {
       width: 40%;
@@ -855,17 +852,17 @@ body {
   margin-bottom: 100px;
 
   @media (max-width: $screen-sm-max) {
-    margin-top: 0px;
     margin-bottom: 50px;
+    margin-top: 0;
   }
 }
 
 .pagination__previous {
-  font-size: 20px;
-  font-family: $font-source-sans-pro;
-  font-weight: 400;
   color: blue;
   float: left;
+  font-family: $font-source-sans-pro;
+  font-size: 20px;
+  font-weight: 400;
   transition: color .2s ease;
 
   &:visited {
@@ -881,20 +878,20 @@ body {
   }
 
   i {
-    margin-right: 10px;
     font-size: 30px;
+    margin-right: 10px;
     position: relative;
-      top: 4px;
+    top: 4px;
     transition: transform .3s ease;
   }
 }
 
 .pagination__next {
-  font-size: 20px;
-  font-family: $font-source-sans-pro;
-  font-weight: 400;
   color: $color-333;
   float: right;
+  font-family: $font-source-sans-pro;
+  font-size: 20px;
+  font-weight: 400;
 
   &:visited {
     color: $color-333;
@@ -909,36 +906,36 @@ body {
   }
 
   i {
-    margin-left: 10px;
     font-size: 30px;
+    margin-left: 10px;
     position: relative;
-      top: 4px;
+    top: 4px;
     transition: transform .3s ease;
   }
 }
 
 // #-Partial mailerlite
 .mailerlite-webform {
-  padding-top: 30px;
-  position: relative;
+  background-color: $color-333;
   bottom: 0;
   left: 0;
+  padding-top: 30px;
+  position: relative;
   width: 100%;
   z-index: 10;
-  background-color: #333;
 
   h4 {
-    font-size: 28px;
+    color: $color-fff;
     float: right;
-    color: #fff;
+    font-size: 28px;
     line-height: 58px;
 
     @media (max-width: $screen-sm-max) {
       float: none;
-      font-weight: 300;
-      text-align: center;
-      line-height: 30px;
       font-size: 30px;
+      font-weight: 300;
+      line-height: 30px;
+      text-align: center;
     }
 
     @media (max-width: $screen-xs-max) {
@@ -953,37 +950,37 @@ body {
 
 // #-Partial Get in Contact
 .get-in-contact {
-  text-align: center;
+  background-color: $color-fff;
   border-top: 1px solid lighten($color-333, 70%);
   padding: 50px 0;
-  background-color: $color-fff;
+  text-align: center;
 
   @at-root #{&}__title {
-    display: inline-block;
-    margin: 0 15px 0 0;
     color: $color-333;
+    display: inline-block;
     font-family: $font-source-sans-pro;
-    font-weight: 600;
     font-size: 25px;
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 2px;
+    margin: 0 15px 0 0;
+    text-transform: uppercase;
 
     @media (max-width: $screen-sm-max) {
       font-size: 18px;
-      margin-bottom: 7px;
       letter-spacing: initial;
+      margin-bottom: 7px;
     }
   }
 
   @at-root #{&}__email {
-    display: inline-block;
-    color: $color-vivid-red;
-    font-family: $font-source-sans-pro;
-    font-weight: 600;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     border-bottom: 4px solid $color-fff;
+    color: $color-vivid-red;
+    display: inline-block;
+    font-family: $font-source-sans-pro;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     transition: border-bottom .2s ease;
 
     @media (max-width: $screen-sm-max) {
@@ -997,8 +994,8 @@ body {
     }
 
     &:hover {
-      color: $color-vivid-red;
       border-bottom: 4px solid $color-vivid-red;
+      color: $color-vivid-red;
     }
   }
 }
@@ -1006,9 +1003,9 @@ body {
 // #-Post Page
 
 .post-page {
-  padding-top: 90px;
   background-color: $color-fcfcfc;
   min-height: 700px; // prevent blank content above the fold
+  padding-top: 90px;
 
   @media (max-width: $screen-sm-max) {
     padding-top: 40px;
@@ -1019,7 +1016,6 @@ body {
 
   @at-root #{&}__share--header {
     height: 25px; // fixed height to avoid "html building" when fb share is loading
-    margin-bottom: 5px;
     margin-bottom: 17px;
   }
 
@@ -1034,16 +1030,16 @@ body {
   // very important rules
   // post formatting
   @at-root #{&}__content {
-    font-size: 18px;
+    color: lighten($color-333, 10%);
     font-family: $font-open-sans;
+    font-size: 18px;
     font-weight: 300;
     line-height: 32px;
-    color: lighten($color-333, 10%);
     margin-bottom: 80px;
 
     img {
-      margin-top: 25px;
       margin-bottom: 25px;
+      margin-top: 25px;
     }
 
     p {
@@ -1051,8 +1047,8 @@ body {
     }
 
     a {
-      color: $color-333;
       border-bottom: 2px solid $color-light-logo;
+      color: $color-333;
       transition: border-bottom-width .3s;
 
       &:visited {
@@ -1072,8 +1068,8 @@ body {
     h4,
     h5,
     h6 {
-      margin-top: 30px;
       margin-bottom: 30px;
+      margin-top: 30px;
     }
 
   }
@@ -1082,9 +1078,9 @@ body {
 // #-Page Page
 
 .page-page {
-  padding-top: 90px;
   background-color: $color-fcfcfc;
   min-height: 700px; // prevent blank content above the fold
+  padding-top: 90px;
 
   @media (max-width: $screen-sm-max) {
     padding-top: 40px;
@@ -1095,7 +1091,6 @@ body {
 
   @at-root #{&}__share--header {
     height: 25px; // fixed height to avoid "html building" when fb share is loading
-    margin-bottom: 5px;
     margin-bottom: 17px;
   }
 
@@ -1110,16 +1105,16 @@ body {
   // very important rules
   // post formatting
   @at-root #{&}__content {
-    font-size: 18px;
+    color: lighten($color-333, 10%);
     font-family: $font-open-sans;
+    font-size: 18px;
     font-weight: 300;
     line-height: 32px;
-    color: lighten($color-333, 10%);
     margin-bottom: 80px;
 
     img {
-      margin-top: 25px;
       margin-bottom: 25px;
+      margin-top: 25px;
     }
 
     p {
@@ -1127,8 +1122,8 @@ body {
     }
 
     a {
-      color: $color-333;
       border-bottom: 2px solid $color-light-logo;
+      color: $color-333;
       transition: border-bottom-width .3s;
 
       &:visited {
@@ -1148,8 +1143,8 @@ body {
     h4,
     h5,
     h6 {
-      margin-top: 30px;
       margin-bottom: 30px;
+      margin-top: 30px;
     }
 
 
@@ -1158,27 +1153,27 @@ body {
 
 // #-About
 .about-page {
-  padding-top: 90px;
-  padding-bottom: 120px;
   background-color: $color-fcfcfc;
   min-height: 650px; // prevent blank content above the fold
+  padding-bottom: 120px;
+  padding-top: 90px;
 
   @media (max-width: $screen-sm-max) {
-    padding-top: 40px;
     padding-bottom: 40px;
+    padding-top: 40px;
   }
 }
 
 .about {
   @at-root #{&}__title {
     color: $color-vivid-red;
-    margin-bottom: 20px;
     font-size: 55px;
     font-weight: 300;
+    margin-bottom: 20px;
 
     @media (max-width: $screen-sm-max) {
-      margin-bottom: 10px;
       font-size: 26px;
+      margin-bottom: 10px;
     }
   }
 
@@ -1191,25 +1186,25 @@ body {
   }
 
   @at-root #{&}__separator::after {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: 5px;
     display: inline-block;
     height: 1px;
+    left: 5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__separator::before {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: -5px;
     display: inline-block;
     height: 1px;
+    left: -5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__header {
@@ -1221,9 +1216,9 @@ body {
     margin-bottom: 60px;
 
     p {
-      margin-bottom: 18px;
-      line-height: 32px;
       font-weight: 300;
+      line-height: 32px;
+      margin-bottom: 18px;
     }
 
     h1,
@@ -1232,13 +1227,13 @@ body {
     h4,
     h5,
     h6 {
-      margin-top: 30px;
       margin-bottom: 30px;
+      margin-top: 30px;
     }
 
     a {
-      color: $color-333;
       border-bottom: 2px solid $color-light-logo;
+      color: $color-333;
       transition: border-bottom-width .3s;
 
       &:visited {
@@ -1250,8 +1245,8 @@ body {
   @at-root #{&}__work-with-us {
 
     ul {
-      list-style: square;
       font-family: $font-source-sans-pro;
+      list-style: square;
       margin-bottom: 10px;
       margin-left: 20px;
 
@@ -1276,20 +1271,20 @@ body {
   }
 
   @at-root #{&}__work-contact {
-    color: $color-fff !important; // important rule because there's a "a" rule above it to general links
     background-color: $color-vivid-red;
-    padding: 7px 20px;
-    margin-top: 20px;
+    border-radius: 3px;
+    color: $color-fff !important; // important rule because there's a "a" rule above it to general links
     display: inline-block;
     font-size: 18px;
-    border-radius: 3px;
+    margin-top: 20px;
+    padding: 7px 20px;
     transition: color .3s;
 
     @media (max-width: $screen-sm-max) {
       display: block;
-      width: 40%;
+      margin: 30px auto 0;
       text-align: center;
-      margin: 30px auto 0px auto;
+      width: 40%;
     }
 
     &:visited {
@@ -1322,13 +1317,14 @@ body {
   @at-root #{&}__founder {
     backface-visibility: hidden;
     border-radius: 100%;
-    width: 130px;
     height: auto;
     margin-left: 50px;
+    width: 130px;
 
     @media (max-width: $screen-sm-max) {
       margin-bottom: 10px;
       margin-left: initial;
+
       &:hover {
         transform: scale(1);
       }
@@ -1336,9 +1332,9 @@ body {
   }
 
   @at-root #{&}__photo {
+    backface-visibility: hidden;
     transform: scale(1);
     transition: transform .3s;
-    backface-visibility: hidden;
 
     &:hover {
       transform: scale(1.05);
@@ -1352,10 +1348,10 @@ body {
   }
 
   @at-root #{&}__name {
-    margin-top: 0;
-    font-weight: 400;
     color: $color-333;
     font-size: 26px;
+    font-weight: 400;
+    margin-top: 0;
 
     @media (max-width: $screen-sm-max) {
       text-align: center;
@@ -1372,10 +1368,10 @@ body {
   }
 
   @at-root #{&}__bio {
-    font-family: $font-source-sans-pro;
-    font-weight: 300;
     color: $color-333;
+    font-family: $font-source-sans-pro;
     font-size: 18px;
+    font-weight: 300;
     line-height: 27px;
 
     a {
@@ -1391,8 +1387,8 @@ body {
     margin-top: 10px;
 
     @media (max-width: $screen-sm-max) {
-      margin-top: 10px;
       margin-bottom: 10px;
+      margin-top: 10px;
     }
 
     li {
@@ -1477,27 +1473,27 @@ body {
 // not used yet but Don't delete it! It will return soon when we have more info to put in contact page.
 .contact-page {
   background-color: $color-fcfcfc;
-  padding-top: 120px;
-  padding-bottom: 150px;
   min-height: 650px; // prevent blank content above the fold
+  padding-bottom: 150px;
+  padding-top: 120px;
 
   @media (max-width: $screen-sm-max) {
     min-height: 600px;
-    padding-top: 40px;
     padding-bottom: 40px;
+    padding-top: 40px;
   }
 }
 
 .contact {
   @at-root #{&}__title {
     color: $color-vivid-red;
-    margin-bottom: 20px;
     font-size: 55px;
     font-weight: 300;
+    margin-bottom: 20px;
 
     @media (max-width: $screen-sm-max) {
-      margin-bottom: 10px;
       font-size: 40px;
+      margin-bottom: 10px;
     }
   }
 
@@ -1510,35 +1506,35 @@ body {
   }
 
   @at-root #{&}__separator::after {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: 5px;
     display: inline-block;
     height: 1px;
+    left: 5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__separator::before {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: -5px;
     display: inline-block;
     height: 1px;
+    left: -5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__email {
+    border-bottom: 4px solid $color-fff;
+    color: lighten($color-vivid-red, 15%);
     display: inline-block;
     font-size: 30px;
     font-weight: 400;
-    color: lighten($color-vivid-red, 15%);
     letter-spacing: 2px;
     margin-bottom: 50px;
-    border-bottom: 4px solid $color-fff;
     transition: border-bottom .2s ease;
 
     &:visited {
@@ -1546,8 +1542,8 @@ body {
     }
 
     &:hover {
-      color: $color-vivid-red;
       border-bottom: 4px solid $color-vivid-red;
+      color: $color-vivid-red;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -1568,13 +1564,13 @@ body {
 .work {
   @at-root #{&}__title {
     color: $color-vivid-red;
-    margin-bottom: 20px;
     font-size: 50px;
     font-weight: 300;
+    margin-bottom: 20px;
 
     @media (max-width: $screen-sm-max) {
-      margin-bottom: 10px;
       font-size: 26px;
+      margin-bottom: 10px;
     }
   }
 
@@ -1591,66 +1587,66 @@ body {
     margin-top: 40px;
 
     @media (max-width: $screen-sm-max) {
-      margin-top: 30px;
       margin-bottom: 30px;
+      margin-top: 30px;
     }
   }
 
   @at-root #{&}__separator::after {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: 5px;
     display: inline-block;
     height: 1px;
+    left: 5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__separator::before {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: -5px;
     display: inline-block;
     height: 1px;
+    left: -5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__separator-both::after {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: 5px;
     display: inline-block;
     height: 1px;
+    left: 5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__separator-both::before {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: -5px;
     display: inline-block;
     height: 1px;
+    left: -5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
 }
 
 .work-consulting {
-  padding-bottom: 40px;
   border-bottom: 1px solid lighten($color-333, 70%);
+  padding-bottom: 40px;
 
   @at-root #{&}__featured {
-    padding-top: 60px;
-    padding-bottom: 50px;
     background-color: $color-fff;
     border-bottom: 1px solid $color-fcfcfc;
+    padding-bottom: 50px;
+    padding-top: 60px;
 
     @media (max-width: $screen-sm-max) {
       text-align: center;
@@ -1658,12 +1654,12 @@ body {
   }
 
   @at-root #{&}__question {
-    color: $color-333;
-    font-weight: 500;
     border-bottom: 5px solid $color-vivid-red;
-    font-size: 36px;
-    margin-bottom: 13px;
+    color: $color-333;
     display: inline-block;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 13px;
 
     &:visited {
       color: $color-333;
@@ -1715,14 +1711,14 @@ body {
   }
 
   @at-root #{&}__contact {
-    color: $color-fff;
     background-color: $color-vivid-red;
-    padding: 7px 20px;
+    border-radius: 3px;
+    color: $color-fff;
     display: inline-block;
-    margin-top: 20px;
     font-size: 18px;
     font-weight: 400;
-    border-radius: 3px;
+    margin-top: 20px;
+    padding: 7px 20px;
     transition: color .3s;
 
     &:link,
@@ -1820,8 +1816,8 @@ body {
 
 .work-clients {
   background-color: $color-fff;
-  padding-top: 30px;
   padding-bottom: 60px;
+  padding-top: 30px;
 
   @at-root #{&}__unit {
     margin-bottom: 60px;
@@ -1829,8 +1825,8 @@ body {
 
   @at-root #{&}__description {
     font-size: 20px;
-    margin-top: 20px;
     margin-bottom: 40px;
+    margin-top: 20px;
 
     @media (max-width: $screen-sm-max) {
       font-size: 18px;
@@ -1839,9 +1835,9 @@ body {
 
   @at-root #{&}__link {
     color: $color-vivid-red;
-    margin-bottom: 20px;
     font-size: 30px;
     font-weight: 400;
+    margin-bottom: 20px;
     transition: border-bottom .2s;
 
     &:link,
@@ -1859,7 +1855,7 @@ body {
     transition: all .6s;
 
     &:hover {
-      filter:brightness(1.05);
+      filter: brightness(1.05);
     }
   }
 
@@ -1870,20 +1866,20 @@ body {
 
     &:hover {
       box-shadow: 0 0 3px 0 darken($color-aaa, 10%);
-      filter:brightness(1.05);
+      filter: brightness(1.05);
     }
   }
 
 }
 
 .work-products {
-  padding-top: 30px;
-  padding-bottom: 60px;
   border-top: 1px solid lighten($color-333, 70%);
+  padding-bottom: 60px;
+  padding-top: 30px;
 
   @at-root #{&}__name {
-    font-size: 26px;
     color: $color-vivid-red;
+    font-size: 26px;
     transition: border-bottom .3s;
 
     &:link,
@@ -1902,14 +1898,14 @@ body {
   }
 
   @at-root #{&}__fng-logo {
-    width: 140px;
     background-color: $color-333;
-    padding: 20px;
-    margin: auto;
-    margin-top: 27px;
-    margin-bottom: 10px;
     border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 27px;
+    padding: 20px;
     transition: all .3s;
+    width: 140px;
 
     &:hover {
       filter: brightness(1.15);
@@ -1929,10 +1925,10 @@ body {
 // #-Open Source
 
 .opensource-page {
-  padding-top: 40px;
   background-color: $color-fcfcfc;
   min-height: 650px; // prevent blank content above the fold
   padding-bottom: 150px;
+  padding-top: 40px;
 
   @media (max-width: $screen-sm-max) {
     padding-bottom: 40px;
@@ -1943,13 +1939,13 @@ body {
 
   @at-root #{&}__title {
     color: $color-vivid-red;
-    margin-bottom: 20px;
     font-size: 50px;
     font-weight: 300;
+    margin-bottom: 20px;
 
     @media (max-width: $screen-sm-max) {
-      margin-bottom: 10px;
       font-size: 26px;
+      margin-bottom: 10px;
     }
   }
 
@@ -1962,49 +1958,49 @@ body {
   }
 
   @at-root #{&}__separator::after {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: 5px;
     display: inline-block;
     height: 1px;
+    left: 5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__separator::before {
+    border-bottom: 1px solid lighten($color-333, 50%);
     content: '';
-    position: relative;
-      top: -5px;
-      left: -5px;
     display: inline-block;
     height: 1px;
+    left: -5px;
+    position: relative;
+    top: -5px;
     width: 12%;
-    border-bottom: 1px solid lighten($color-333, 50%);
   }
 
   @at-root #{&}__project {
     margin-bottom: 30px;
 
     ul {
-      margin-left: 20px;
-      list-style: disc;
       font-family: $font-source-sans-pro;
       font-size: 20px;
+      list-style: disc;
+      margin-left: 20px;
     }
   }
 
   @at-root #{&}__project-title {
-    font-size: 26px;
-    color: $color-333;
-    transition: color .3s;
     border-bottom: 2px solid $color-light-logo;
+    color: $color-333;
+    font-size: 26px;
+    transition: color .3s;
 
     @media (max-width: $screen-sm-max) {
       font-size: 20px;
     }
 
-    &:visited{
+    &:visited {
       color: $color-333;
     }
 
@@ -2022,9 +2018,9 @@ body {
   }
 
   @at-root #{&}__more-projects {
+    color: $color-vivid-red;
     display: inline-block;
     font-family: $font-source-sans-pro;
-    color: $color-vivid-red;
     font-size: 24px;
     margin-top: 20px;
     transition: color .3s;
