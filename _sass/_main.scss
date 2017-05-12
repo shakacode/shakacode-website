@@ -1270,6 +1270,10 @@ body {
     }
   }
 
+  @at-root #{&}__hiring {
+    font-weight: bold;
+  }
+
   @at-root #{&}__work-contact {
     background-color: $color-vivid-red;
     border-radius: 3px;
