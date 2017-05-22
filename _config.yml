@@ -37,3 +37,203 @@ asset_pipeline:
 exclude: [Guardfile]
 
 excerpt_separator: <!--more-->
+
+team:
+  - member:
+    name: Justin Gordon
+    image_path: justin.jpg
+    description: Aloha! Inspired by the Ruby on Rails Community, Justin began blogging on <a href="http://www.railsonmaui.com" target="_blank">RailsOnMaui</a> and <a href="https://github.com/justin808" target="_blank">working on open source</a>. A philosophy of sharing, plus <a href="http://www.railsonmaui.com/blog/2014/10/03/integrating-webpack-and-the-es6-transpiler-into-an-existing-rails-project/" target="_blank">React/Webpack/Rails integration</a>, developed into <a href="http://www.shakacode.com/about" target="_blank">ShakaCode</a>! A family, coding, and surfing in Maui create a healthy life balance.
+    facebook: justinhgordon
+    twitter: railsonmaui
+    wikipedia:
+    github: justin808
+    linkedin: railsonmaui
+    dribbble:
+    personal: http://www.railsonmaui.com
+  - member:
+    name: Alex Fedoseev
+    image_path: alex.jpg
+    description: Alex started in web-analytics & marketing, then web development with Ruby on Rails, and has recently been focusing on the React + Flux ecosystem with a Rails backend. Alex shares his experience through a <a href="http://alexfedoseev.com/" target="_blank">personal blog</a>, <a href="https://medium.com/@alexfedoseev" target="_blank">medium</a> & <a href="https://github.com/alexfedoseev" target="_blank">github</a>. Coding & surfing FTW!
+    facebook: alex.fedoseev
+    twitter: alexfedoseev
+    wikipedia:
+    github: alexfedoseev
+    linkedin: alexfedoseev
+    dribbble:
+    personal: http://alexfedoseev.com
+  - member:
+    name: Alexey Karasev
+    image_path: alexey.jpg
+    description: Alexey has worked in investment business for several years, programming as a hobby in his free time. After some time, he decided to quit his investment job to pursue his real passion and started programming full-time. He has experience in backend development (Rails, Node, Golang, Hadoop), frontend (Angular, React) and native iOS apps development in Swift and Obj-C.
+    facebook: karasev.alexey
+    twitter: AlexeyKarasev1
+    wikipedia:
+    github: alleycat-at-git
+    linkedin:
+    dribbble:
+    personal:
+  - member:
+    name: Ali Pearson
+    image_path: ali.jpg
+    description: Ali loves code, but only as a spectator for now. Meanwhile, she manages everything else at ShakaCode, so the coders can stay in THE ZONE. Ali also orchestrates all aspects of <a href="https://www.facebook.com/SugarRanch" target="_blank">Sugar Ranch Maui</a>, helps at the kids' school. She has no free time. :-)
+    facebook: alipearso
+    twitter: alipearso
+    wikipedia:
+    github: shakagirl
+    linkedin: ali-pearson-9437b94
+    dribbble:
+    personal:
+  - member:
+    name: Blaine Hatab
+    image_path: blaine.jpg
+    description: Blaine is an energetic full stack developer with a passion for the user experience and startups. He loves exploration of all things tech from raspberry pis to ruby on rails. Blaine takes great care of his teeth, wears cool hats, and likes stargazing.
+    facebook: blaine.hatab
+    twitter: BlaineHatab
+    wikipedia:
+    github: jbhatab
+    linkedin: blainehatab
+    dribbble:
+    personal:
+  - member:
+    name: Dylan Grafmyre
+    image_path: dylan.jpg
+    description: Enjoys standing in front of the fire hydrant of technology with his mouth wide open, loving to learn and being stimulated by the challenge of mastering the new. When not learning or studying all facets of web development, he greatly enjoys time with his family and freedom of the outdoors and nature.
+    facebook: motuman
+    twitter: dylangrafmyre
+    wikipedia:
+    instagram:
+    github: dylangrafmyre
+    linkedin:
+    dribbble:
+    personal:
+  - member:
+    name: Eugene Arkhipov
+    image_path: eugene.jpg
+    description: Eugene is a passionate designer who loves creating beautiful and effective products. He believes that design is not just about how a product looks but also how it works, so he does his best to provide users with a great experience.
+    facebook: earkhipov
+    twitter:
+    wikipedia:
+    instagram:
+    github:
+    linkedin: evgenyarkhipov
+    dribbble: arkhipov
+    personal:
+  - member:
+    name: Garrett Lisi
+    image_path: garrett.jpg
+    description: Garrett spends most of his time doing theoretical physics, surfing, and working on super geeky projects -- including this one. He is best known for discovering <a href="https://en.wikipedia.org/wiki/An_Exceptionally_Simple_Theory_of_Everything" target="_blank">“An Exceptionally Simple Theory of Everything”</a> and co-founding the <a href="http://pacificscienceinstitute.org/" target="_blank">Pacific Science Institute</a> on Maui.
+    facebook: Antony.Garrett.Lisi
+    twitter: garrettlisi
+    wikipedia: Antony_Garrett_Lisi
+    instagram:
+    github:
+    linkedin: garrett-lisi-3229994
+    dribbble:
+    personal: http://li.si
+  - member:
+    name: Josias Schneider
+    image_path: josias.jpg
+    description: Josias is a Ruby and Javascript developer from Brazil. With a passion for startups, agile, and product development, he is now focused on React/Redux and learning functional programming. Josias enjoys everything about games, tech, traveling with his wife, and playing football on weekends.
+    facebook: JosiasSchneider
+    twitter: josiasds
+    wikipedia:
+    instagram:
+    github: josiasds
+    linkedin:
+    dribbble:
+    personal:
+  - member:
+    name: Judah Meek
+    image_path: judah.jpg
+    description: Judah comes to ShakaCode from Texas. He loves programming and professional web development. In his free time, he hacks open source, especially ShakaCode’s.
+    facebook:
+    twitter: judahmeek
+    wikipedia:
+    instagram:
+    github: Judahmeek
+    linkedin:
+    dribbble:
+    personal:
+  - member:
+    name: Kate Ikonnikova
+    image_path: kate.jpg
+    description: Kate is a product designer and likes snowboarding, surfing, and drawing. She started out as a journalist but eventually transitioned to designer during her extensive traveling and work at companies large and small.
+    facebook: ikonnikova
+    twitter: chozya
+    wikipedia:
+    instagram:
+    github:
+    linkedin:
+    dribbble:
+    personal: http://ikonnikova.com/
+  - member:
+    name: Marcus Sá
+    image_path: marcus.jpg
+    description: Marcus is a Software Engineer from Brazil who loves to transform code into products that make people more productive and less stressed. He also loves working remotely, watching American football, reading horror books, and playing with his Arduino.
+    facebook: marcus.m.sa
+    twitter: sa_vini
+    wikipedia:
+    instagram:
+    github: mamute
+    linkedin: marcus-sá-29125a32
+    dribbble:
+    personal:
+  - member:
+    name: Mario Perez
+    image_path: mario.jpg
+    description: Mario is a Computer Scientist from Spain. Ruby lover and refactoring maniac who enjoys working remotely. When he's not pointing out code smells, he's probably in a crossfit box or dancing salsa & bachata.
+    facebook: mario.mariete19
+    twitter: mapreal19
+    wikipedia:
+    instagram:
+    github: mapreal19
+    linkedin: marioperez19
+    dribbble:
+    personal: http://marioperez.me/
+  - member:
+    name: Renan Aguiar
+    image_path: renan.jpg
+    description: Renan discovered programming at university and quickly abandoned his original course of study to immerse himself in the coding world. He now works as a software engineer embracing Javascript and Ruby. Renan is 3.14 times more productive while listening to music.
+    facebook: rffaguiar
+    twitter: rffaguiar
+    wikipedia:
+    instagram:
+    github: rffaguiar
+    linkedin:
+    dribbble:
+    personal:
+  - member:
+    name: Rob Wise
+    image_path: robwise.jpg
+    description: Rob holds a B.A. in Economics from the University of Virginia and an M.S. in Information Systems from Drexel University. He currently lives in the Washington, D.C., area and loves programming, User Experience, Ruby on Rails, databases, and learning React and Redux.
+    facebook:
+    twitter: RobAWise
+    wikipedia:
+    instagram:
+    github: robwise
+    linkedin: robwise
+    dribbble:
+    personal: http://robwise.github.io
+  - member:
+    name: Samnang Chhun
+    image_path: samnang.jpg
+    description: Samnang is a software craftsman living in Phnom Penh. He is a pair programming lover, big fan of TDD, clean code, Vim, and the general Unix philosophy. When he's not programming, he enjoys socializing, playing football, and biking every early Saturday morning.
+    facebook: chhunsamnang
+    twitter: samnangchhun
+    wikipedia:
+    instagram:
+    github: samnang
+    linkedin: samnangchhun
+    dribbble:
+    personal: http://samnang.me
+  - member:
+    name: Sergey Tarasov
+    image_path: sergey.jpg
+    description: Sergey has worked as an international corporate lawyer and an executive in the heavy equipment industry. In pursuit of more balanced and enjoyable lifestyle, he's now pursuing his passion for programming. He loves yoga, healthy lifestyle & family time.
+    facebook:
+    twitter:
+    wikipedia:
+    github: dzirtusss
+    linkedin:
+    dribbble:
+    personal: http://sergey-tarasov.com/

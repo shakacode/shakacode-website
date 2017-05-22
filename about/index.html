@@ -22,7 +22,6 @@ title: ShakaCode About
       </div>
 
       <div class="col-md-10 col-md-offset-1">
-
         <header class="about__header">
           <a name="shaka-code-team" class="offset-y-anchor"></a>
           <h1 class="about__title text-center">ShakaCode Team</h1>
@@ -30,441 +29,58 @@ title: ShakaCode About
             <img width="45" height="36" src="{{ site.url | prepend: site.baseurl }}/assets/shaka-sign.svg" alt="Shaka Sign Separator">
           </div>
         </header>
+        <div class="row shaka-members-group">
 
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/justin.jpg" alt="Justin Gordon">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/justinhgordon" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/railsonmaui" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/justin808/" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/railsonmaui" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://www.railsonmaui.com" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Justin Gordon</h3>
-                  <p class="shaka-member__bio">Aloha! Inspired by the Ruby on Rails Community, Justin began blogging on <a href="http://www.railsonmaui.com" target="_blank">RailsOnMaui</a> and <a href="https://github.com/justin808" target="_blank">working on open source</a>. A philosophy of sharing, plus <a href="http://www.railsonmaui.com/blog/2014/10/03/integrating-webpack-and-the-es6-transpiler-into-an-existing-rails-project/" target="_blank">React/Webpack/Rails integration</a>, developed into <a href="http://www.shakacode.com/about" target="_blank">ShakaCode</a>! A family, coding, and surfing in Maui create a healthy life balance.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
+          {% for member in site.team %}
 
           <div class="col-md-6 col-sm-12">
             <div class="row shaka-member">
               <div class="col-md-5 col-sm-12">
                 <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/alex.jpg" alt="Alex Feedoseev">
+                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/{{ member.image_path }}" alt="{{ member.name }}">
                 </div>
                 <div class="shaka-member__social-links text-center">
                   <ul>
-                    <li><a href="https://www.facebook.com/alex.fedoseev" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/alexfedoseev" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/alexfedoseev" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/alexfedoseev" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://alexfedoseev.com/" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
+                    {% if member.facebook %}
+                      <li><a href="https://www.facebook.com/{{ member.facebook }}" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    {% endif %}
+                    {% if member.twitter %}
+                      <li><a href="https://twitter.com/{{ member.twitter }}" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    {% endif %}
+                    {% if member.wikipedia %}
+                      <li><a href="https://en.wikipedia.org/wiki/{{ member.wikipedia }}" class="shaka-member__wikipedia" target="_blank"><i class="fa fa-wikipedia-w"></i></a></li>
+                    {% endif %}
+                    {% if member.instagram %}
+                      <li><a href="https://instagram.com/{{ member.instagram }}/" class="shaka-member__twitter" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    {% endif %}
+                    {% if member.github %}
+                      <li><a href="https://github.com/{{ member.github }}/" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
+                    {% endif %}
+                    {% if member.linkedin %}
+                      <li><a href="https://www.linkedin.com/in/{{ member.linkedin }}" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    {% endif %}
+                    {% if member.dribbble %}
+                      <li><a href="https://dribbble.com/{{ member.dribbble }}" class="shaka-member__personal" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                    {% endif %}
+                    {% if member.personal %}
+                      <li><a href="{{ member.personal }}" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
+                    {% endif %}
                   </ul>
                 </div>
               </div>
               <div class="col-md-7 col-sm-12">
                 <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Alex Fedoseev</h3>
-                  <p class="shaka-member__bio">Alex started in web-analytics & marketing, then web development with Ruby on Rails, and has recently been focusing on the React + Flux ecosystem with a Rails backend. Alex shares his experience through a <a href="http://alexfedoseev.com/" target="_blank">personal blog</a>, <a href="https://medium.com/@alexfedoseev" target="_blank">medium</a> & <a href="https://github.com/alexfedoseev" target="_blank">github</a>. Coding & surfing FTW!</p>
+                  <h3 class="shaka-member__name">{{ member.name }}</h3>
+                  <p class="shaka-member__bio">{{ member.description }}</p>
                 </div>
               </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
+            </div>
+          </div>
 
-        </div><!-- end .shaka-member-row -->
+          {% endfor %}
 
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/alexey.jpg" alt="Alexey Karasev">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/karasev.alexey" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/AlexeyKarasev1" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/alleycat-at-git" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Alexey Karasev</h3>
-                  <p class="shaka-member__bio">Alexey has worked in investment business for several years, programming as a hobby in his free time. After some time, he decided to quit his investment job to pursue his real passion and started programming full-time. He has experience in backend development (Rails, Node, Golang, Hadoop), frontend (Angular, React) and native iOS apps development in Swift and Obj-C.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/ali.jpg" alt="Ali Pearson">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/alipearso" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/alipearso" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/shakagirl" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/pub/ali-pearson/4/7b9/943" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Ali Pearson</h3>
-                  <p class="shaka-member__bio">Ali loves code, but only as a spectator for now. Meanwhile, she manages everything else at ShakaCode, so the coders can stay in THE ZONE. Ali also orchestrates all aspects of <a href="https://www.facebook.com/SugarRanch" target="_blank">Sugar Ranch Maui</a>, helps at the kids' school. She has no free time. :-)</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/blaine.jpg" alt="Blaine Hatab">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/blaine.hatab" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/BlaineHatab" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/jbhatab" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/blainehatab" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Blaine Hatab</h3>
-                  <p class="shaka-member__bio">Blaine is an energetic full stack developer with a passion for the user experience and startups. He loves exploration of all things tech from raspberry pis to ruby on rails. Blaine takes great care of his teeth, wears cool hats, and likes stargazing.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/dylan.jpg" alt="Dylan Grafmyre">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/motuman" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/dylangrafmyre" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/dylangrafmyre" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Dylan Grafmyre</h3>
-                  <p class="shaka-member__bio">Enjoys standing in front of the fire hydrant of technology with his mouth wide open, loving to learn and being stimulated by the challenge of mastering the new. When not learning or studying all facets of web development, he greatly enjoys time with his family and freedom of the outdoors and nature.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/eugene.jpg" alt="Eugene Arkhipov">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/earkhipov" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/evgenyarkhipov" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://dribbble.com/arkhipov" class="shaka-member__personal" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Eugene Arkhipov</h3>
-                  <p class="shaka-member__bio">Eugene is a passionate designer who loves creating beautiful and effective products. He believes that design is not just about how a product looks but also how it works, so he does his best to provide users with a great experience.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/garrett.jpg" alt="Garrett Lisi">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/Antony.Garrett.Lisi" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/garrettlisi" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Antony_Garrett_Lisi" class="shaka-member__wikipedia" target="_blank"><i class="fa fa-wikipedia-w"></i></a></li>
-                    <li><a href="https://www.linkedin.com/pub/garrett-lisi/4/999/322" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://li.si" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Garrett Lisi</h3>
-                  <p class="shaka-member__bio">Garrett spends most of his time doing theoretical physics, surfing, and working on super geeky projects -- including this one. He is best known for discovering <a href="https://en.wikipedia.org/wiki/An_Exceptionally_Simple_Theory_of_Everything" target="_blank">“An Exceptionally Simple Theory of Everything”</a> and co-founding the <a href="http://pacificscienceinstitute.org/" target="_blank">Pacific Science Institute</a> on Maui.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/josias.jpg" alt="Josias Schneider">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/JosiasSchneider" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/josiasds" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/josiasds" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Josias Schneider</h3>
-                  <p class="shaka-member__bio">Josias is a Ruby and Javascript developer from Brazil. With a passion for startups, agile, and product development, he is now focused on React/Redux and learning functional programming. Josias enjoys everything about games, tech, traveling with his wife, and playing football on weekends.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/judah.jpg" alt="judah Meek">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://twitter.com/judahmeek" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/Judahmeek" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Judah Meek</h3>
-                  <p class="shaka-member__bio">Judah comes to ShakaCode from Texas. He loves programming and professional web development. In his free time, he hacks open source, especially ShakaCode’s.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/kate.jpg" alt="Kate Ikonnikova">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/ikonnikova" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/chozya" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="http://ikonnikova.com/" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Kate Ikonnikova</h3>
-                  <p class="shaka-member__bio">Kate is a product designer and likes snowboarding, surfing, and drawing. She started out as a journalist but eventually transitioned to designer during her extensive traveling and work at companies large and small.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/marcus.jpg" alt="Marcus Sá">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/marcus.m.sa" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/sa_vini" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/mamute" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/marcus-s%C3%A1-29125a32?trk=nav_responsive_tab_profile" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Marcus Sá</h3>
-                  <p class="shaka-member__bio">Marcus is a Software Engineer from Brazil who loves to transform code into products that make people more productive and less stressed. He also loves working remotely, watching American football, reading horror books, and playing with his Arduino.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/mario.jpg" alt="Mario Perez">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/mario.mariete19" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/mapreal19" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/mapreal19" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/marioperez19" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://marioperez.me/" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Mario Pérez</h3>
-                  <p class="shaka-member__bio">Mario is a Computer Scientist from Spain. Ruby lover and refactoring maniac who enjoys working remotely. When he's not pointing out code smells, he's probably in a crossfit box or dancing salsa & bachata.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/renan.jpg" alt="Renan Aguiar">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/renan.aguiar.716" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/rffaguiar" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/rffaguiar" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Renan Aguiar</h3>
-                  <p class="shaka-member__bio">Renan discovered programming at university and quickly abandoned his original course of study to immerse himself in the coding world. He now works as a software engineer embracing Javascript and Ruby. Renan is 3.14 times more productive while listening to music.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/robwise.jpg" alt="Rob Wise">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://twitter.com/RobAWise" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/robwise" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/robwise" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://robwise.github.io" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Rob Wise</h3>
-                  <p class="shaka-member__bio">Rob holds a B.A. in Economics from the University of Virginia and an M.S. in Information Systems from Drexel University. He currently lives in the Washington, D.C., area and loves programming, User Experience, Ruby on Rails, databases, and learning React and Redux.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/samnang.jpg" alt="Samnang Chhun">
-                </div>
-
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://www.facebook.com/chhunsamnang" class="shaka-member__facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/samnangchhun" class="shaka-member__twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/samnang" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/samnangchhun" class="shaka-member__linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://samnang.me" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Samnang Chhun</h3>
-                  <p class="shaka-member__bio">Samnang is a software craftsman living in Phnom Penh. He is a pair programming lover, big fan of TDD, clean code, Vim, and the general Unix philosophy. When he's not programming, he enjoys socializing, playing football, and biking every early Saturday morning.</p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-
-        <div class="row shaka-member-row">
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row shaka-member">
-              <div class="col-md-5 col-sm-12">
-                <div class="text-center">
-                  <img class="shaka-member__photo" src="{{ site.url | prepend: site.baseurl }}/assets/members/sergey.jpg" alt="Sergey Tarasov">
-                </div>
-                <div class="shaka-member__social-links text-center">
-                  <ul>
-                    <li><a href="https://github.com/dzirtusss" class="shaka-member__github" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="http://sergey-tarasov.com/" class="shaka-member__personal" target="_blank"><i class="fa fa-user"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="shaka-member__temp-padding-fix">
-                  <h3 class="shaka-member__name">Sergey Tarasov</h3>
-                  <p class="shaka-member__bio">Sergey has worked as an international corporate lawyer and an executive in the heavy equipment industry. In pursuit of more balanced and enjoyable lifestyle, he's now pursuing his passion for programming. He loves yoga, healthy lifestyle & family time. </p>
-                </div>
-              </div>
-            </div><!-- end .shaka-member -->
-          </div><!-- end member container -->
-
-        </div><!-- end .shaka-member-row -->
-      </div><!-- end col-md-10 -->
+        </div>
+      </div>
 
       <div class="about__work-with-us col-md-10 col-md-offset-1">
 

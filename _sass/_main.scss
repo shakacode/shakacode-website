@@ -1311,6 +1311,11 @@ body {
   }
 }
 
+.shaka-members-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .shaka-member {
   margin-bottom: 20px;
 
