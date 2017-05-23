@@ -131,6 +131,18 @@ team:
     dribbble:
     personal: http://li.si
   - member:
+    name: Jonathan Philippou
+    image_path: jonathan.jpg
+    description: Jonathan is a Software Engineer from New York City. He studied Computer Science at New York University and went to Dev Bootcamp. He loves coding and playing with his dogs, Skylo and Thumper. He also likes snowboarding and fencing.
+    facebook: jonathan.philippou
+    twitter:
+    wikipedia:
+    instagram:
+    github: Conturbo
+    linkedin:
+    dribbble:
+    personal:
+  - member:
     name: Josias Schneider
     image_path: josias.jpg
     description: Josias is a Ruby and Javascript developer from Brazil. With a passion for startups, agile, and product development, he is now focused on React/Redux and learning functional programming. Josias enjoys everything about games, tech, traveling with his wife, and playing football on weekends.
