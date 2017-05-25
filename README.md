@@ -50,7 +50,8 @@ The [octopress-asset-pipeline](https://github.com/octopress/asset-pipeline) gem 
 ```
 
 ## Team Members Data
-All user info is inside about/index.html, feel free to change your info.
+All user info is inside _config.yml, feel free to change your info. If you're playing around on localhost, restart it.
+You need to restart the server everytime you make some change on _config.yml. If you add someone, do it alphabetically.
 
 ## How to create posts
 1. Run the project locally
