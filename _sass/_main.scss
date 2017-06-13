@@ -18,6 +18,7 @@
 // #-Contact
 // #-Work: Products, Clients and Consulting
 // #-Open Source
+// #-Talks
 // #-JS Helpers
 
 // ----------------------------
@@ -34,6 +35,7 @@ $color-000: #000;
 $color-light-logo: #fc5d51;
 $color-react-sec: #3d3d3d;
 $color-react-title: #d9d9d9;
+$color-talks-heading: #e96c5e;
 
 $color-envelope: $color-vivid-red !default;
 $color-facebook: #3b5998;
@@ -2045,6 +2047,84 @@ body {
     &:hover {
       color: $color-333;
     }
+  }
+}
+
+// #-Talks
+
+.talks-page {
+  background-color: $color-react-sec;
+  min-height: 650px; // prevent blank content above the fold
+  padding-bottom: 150px;
+  padding-top: 80px;
+
+  @media (max-width: $screen-sm-max) {
+    padding-bottom: 40px;
+  }
+}
+
+.talks-header {
+  margin-bottom: 60px;
+}
+
+.talks {
+  h2 {
+    margin-bottom: 0;
+  }
+
+  @at-root #{&}__subtitle {
+    color: $color-swhite;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 20px;
+    }
+  }
+
+  @at-root #{&}__title {
+    color: $color-talks-heading;
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    @media (max-width: $screen-md-max) {
+      font-size: 50px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 30px;
+    }
+  }
+
+  @at-root #{&}__title--white {
+    color: $color-swhite;
+  }
+
+  @at-root #{&}__origin {
+    color: $color-swhite;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 40px;
+    text-align: right;
+  }
+
+  @at-root #{&}__content {
+    color: $color-swhite;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+  }
+
+  @at-root #{&}__form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 
