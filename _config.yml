@@ -96,6 +96,18 @@ team:
     dribbble:
     personal:
   - member:
+    name: Denis Udovenko
+    image_path: denis.jpg
+    description: Denis holds an Engineer's degree, Information technologies specialist from Far Eastern State University. He has over 8 years of web development skills. Always looking to work with interesting projects, primarily as Ruby on Rails or full stack developer. He's a drummer in a music band and spends half of winter for snowboarding.
+    facebook:
+    twitter:
+    wikipedia:
+    instagram:
+    github: udovenko
+    linkedin:
+    dribbble:
+    personal:
+  - member:
     name: Eugene Arkhipov
     image_path: eugene.jpg
     description: Eugene is a passionate designer who loves creating beautiful and effective products. He believes that design is not just about how a product looks but also how it works, so he does his best to provide users with a great experience.
