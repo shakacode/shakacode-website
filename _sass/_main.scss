@@ -19,6 +19,7 @@
 // #-Work: Products, Clients and Consulting
 // #-Open Source
 // #-Talks
+// #-Newsletter Signup Page
 // #-JS Helpers
 
 // ----------------------------
@@ -47,7 +48,8 @@ $color-personal: $color-333 !default;
 // #-Fonts
 
 $font-open-sans: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;
-$font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica, sans-serif;
+$font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica,
+  sans-serif;
 
 // #-Miscellaneous
 
@@ -240,7 +242,8 @@ body {
 
       &:visited,
       &:active,
-      &:link { // for some reason this solves the issue (https://github.com/shakacode/shakacode-website/issues/12) after clicking in a mailto anchor
+      &:link {
+        // for some reason this solves the issue (https://github.com/shakacode/shakacode-website/issues/12) after clicking in a mailto anchor
         color: $color-light-logo;
       }
 
@@ -294,7 +297,8 @@ body {
     transition: border-bottom .1s;
 
     &:visited,
-    &:link { // for some reason this solves the issue (https://github.com/shakacode/shakacode-website/issues/12) after clicking in a mailto anchor
+    &:link {
+      // for some reason this solves the issue (https://github.com/shakacode/shakacode-website/issues/12) after clicking in a mailto anchor
       color: darken($color-fff, 20%);
     }
 
@@ -476,7 +480,8 @@ body {
 
   @media (min-width: $screen-md-min) {
     // show image only on tablets and up
-    background: $color-vivid-red url($site-url + '/assets/we-are-bg.jpg') 100% 90% no-repeat;
+    background: $color-vivid-red url($site-url + '/assets/we-are-bg.jpg') 100%
+      90% no-repeat;
   }
 
   @media (max-width: $screen-sm-max) {
@@ -742,7 +747,6 @@ body {
 }
 
 .blog-post {
-
   @at-root #{&}__link {
     border-bottom: 3px solid $color-fcfcfc;
     color: $color-vivid-red;
@@ -809,7 +813,6 @@ body {
     li {
       margin-bottom: 22px;
     }
-
   }
 
   @at-root #{&}__separator {
@@ -1015,7 +1018,6 @@ body {
 }
 
 .blog-post {
-
   @at-root #{&}__share--header {
     height: 25px; // fixed height to avoid "html building" when fb share is loading
     margin-bottom: 17px;
@@ -1073,7 +1075,6 @@ body {
       margin-bottom: 30px;
       margin-top: 30px;
     }
-
   }
 }
 
@@ -1090,7 +1091,6 @@ body {
 }
 
 .page {
-
   @at-root #{&}__share--header {
     height: 25px; // fixed height to avoid "html building" when fb share is loading
     margin-bottom: 17px;
@@ -1148,8 +1148,6 @@ body {
       margin-bottom: 30px;
       margin-top: 30px;
     }
-
-
   }
 }
 
@@ -1245,7 +1243,6 @@ body {
   }
 
   @at-root #{&}__work-with-us {
-
     ul {
       font-family: $font-source-sans-pro;
       list-style: square;
@@ -1301,7 +1298,6 @@ body {
       color: $color-333;
     }
   }
-
 }
 
 // not used yet
@@ -1367,7 +1363,6 @@ body {
     @media (max-width: $screen-sm-max) {
       text-align: center;
     }
-
   }
 
   @at-root #{&}__temp-padding-fix {
@@ -1646,7 +1641,6 @@ body {
     top: -5px;
     width: 12%;
   }
-
 }
 
 .work-consulting {
@@ -1880,7 +1874,6 @@ body {
       filter: brightness(1.05);
     }
   }
-
 }
 
 .work-products {
@@ -1947,7 +1940,6 @@ body {
 }
 
 .opensource {
-
   @at-root #{&}__title {
     color: $color-vivid-red;
     font-size: 50px;
@@ -2125,6 +2117,59 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+  }
+}
+
+// #-Newsletter Signup Page
+.newsletter-page {
+  background: $color-fff url($site-url + '/assets/newsletter-bg.jpg') 0 0
+    no-repeat;
+  min-height: 650px; // prevent blank content above the fold
+  padding-bottom: 150px;
+  padding-top: 80px;
+
+  @media (max-width: $screen-sm-max) {
+    padding-bottom: 40px;
+  }
+}
+
+.newsletter {
+  @at-root #{&}__title {
+    color: $color-fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: 0;
+
+    @media (max-width: $screen-md-max) {
+      font-size: 50px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 30px;
+    }
+  }
+
+  @at-root #{&}__content {
+    color: $color-swhite;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    a {
+      color: $color-fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+  }
+
+  @at-root #{&}__form {
+    p {
+      text-align: center !important;
+    }
   }
 }
 
