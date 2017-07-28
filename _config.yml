@@ -180,6 +180,18 @@ team:
     dribbble:
     personal: http://ikonnikova.com/
   - member:
+    name: Ilya Saldin
+    image_path: ilya.jpg
+    description: Ilya is a developer from Kazakhstan living in Russia with more than 10 years of experience as a developer. He has knowledge on Java, iOS, React and React Native development. When he's not programming, he's enjoying some electronic music and sci-fi books.
+    facebook:
+    twitter: c10wn
+    wikipedia:
+    instagram:
+    github: isaldin
+    linkedin: ilya-saldin-49200140
+    dribbble:
+    personal:
+  - member:
     name: Marcus Sá
     image_path: marcus.jpg
     description: Marcus is a Software Engineer from Brazil who loves to transform code into products that make people more productive and less stressed. He also loves working remotely, watching American football, reading horror books, and playing with his Arduino.
