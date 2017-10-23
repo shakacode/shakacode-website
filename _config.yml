@@ -144,18 +144,6 @@ team:
     dribbble:
     personal:
   - member:
-    name: Josias Schneider
-    image_path: josias.jpg
-    description: Josias is a Ruby and Javascript developer from Brazil. With a passion for startups, agile, and product development, he is now focused on React/Redux and learning functional programming. Josias enjoys everything about games, tech, traveling with his wife, and playing football on weekends.
-    facebook: JosiasSchneider
-    twitter: josiasds
-    wikipedia:
-    instagram:
-    github: josiasds
-    linkedin:
-    dribbble:
-    personal:
-  - member:
     name: Judah Meek
     image_path: judah.jpg
     description: Judah comes to ShakaCode from Texas. He loves programming and professional web development. In his free time, he hacks open source, especially ShakaCode’s.
@@ -262,3 +250,14 @@ team:
     linkedin:
     dribbble:
     personal: http://sergey-tarasov.com/
+  - member:
+    name: Vladimir Tsyganov
+    image_path: vladimir.jpg
+    description: Vladimir is a software developer from Russia with a degree in Applied Mathematics. He has 5 years of full-stack development experience focusing primarily on Rails and Node. In his spare time, he likes to spend time with his family, hike, mountain ski, and hang out with his friends.
+    facebook:
+    twitter:
+    wikipedia:
+    github:
+    linkedin:
+    dribbble:
+    personal:
