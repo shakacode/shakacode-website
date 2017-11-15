@@ -120,30 +120,6 @@ team:
     dribbble: arkhipov
     personal:
   - member:
-    name: Garrett Lisi
-    image_path: garrett.jpg
-    description: Garrett spends most of his time doing theoretical physics, surfing, and working on super geeky projects -- including this one. He is best known for discovering <a href="https://en.wikipedia.org/wiki/An_Exceptionally_Simple_Theory_of_Everything" target="_blank">“An Exceptionally Simple Theory of Everything”</a> and co-founding the <a href="http://pacificscienceinstitute.org/" target="_blank">Pacific Science Institute</a> on Maui.
-    facebook: Antony.Garrett.Lisi
-    twitter: garrettlisi
-    wikipedia: Antony_Garrett_Lisi
-    instagram:
-    github:
-    linkedin: garrett-lisi-3229994
-    dribbble:
-    personal: http://li.si
-  - member:
-    name: Jonathan Philippou
-    image_path: jonathan.jpg
-    description: Jonathan is a Software Engineer from New York City. He studied Computer Science at New York University and went to Dev Bootcamp. He loves coding and playing with his dogs, Skylo and Thumper. He also likes snowboarding and fencing.
-    facebook: jonathan.philippou
-    twitter:
-    wikipedia:
-    instagram:
-    github: Conturbo
-    linkedin:
-    dribbble:
-    personal:
-  - member:
     name: Judah Meek
     image_path: judah.jpg
     description: Judah comes to ShakaCode from Texas. He loves programming and professional web development. In his free time, he hacks open source, especially ShakaCode’s.
@@ -155,18 +131,6 @@ team:
     linkedin:
     dribbble:
     personal:
-  - member:
-    name: Kate Ikonnikova
-    image_path: kate.jpg
-    description: Kate is a product designer and likes snowboarding, surfing, and drawing. She started out as a journalist but eventually transitioned to designer during her extensive traveling and work at companies large and small.
-    facebook: ikonnikova
-    twitter: chozya
-    wikipedia:
-    instagram:
-    github:
-    linkedin:
-    dribbble:
-    personal: http://ikonnikova.com/
   - member:
     name: Ilya Saldin
     image_path: ilya.jpg
