@@ -1694,6 +1694,21 @@ body {
     }
   }
 
+  @at-root #{&}__details-plan {
+    border-bottom: 1px solid $color-vivid-red;
+    color: $color-vivid-red;
+    font-size: 26px;
+    transition: border-bottom .2s;
+
+    &:visited {
+      color: $color-vivid-red;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $color-vivid-red;
+    }
+  }
+
   @at-root #{&}__text {
     font-size: 26px;
 
