@@ -11,7 +11,7 @@
 // #-Home
 // #-Blog Home
 // #-Blog Pagination
-// #-Partial Get in Contact
+// #-Partial Get in Touch
 // #-Post Page
 // #-Page Page
 // #-About
@@ -52,6 +52,36 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica,
   sans-serif;
 
 // #-Miscellaneous
+
+@mixin bt_get-in-touch {
+  display: block;
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-vivid-red;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: $font-source-sans-pro;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 22px;
+  transition: all .3s ease;
+
+  &:hover,
+  &:active {
+    background-color: darken($color-vivid-red, 5%);
+  }
+}
+
+@mixin link {
+  color: $color-vivid-red;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
 
 // very important class: you need to use it as the <a> class when this anchor is part of an URL, ex. shakacode.com/work/index.html#something
 // Otherwise, the fixed header will stay on top of it.
@@ -953,9 +983,17 @@ body {
   }
 }
 
-// #-Partial Get in Contact
+
+// #-Partial Get in Touch
+.contact-style-dark {
+  background-color: #e4e4e4;
+}
+
+.contact-style-light {
+  background-color: #fff;
+}
+
 .get-in-contact {
-  background-color: $color-fff;
   border-top: 1px solid lighten($color-333, 70%);
   padding: 50px 0;
   text-align: center;
@@ -2191,4 +2229,214 @@ body {
 // #-JS Helpers
 .js-highlight-link {
   border-bottom: 4px solid $color-light-logo;
+}
+
+// #-Service
+.service-page {
+  background-color: #fff;
+  min-height: 650px; // prevent blank content above the fold
+
+  @media (max-width: $screen-sm-max) {
+    padding-bottom: 40px;
+  }
+}
+
+.service-header {
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.service__title {
+  color: $color-vivid-red;
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+}
+
+.service__headline {
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  width: 60%;
+  text-align: center;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 30px;
+  }
+}
+
+.service__contact,
+.service__contact:link,
+.service__contact:visited {
+  @include bt_get-in-touch;
+}
+
+.service-area-container {
+  padding-top: 100px;
+}
+
+.service-area__title {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.service-area__description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 80px;
+}
+
+.service-technology-container {
+  padding-bottom: 50px;
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: row wrap;
+}
+
+.service-technology {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.service-technology__svg {
+  width: 150px;
+  height: 150px;
+}
+
+.service-technology__title {
+  font-family: $font-source-sans-pro;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-technology__description {
+  font-family: $font-open-sans;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.service-build {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $color-333;
+}
+
+.service-section__title {
+  color: #fff;
+  font-family: $font-open-sans;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+ .service-build__point {
+   color: #e6e6e6;
+   font-family: $font-open-sans;
+   font-size: 20px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+ }
+
+.svg-checkmark {
+  width: 24px;
+  height: 22px;
+  margin-right: 10px;
+
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+.service__contact-build,
+.service__contact-build:link,
+.service__contact-build:visited {
+  @include bt_get-in-touch;
+  margin-top: 60px;
+}
+
+.service-book-time {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.service-book-time__balloon {
+  position: relative;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 35px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 45px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e4e4e4;
+  }
+}
+
+.service-book-time__message {
+  font-family: $font-open-sans;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.regular-link,
+.regular-link:link,
+.regular-link:visited {
+  @include link;
+}
+
+.service-book-time__person {
+  float: right;
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.service-book-time__person-info {
+  margin-right: 20px;
+  text-align: right;
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.service-book-time__person-img {
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+}
+
+.service-book-time__name,
+.service-book-time__job {
+  font-size: 20px;
+  font-family: $font-open-sans;
+  line-height: 1.5;
+}
+
+.service-book-time__job {
+  font-size: 18px;
 }

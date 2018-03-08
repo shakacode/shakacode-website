@@ -1,0 +1,16 @@
+<svg class="service-technology__svg" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Ruby on Rails
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <rect fill="#FF5C63" width="150" height="150" rx="8"/>
+    <path fill="#7C0000" d="M38.5 36L57 66H20z"/>
+    <path fill="#7C0000" d="M74.5 36L93 66H56z"/>
+    <path fill="#FFF" d="M111.5 36L130 66H93z"/>
+    <path fill="#CC0200" d="M56.5 66L75 36H38z"/>
+    <path fill="#FFF" d="M74.5 131L93 66H56z"/>
+    <path fill="#CC0200" d="M75 130L57.101 66H20z"/>
+    <path fill="#7C0000" d="M75 130l17.899-64H130z"/>
+    <path fill="#CC0200" d="M92.5 66L111 36H74z"/>
+  </g>
+</svg>
