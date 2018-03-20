@@ -74,6 +74,30 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica,
   }
 }
 
+@mixin bt_get-in-touch--white {
+  display: block;
+  width: 290px;
+  border: 2px solid #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-fcfcfc;
+  font-family: $font-source-sans-pro;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 22px;
+  transition: all .2s ease;
+
+  &:hover,
+  &:active {
+    border-color: #fff;
+    background-color: #fff;
+    color: #333;
+  }
+}
+
 @mixin link {
   color: $color-vivid-red;
 
@@ -444,8 +468,7 @@ body {
   @at-root #{&}__statement {
     color: $color-000;
     font-size: 24px;
-    font-weight: 200;
-    letter-spacing: 1px;
+    font-weight: 300;
     margin-bottom: 30px;
 
     a {
@@ -505,8 +528,8 @@ body {
 .home-we-are {
   background-color: $color-vivid-red;
   color: $color-fcfcfc;
+  padding-top: 100px;
   padding-bottom: 100px;
-  padding-top: 50px;
 
   @media (min-width: $screen-md-min) {
     // show image only on tablets and up
@@ -526,7 +549,8 @@ body {
     color: $color-fcfcfc;
     font-size: 55px;
     font-weight: 300;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    margin-top: 0;
 
     @media (max-width: $screen-sm-max) {
       font-size: 30px;
@@ -546,10 +570,9 @@ body {
   @at-root #{&}__statement {
     color: $color-fcfcfc;
     font-size: 27px;
-    font-weight: 100;
-    letter-spacing: 1px;
+    font-weight: 300;
     line-height: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 
     @media (max-width: $screen-sm-max) {
       font-size: 20px;
@@ -578,17 +601,40 @@ body {
   }
 }
 
+.home-our-services {
+  background-color: $color-react-sec;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: $color-react-title;
+}
+
+.home-our-services__statement {
+  color: $color-fcfcfc;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+}
+
 .home-react-rails {
   background-color: $color-react-sec;
   padding-bottom: 30px;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .home-react-rails__title {
   color: $color-swhite;
   font-size: 55px;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 0;
 
   @media (max-width: $screen-sm-max) {
     font-size: 30px;
@@ -634,7 +680,7 @@ body {
   border: 0;
   border-top: 1px solid hsla(0, 0%, 40%, 1);
   margin: auto;
-  margin-bottom: 54px;
+  margin-bottom: 60px;
   margin-top: 20px;
   text-align: center;
   width: 300px;
@@ -2277,6 +2323,12 @@ body {
 .service__contact:link,
 .service__contact:visited {
   @include bt_get-in-touch;
+}
+
+.service__contact--white,
+.service__contact--white:link,
+.service__contact--white:visited {
+  @include bt_get-in-touch--white;
 }
 
 .service-area-container {
