@@ -96,18 +96,6 @@ team:
     dribbble:
     personal:
   - member:
-    name: Denis Udovenko
-    image_path: denis.jpg
-    description: Denis holds an Engineer's degree, Information technologies specialist from Far Eastern State University. He has over 8 years of web development skills. Always looking to work with interesting projects, primarily as Ruby on Rails or full stack developer. He's a drummer in a music band and spends half of winter for snowboarding.
-    facebook:
-    twitter:
-    wikipedia:
-    instagram:
-    github: udovenko
-    linkedin:
-    dribbble:
-    personal:
-  - member:
     name: Eugene Arkhipov
     image_path: eugene.jpg
     description: Eugene is a passionate designer who loves creating beautiful and effective products. He believes that design is not just about how a product looks but also how it works, so he does his best to provide users with a great experience.
@@ -129,18 +117,6 @@ team:
     instagram:
     github: Judahmeek
     linkedin:
-    dribbble:
-    personal:
-  - member:
-    name: Ilya Saldin
-    image_path: ilya.jpg
-    description: Ilya is a developer from Kazakhstan living in Russia with more than 10 years of experience as a developer. He has knowledge on Java, iOS, React and React Native development. When he's not programming, he's enjoying some electronic music and sci-fi books.
-    facebook:
-    twitter: saldin_ilya
-    wikipedia:
-    instagram:
-    github: isaldin
-    linkedin: ilya-saldin-49200140
     dribbble:
     personal:
   - member:
@@ -192,18 +168,6 @@ team:
     dribbble:
     personal: http://robwise.github.io
   - member:
-    name: Samnang Chhun
-    image_path: samnang.jpg
-    description: Samnang is a software craftsman living in Phnom Penh. He is a pair programming lover, big fan of TDD, clean code, Vim, and the general Unix philosophy. When he's not programming, he enjoys socializing, playing football, and biking every early Saturday morning.
-    facebook: chhunsamnang
-    twitter: samnangchhun
-    wikipedia:
-    instagram:
-    github: samnang
-    linkedin: samnangchhun
-    dribbble:
-    personal: http://samnang.me
-  - member:
     name: Sergey Tarasov
     image_path: sergey.jpg
     description: Sergey has worked as an international corporate lawyer and an executive in the heavy equipment industry. In pursuit of more balanced and enjoyable lifestyle, he's now pursuing his passion for programming. He loves yoga, healthy lifestyle & family time.
@@ -214,14 +178,3 @@ team:
     linkedin:
     dribbble:
     personal: http://sergey-tarasov.com/
-  - member:
-    name: Vladimir Tsyganov
-    image_path: vladimir.jpg
-    description: Vladimir is a software developer from Russia with a degree in Applied Mathematics. He has 5 years of full-stack development experience focusing primarily on Rails and Node. In his spare time, he likes to spend time with his family, hike, mountain ski, and hang out with his friends.
-    facebook:
-    twitter:
-    wikipedia:
-    github:
-    linkedin:
-    dribbble:
-    personal:
