@@ -2350,7 +2350,6 @@ body {
 }
 
 .service-technology-container {
-  padding-bottom: 50px;
   display: flex;
   flex: 1 0 auto;
   flex-flow: row wrap;
@@ -2380,6 +2379,18 @@ body {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: left;
+}
+
+ .service-technology__all-link-container {
+   margin-bottom: 100px;
+ }
+
+.service-technology__all-link {
+  font-family: $font-open-sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
   text-align: left;
 }
 
