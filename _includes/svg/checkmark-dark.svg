@@ -1,0 +1,9 @@
+<svg class="svg-checkmark" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Checkmark
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#333" d="M.5 2.5h19v19H.5z"/>
+    <path d="M11.786 17c-.494 0-.987-.226-1.364-.679l-3.857-4.636c-.753-.906-.753-2.373 0-3.279.753-.905 1.974-.905 2.727 0l2.494 2.997L20.708.68c.753-.905 1.974-.905 2.727 0 .753.905.753 2.373 0 3.278L13.15 16.321c-.376.453-.87.679-1.363.679z" fill="#333" fill-rule="nonzero"/>
+  </g>
+</svg>

@@ -17,6 +17,8 @@
 // #-About
 // #-Contact
 // #-Work: Products, Clients and Consulting
+// #-Leadpage
+// #-Service
 // #-Open Source
 // #-Talks
 // #-Newsletter Signup Page
@@ -180,6 +182,16 @@ body {
   @at-root #{&}__shaka-logo {
     float: left;
 
+    @media (max-width: $screen-sm-max) {
+      float: initial;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  @at-root #{&}__shaka-logo-lp {
     @media (max-width: $screen-sm-max) {
       float: initial;
 
@@ -2275,6 +2287,102 @@ body {
 // #-JS Helpers
 .js-highlight-link {
   border-bottom: 4px solid $color-light-logo;
+}
+
+// #-Leadpage
+
+.leadpage {
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $font-open-sans;
+
+  }
+
+  .margin-bottom__small {
+    margin-bottom: 20px;
+  }
+
+  .margin-bottom__medium {
+    margin-bottom: 50px;
+  }
+
+  .leadpage-point {
+    color: $color-333;
+    font-family: $font-open-sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: row nowrap;
+  }
+}
+
+.leadpage-header {
+  margin-bottom: 70px;
+}
+
+.leadpage-title {
+  color: $color-vivid-red;
+  font-family: $font-open-sans;
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+}
+
+.leadpage-subtitle {
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  width: 60%;
+  text-align: center;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 30px;
+  }
+}
+
+.lp-form {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $color-aaa;
+  padding: 40px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 370px;
+
+  h3 {
+    font-family: $font-open-sans;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .subscribe-form {
+    padding: 0 !important;
+  }
+
+  .form-control {
+    height: 50px !important;
+    margin-bottom: 25px !important;
+  }
+
+  #mlb2-8225848.ml-subscribe-form .primary {
+    height: 65px !important;
+  }
 }
 
 // #-Service

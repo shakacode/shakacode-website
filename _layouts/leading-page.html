@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head-leading-page.html %}
+
+  <body>
+
+    {% include fb-sdk.html %}
+
+    {% include header-leading-page.html %}
+
+    <div class="page-content">
+      {{ content }}
+    </div>
+
+    {% include get-in-contact.html blockClass="light" %}
+
+    {% include footer.html %}
+
+    {% js_asset_tag %}
+  </body>
+
+</html>
