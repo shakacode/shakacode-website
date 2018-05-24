@@ -2303,6 +2303,13 @@ body {
 
   }
 
+  a,
+  a:link,
+  a:visited {
+    text-decoration: underline;
+    color: $color-333;
+  }
+
   .margin-bottom__small {
     margin-bottom: 20px;
   }
@@ -2322,6 +2329,14 @@ body {
     flex: 1 0 auto;
     flex-flow: row nowrap;
   }
+}
+
+.leadpage-client,
+.leadpage-client:link,
+.leadpage-client:visited {
+  text-decoration: underline;
+  font-weight: bold;
+  color: $color-333;
 }
 
 .leadpage-header {
@@ -2526,6 +2541,8 @@ body {
  }
 
 .svg-checkmark {
+  min-width: 24px;
+  min-height: 22px;
   width: 24px;
   height: 22px;
   margin-right: 10px;
