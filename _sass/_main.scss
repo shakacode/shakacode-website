@@ -1826,6 +1826,28 @@ body {
     }
   }
 
+  @at-root #{&}__text-highlight {
+    font-size: 26px;
+    font-weight: 400;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+    }
+
+    a {
+      color: $color-vivid-red;
+      transition: border-bottom .2s;
+
+      &:visited {
+        color: $color-vivid-red;
+      }
+
+      &:hover {
+        border-bottom: 3px solid $color-vivid-red;
+      }
+    }
+  }
+
   @at-root #{&}__contact {
     background-color: $color-vivid-red;
     border-radius: 3px;
