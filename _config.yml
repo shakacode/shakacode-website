@@ -84,15 +84,14 @@ team:
     dribbble:
     personal:
   - member:
-    name: Dylan Grafmyre
-    image_path: dylan.jpg
-    description: Enjoys standing in front of the fire hydrant of technology with his mouth wide open, loving to learn and being stimulated by the challenge of mastering the new. When not learning or studying all facets of web development, he greatly enjoys time with his family and freedom of the outdoors and nature.
-    facebook: motuman
-    twitter: dylangrafmyre
+    name: Andrey Ashgaliev
+    image_path: andrey.jpg
+    description: Andrey is a software developer from Kazakhstan. He has been engaged in various technologies in his career, from sysadmin tasks and developing scripts on VBA, to developing websites on the PHP / JS stack. Recently, he got passionate about React technology and everything connected to it. In his free time, he likes to spend with his family and friends.
+    facebook: andrey.ashgaliev
+    twitter:
     wikipedia:
-    instagram:
-    github: dylangrafmyre
-    linkedin:
+    github: ashgaliyev
+    linkedin: andrey-ashgaliyev-09b08932/
     dribbble:
     personal:
   - member:
@@ -155,18 +154,6 @@ team:
     linkedin:
     dribbble:
     personal:
-  - member:
-    name: Rob Wise
-    image_path: robwise.jpg
-    description: Rob holds a B.A. in Economics from the University of Virginia and an M.S. in Information Systems from Drexel University. He currently lives in the Washington, D.C., area and loves programming, User Experience, Ruby on Rails, databases, and learning React and Redux.
-    facebook:
-    twitter: RobAWise
-    wikipedia:
-    instagram:
-    github: robwise
-    linkedin: robwise
-    dribbble:
-    personal: http://robwise.github.io
   - member:
     name: Sergey Tarasov
     image_path: sergey.jpg
