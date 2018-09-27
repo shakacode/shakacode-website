@@ -19,6 +19,7 @@
 // #-Work: Products, Clients and Consulting
 // #-Leadpage
 // #-Service
+// #-React on Rails Pro
 // #-Open Source
 // #-Talks
 // #-Newsletter Signup Page
@@ -49,8 +50,8 @@ $color-personal: $color-333 !default;
 
 // #-Fonts
 
-$font-open-sans: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;
-$font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica,
+$font-open-sans: "Open Sans", "Helvetica Neue", helvetica, sans-serif;
+$font-source-sans-pro: "Source Sans Pro", "Helvetica Neue", helvetica,
   sans-serif;
 
 // #-Miscellaneous
@@ -68,7 +69,7 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica,
   font-size: 18px;
   font-weight: 500;
   padding: 22px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover,
   &:active {
@@ -90,7 +91,7 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica,
   font-size: 18px;
   font-weight: 500;
   padding: 22px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 
   &:hover,
   &:active {
@@ -107,6 +108,10 @@ $font-source-sans-pro: 'Source Sans Pro', 'Helvetica Neue', helvetica,
   &:active {
     text-decoration: underline;
   }
+}
+
+.margin-bottom--60 {
+  margin-bottom: 60px !important;
 }
 
 // very important class: you need to use it as the <a> class when this anchor is part of an URL, ex. shakacode.com/work/index.html#something
@@ -208,7 +213,7 @@ body {
     font-weight: 600;
     margin-left: 18px;
     margin-top: 9px;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
       // color: darken($color-fcfcfc, 20%);
@@ -226,7 +231,7 @@ body {
     display: none;
     float: right;
     height: 35px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     width: 40px;
 
     &:hover,
@@ -287,7 +292,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    transition: border-bottom .1s;
+    transition: border-bottom 0.1s;
 
     &:visited,
     &:link {
@@ -304,7 +309,7 @@ body {
       font-size: 18px;
       font-weight: 400;
       text-transform: uppercase;
-      transition: border-bottom .3s;
+      transition: border-bottom 0.3s;
 
       &:visited,
       &:active,
@@ -360,7 +365,7 @@ body {
     font-family: $font-source-sans-pro;
     font-size: 16px;
     font-weight: 300;
-    transition: border-bottom .1s;
+    transition: border-bottom 0.1s;
 
     &:visited,
     &:link {
@@ -399,7 +404,7 @@ body {
     color: $color-333;
     font-size: 16px;
     padding: 4px 8px;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
 
     @at-root #{&}--twitter {
       background-color: darken($color-fff, 20%);
@@ -407,7 +412,7 @@ body {
       color: $color-333;
       font-size: 16px;
       padding: 4px 6px;
-      transition: background-color .3s;
+      transition: background-color 0.3s;
 
       &:visited {
         color: $color-333;
@@ -453,7 +458,7 @@ body {
   @at-root #{&}__title-link {
     border-bottom: 5px solid $color-vivid-red;
     color: $color-vivid-red;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:visited {
       border-bottom: 5px solid $color-vivid-red;
@@ -486,7 +491,7 @@ body {
     a {
       border-bottom: 5px solid $color-vivid-red;
       color: $color-333;
-      transition: border-bottom .6s ease;
+      transition: border-bottom 0.6s ease;
 
       &:hover {
         border-bottom: 5px solid $color-333;
@@ -506,7 +511,7 @@ body {
   }
 
   @at-root #{&}__shaka-sign {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   @at-root #{&}__separator {
@@ -516,7 +521,7 @@ body {
 
   @at-root #{&}__separator::after {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: 5px;
@@ -527,7 +532,7 @@ body {
 
   @at-root #{&}__separator::before {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: -5px;
@@ -545,8 +550,8 @@ body {
 
   @media (min-width: $screen-md-min) {
     // show image only on tablets and up
-    background: $color-vivid-red url($site-url + '/assets/we-are-bg.jpg') 100%
-      90% no-repeat;
+    background: $color-vivid-red url($site-url+"/assets/we-are-bg.jpg") 100% 90%
+      no-repeat;
   }
 
   @media (max-width: $screen-sm-max) {
@@ -572,7 +577,7 @@ body {
 
   @at-root #{&}__title-link {
     border-bottom: 0 solid $color-fff;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:hover {
       border-bottom: 4px solid $color-fff;
@@ -594,13 +599,13 @@ body {
   }
 
   @at-root #{&}__meet-team {
-    border-bottom: 3px solid rgba(255, 255, 255, .2);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
     color: $color-fcfcfc;
     display: inline-block;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1.5px;
-    transition: border-bottom .2s ease;
+    transition: border-bottom 0.2s ease;
 
     &:hover {
       border-bottom: 3px solid $color-fff;
@@ -665,7 +670,7 @@ body {
   a {
     border-bottom: 1px solid $color-fff;
     color: $color-fff;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:link,
     &:visited {
@@ -715,7 +720,7 @@ body {
     border-right: 15px solid transparent;
     border-top: 16px solid #454545;
     bottom: -15px;
-    content: '';
+    content: "";
     position: absolute;
     right: 26px;
   }
@@ -778,7 +783,7 @@ body {
   a {
     border-bottom: 1px solid $color-fff;
     color: $color-vivid-red;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:link,
     &:visited {
@@ -799,7 +804,7 @@ body {
   a {
     border-bottom: 1px solid $color-fff;
     color: $color-fff;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:link,
     &:visited {
@@ -842,7 +847,7 @@ body {
     font-size: 40px;
     font-weight: 200;
     margin-bottom: 10px;
-    transition: border-bottom .3s ease;
+    transition: border-bottom 0.3s ease;
 
     &:hover {
       border-bottom: 3px solid $color-vivid-red;
@@ -909,7 +914,7 @@ body {
 
   @at-root #{&}__separator::after {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: 5px;
@@ -924,7 +929,7 @@ body {
 
   @at-root #{&}__separator::before {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: -5px;
@@ -956,7 +961,7 @@ body {
   font-family: $font-source-sans-pro;
   font-size: 20px;
   font-weight: 400;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 
   &:visited {
     color: $color-333;
@@ -975,7 +980,7 @@ body {
     margin-right: 10px;
     position: relative;
     top: 4px;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
   }
 }
 
@@ -1003,7 +1008,7 @@ body {
     margin-left: 10px;
     position: relative;
     top: 4px;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
   }
 }
 
@@ -1040,7 +1045,6 @@ body {
     padding-top: 20px;
   }
 }
-
 
 // #-Partial Get in Touch
 .contact-style-dark {
@@ -1082,7 +1086,7 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    transition: border-bottom .2s ease;
+    transition: border-bottom 0.2s ease;
 
     @media (max-width: $screen-sm-max) {
       font-size: 18px;
@@ -1124,7 +1128,7 @@ body {
     font-size: 40px;
     font-weight: 200;
     margin-bottom: 10px;
-    transition: border-bottom .3s ease;
+    transition: border-bottom 0.3s ease;
   }
 
   // very important rules
@@ -1149,7 +1153,7 @@ body {
     a {
       border-bottom: 2px solid $color-light-logo;
       color: $color-333;
-      transition: border-bottom-width .3s;
+      transition: border-bottom-width 0.3s;
 
       &:visited {
         color: $color-333;
@@ -1197,7 +1201,7 @@ body {
     font-size: 40px;
     font-weight: 200;
     margin-bottom: 10px;
-    transition: border-bottom .3s ease;
+    transition: border-bottom 0.3s ease;
   }
 
   // very important rules
@@ -1222,7 +1226,7 @@ body {
     a {
       border-bottom: 2px solid $color-light-logo;
       color: $color-333;
-      transition: border-bottom-width .3s;
+      transition: border-bottom-width 0.3s;
 
       &:visited {
         color: $color-333;
@@ -1283,7 +1287,7 @@ body {
 
   @at-root #{&}__separator::after {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: 5px;
@@ -1294,7 +1298,7 @@ body {
 
   @at-root #{&}__separator::before {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: -5px;
@@ -1330,7 +1334,7 @@ body {
     a {
       border-bottom: 2px solid $color-light-logo;
       color: $color-333;
-      transition: border-bottom-width .3s;
+      transition: border-bottom-width 0.3s;
 
       &:visited {
         color: $color-333;
@@ -1377,7 +1381,7 @@ body {
     font-size: 18px;
     margin-top: 20px;
     padding: 7px 20px;
-    transition: color .3s;
+    transition: color 0.3s;
 
     @media (max-width: $screen-sm-max) {
       display: block;
@@ -1437,7 +1441,7 @@ body {
   @at-root #{&}__photo {
     backface-visibility: hidden;
     transform: scale(1);
-    transition: transform .3s;
+    transition: transform 0.3s;
 
     &:hover {
       transform: scale(1.05);
@@ -1509,7 +1513,7 @@ body {
 
   @at-root #{&}__email {
     font-size: 20px;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: $color-vivid-red;
@@ -1518,7 +1522,7 @@ body {
 
   @at-root #{&}__facebook {
     font-size: 19px;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: $color-facebook;
@@ -1527,7 +1531,7 @@ body {
 
   @at-root #{&}__twitter {
     font-size: 20px;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: $color-twitter;
@@ -1536,7 +1540,7 @@ body {
 
   @at-root #{&}__github {
     font-size: 20px;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: $color-github;
@@ -1545,7 +1549,7 @@ body {
 
   @at-root #{&}__linkedin {
     font-size: 20px;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: $color-linkedin;
@@ -1554,7 +1558,7 @@ body {
 
   @at-root #{&}__wikipedia {
     font-size: 17px;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: $color-personal;
@@ -1563,7 +1567,7 @@ body {
 
   @at-root #{&}__personal {
     font-size: 20px;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: $color-personal;
@@ -1609,7 +1613,7 @@ body {
 
   @at-root #{&}__separator::after {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: 5px;
@@ -1620,7 +1624,7 @@ body {
 
   @at-root #{&}__separator::before {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: -5px;
@@ -1637,7 +1641,7 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 50px;
-    transition: border-bottom .2s ease;
+    transition: border-bottom 0.2s ease;
 
     &:visited {
       color: lighten($color-vivid-red, 15%);
@@ -1696,7 +1700,7 @@ body {
 
   @at-root #{&}__separator::after {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: 5px;
@@ -1707,7 +1711,7 @@ body {
 
   @at-root #{&}__separator::before {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: -5px;
@@ -1718,7 +1722,7 @@ body {
 
   @at-root #{&}__separator-both::after {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: 5px;
@@ -1729,7 +1733,7 @@ body {
 
   @at-root #{&}__separator-both::before {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: -5px;
@@ -1779,7 +1783,7 @@ body {
     border-bottom: 1px solid $color-vivid-red;
     color: $color-vivid-red;
     font-size: 20px;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:visited {
       color: $color-vivid-red;
@@ -1794,7 +1798,7 @@ body {
     border-bottom: 1px solid $color-vivid-red;
     color: $color-vivid-red;
     font-size: 26px;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:visited {
       color: $color-vivid-red;
@@ -1814,7 +1818,7 @@ body {
 
     a {
       color: $color-vivid-red;
-      transition: border-bottom .2s;
+      transition: border-bottom 0.2s;
 
       &:visited {
         color: $color-vivid-red;
@@ -1836,7 +1840,7 @@ body {
 
     a {
       color: $color-vivid-red;
-      transition: border-bottom .2s;
+      transition: border-bottom 0.2s;
 
       &:visited {
         color: $color-vivid-red;
@@ -1857,7 +1861,7 @@ body {
     font-weight: 400;
     margin-top: 20px;
     padding: 7px 20px;
-    transition: color .3s;
+    transition: color 0.3s;
 
     &:link,
     &:visited {
@@ -1882,7 +1886,7 @@ body {
   a {
     border-bottom: 1px solid $color-vivid-red;
     color: $color-vivid-red;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:link,
     &:visited {
@@ -1976,7 +1980,7 @@ body {
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 20px;
-    transition: border-bottom .2s;
+    transition: border-bottom 0.2s;
 
     &:link,
     &:visited {
@@ -1990,7 +1994,7 @@ body {
 
   @at-root #{&}__img {
     display: inline-block;
-    transition: all .6s;
+    transition: all 0.6s;
 
     &:hover {
       filter: brightness(1.05);
@@ -2000,7 +2004,7 @@ body {
   @at-root #{&}__img-blink {
     box-shadow: 0 0 1px 0 $color-aaa;
     display: inline-block;
-    transition: all .6s;
+    transition: all 0.6s;
 
     &:hover {
       box-shadow: 0 0 3px 0 darken($color-aaa, 10%);
@@ -2017,7 +2021,7 @@ body {
   @at-root #{&}__name {
     color: $color-vivid-red;
     font-size: 26px;
-    transition: border-bottom .3s;
+    transition: border-bottom 0.3s;
 
     &:link,
     &:visited {
@@ -2041,7 +2045,7 @@ body {
     margin-bottom: 10px;
     margin-top: 27px;
     padding: 20px;
-    transition: all .3s;
+    transition: all 0.3s;
     width: 140px;
 
     &:hover {
@@ -2095,7 +2099,7 @@ body {
 
   @at-root #{&}__separator::after {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: 5px;
@@ -2106,7 +2110,7 @@ body {
 
   @at-root #{&}__separator::before {
     border-bottom: 1px solid lighten($color-333, 50%);
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     left: -5px;
@@ -2130,7 +2134,7 @@ body {
     border-bottom: 2px solid $color-light-logo;
     color: $color-333;
     font-size: 26px;
-    transition: color .3s;
+    transition: color 0.3s;
 
     @media (max-width: $screen-sm-max) {
       font-size: 20px;
@@ -2159,7 +2163,7 @@ body {
     font-family: $font-source-sans-pro;
     font-size: 24px;
     margin-top: 20px;
-    transition: color .3s;
+    transition: color 0.3s;
 
     @media (max-width: $screen-sm-max) {
       font-size: 20px;
@@ -2255,7 +2259,7 @@ body {
 
 // #-Newsletter Signup Page
 .newsletter-page {
-  background: $color-fff url($site-url + '/assets/newsletter-bg.jpg') 0 0
+  background: $color-fff url($site-url+"/assets/newsletter-bg.jpg") 0 0
     no-repeat;
   min-height: 650px; // prevent blank content above the fold
   padding-bottom: 150px;
@@ -2322,7 +2326,6 @@ body {
     font-size: 18px;
     line-height: 30px;
     font-family: $font-open-sans;
-
   }
 
   a,
@@ -2438,7 +2441,6 @@ body {
   padding-bottom: 100px;
 }
 
-
 .service__title {
   color: $color-vivid-red;
   font-size: 50px;
@@ -2527,9 +2529,9 @@ body {
   text-align: left;
 }
 
- .service-technology__all-link-container {
-   margin-bottom: 100px;
- }
+.service-technology__all-link-container {
+  margin-bottom: 100px;
+}
 
 .service-technology__all-link {
   font-family: $font-open-sans;
@@ -2554,13 +2556,13 @@ body {
   margin-bottom: 60px;
 }
 
- .service-build__point {
-   color: #e6e6e6;
-   font-family: $font-open-sans;
-   font-size: 20px;
-   line-height: 1.5;
-   margin-bottom: 20px;
- }
+.service-build__point {
+  color: #e6e6e6;
+  font-family: $font-open-sans;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
 
 .svg-checkmark {
   min-width: 24px;
@@ -2594,7 +2596,7 @@ body {
   margin-bottom: 35px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     right: 45px;
@@ -2649,4 +2651,205 @@ body {
 
 .service-book-time__job {
   font-size: 18px;
+}
+
+// #-React on Rails Pro
+.ror-pro-header {
+  background-color: #f2f2f2;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.ror-pro__header-h2 {
+  font-size: 35px;
+  font-family: $font-source-sans-pro;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.ror-pro__header-h1 {
+  font-size: 35px;
+  font-family: $font-source-sans-pro;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.ror-pro__header-testimonial {
+  font-family: $font-source-sans-pro;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.ror-pro__header-testimonial--author {
+  font-family: $font-source-sans-pro;
+  font-size: 18px;
+  color: $color-vivid-red;
+  text-align: right;
+}
+
+.ror-pro__header-testimonial--author-role {
+  font-family: $font-source-sans-pro;
+  font-size: 18px;
+  color: $color-333;
+  text-align: right;
+}
+
+.ror-pro__header-testimonial--author-role-link,
+.ror-pro__header-testimonial--author-role-link:link,
+.ror-pro__header-testimonial--author-role-link:visited {
+  color: $color-vivid-red;
+  text-decoration: underline;
+}
+
+.ror-pro__container-features {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: row wrap;
+}
+
+.ror-pro__container-performance {
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.ror-pro__section-title {
+  color: #333;
+  font-family: $font-open-sans;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.ror-pro__companies {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+
+  & > div {
+    margin-bottom: 30px;
+  }
+}
+
+.ror-pro__company-logo {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.ror-pro__company-name,
+.ror-pro__company-name:link,
+.ror-pro__company-name:visited {
+  display: block;
+  font-family: $font-source-sans-pro;
+  font-weight: 600;
+  font-size: 20px;
+  color: $color-333;
+}
+
+.ror-pro__company-article,
+.ror-pro__company-article:link,
+.ror-pro__company-article:visited {
+  display: block;
+  font-family: $font-source-sans-pro;
+  font-size: 18px;
+  color: $color-vivid-red;
+  text-decoration: underline;
+}
+
+.ror-pro__performance-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ror-pro__arrow-down {
+  margin-right: 15px;
+}
+
+.ror-pro__performance-gain {
+  font-size: 50px;
+  font-family: $font-source-sans-pro;
+  font-weight: 600;
+}
+
+.ror-pro__text {
+  font-family: $font-source-sans-pro;
+  font-weight: 600;
+  font-size: 18px;
+  color: $color-333;
+}
+
+.ror-pro__container-purchase {
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ror-pro__purchase-text p {
+  color: $color-333;
+  font-family: $font-open-sans;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.ror-pro__purchase-text a,
+.ror-pro__purchase-text a:link,
+.ror-pro__purchase-text a:visited {
+  color: $color-vivid-red;
+}
+
+.ror-pro__purchase-title {
+  color: $color-333;
+  font-family: $font-source-sans-pro;
+  font-size: 20px;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0 15px 0 0;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 18px;
+    letter-spacing: initial;
+    margin-bottom: 7px;
+  }
+}
+
+.ror-pro__purchase-email {
+  border-bottom: 4px solid $color-fff;
+  color: $color-vivid-red;
+  display: inline-block;
+  font-family: $font-source-sans-pro;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: border-bottom 0.2s ease;
+  border-bottom: 4px solid $color-vivid-red;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 18px;
+    letter-spacing: initial;
+  }
+
+  &:visited,
+  &:link {
+    color: $color-vivid-red;
+  }
+
+  &:hover {
+    border-bottom: 4px solid $color-vivid-red;
+    color: $color-vivid-red;
+  }
+}
+
+.ror-pro__contact,
+.ror-pro__contact:link,
+.ror-pro__contact:visited {
+  @include bt_get-in-touch;
+  margin-top: 40px;
 }

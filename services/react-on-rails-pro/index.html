@@ -1,0 +1,130 @@
+---
+layout: default-no-contact
+title: React on Rails PRO! High Performance
+---
+<div class="service-page">
+  <section class="service-header">
+    <header class="about__header text-center">
+      <h2 class="service__title">React on Rails PRO</h2>
+      <div class="about__separator margin-bottom--60 text-center">
+        <img width="29" height="51" src="{{ site.url | prepend: site.baseurl }}/assets/ror-thunder.svg" alt="React on Rails Thunder">
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="ror-pro__header-h2">HIGH PERFORMANCE</h2>
+          <h1 class="ror-pro__header-h1">Improve your server-response times up to 90% with React on Rails PRO!</h1>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <p class="ror-pro__header-testimonial">“Anybody who regularly hits six digit request numbers a day is going to be in for a bad time. React on Rails PRO is perfect on this case. Do you want your app to randomly crash sometimes in hard to predict ways? Then Execjs is perfect for you.”</p>
+          <p class="ror-pro__header-testimonial--author">Pete Keen</p>
+          <p class="ror-pro__header-testimonial--author-role">Lead back end developer at <a href="https://egghead.io" target="_blank" class="ror-pro__header-testimonial--author-role-link">Egghead.io</a></p>
+          </div>
+        </div>
+    </div>
+    <a class="ror-pro__contact" href="mailto:{{ site.justin_email }}" target="_blank">Get in touch to Buy $950/year</a>
+  </section>
+
+  <div class="container">
+    <section class="row ror-pro__container-features">
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Code Splitting</h3>
+        <p class="service-technology__description">Only load JavaScript needed for the current page. Prioritize what a user will need and lazy-load the rest with code-splitting. This gives you the best chance at loading and getting interactive fast. Stacks with route-based code-splitting by default are game-changers.</p>
+      </div>
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Caching Server Rendering</h3>
+        <p class="service-technology__description">Server rendering of JavaScript evaluation is cached if prerender_caching is turned on in your Rails config. This applies to all JavaScript evaluation methods, including ExecJS and the Node VM Renderer.</p>
+      </div>
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Fragment Caching View Helpers</h3>
+        <p class="service-technology__description">Fragment caching is available via the <b>cached_react_component</b> and <b>cached_react_component_hash</b> view helpers. This includes lazy evaluation of props. Such fragment caching saves a ton of CPU work for your web server and greatly reduces the request time.</p>
+      </div>
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Node React Render</h3>
+        <p class="service-technology__description">The "React on Rails Pro Node React Renderer" provides more efficient React Server Side Rendering on a standalone Node JS server.</p>
+      </div>
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Overall Management Memory and CPU</h3>
+        <p class="service-technology__description">A separate Node rendering server is easier to manage in terms of monitoring memory and CPU performance, allocating dynos, etc. This also makes it easier to manager the ruby servers, as you no longer have to consider the impact of starting an embedded V8.</p>
+      </div>
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Proper Node Tooling</h3>
+        <p class="service-technology__description">A disadvantage of Ruby embedded JavaScript (ExecJS) is that it precludes the use of standard Node tooling for doing things like profiling and tracking down memory leaks.</p>
+      </div>
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Caching of React Rendering</h3>
+        <p class="service-technology__description">To limit the load on the renderer server or embedded ExecJS, caching of React rendering requests can be enabled by a config setting. Because current React rendering requests are idempotent (same value regardless of calls), caching should be feasible for all server rendering calls.</p>
+      </div>
+      <div class="col-md-6 col-lg-4 service-technology">
+        <h3 class="service-technology__title">Rolling Restart of Node Workers</h3>
+        <p class="service-technology__description">Due to poor performance and crashes due to memory leaks, the rolling restart of node workers was thus added as an option to the core rendering product. This option is cheap insurance against the renderer getting too slow from a memory leak due to a bug in some newly deployed JavaScript code.</p>
+      </div>
+    </section>
+  </div>
+  <div class="ror-pro__container-performance">
+    <section class="container">
+      <div class="col-md-12">
+        <h2 class="ror-pro__section-title">How much performance can I get from it?</h2>
+        <div class="row ror-pro__companies">
+          <div class="col-md-6 text-center">
+            <a class="ror-pro__company-logo" href="https://hvmn.com/" target="_blank">
+              <img src="{{ site.url | prepend: site.baseurl }}/assets/images/hvmn-logo.png" alt="HVMN logo">
+            </a>
+            <a class="ror-pro__company-name" href="https://hvmn.com/" target="_blank">hvmn.com</a>
+            <div class="ror-pro__performance-block">
+              <img class="ror-pro__arrow-down" src="{{ site.url | prepend: site.baseurl }}/assets/images/arrow-down.png" alt="decrease in server response time">
+              <span class="ror-pro__performance-gain">90%</span>
+            </div>
+            <p class="ror-pro__text">in server response time</p>
+            <a class="ror-pro__company-article" href="https://blog.shakacode.com/hvmns-90-reduction-in-server-response-time-from-react-on-rails-pro-eb08226687db" target="_blank">read the article</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a class="ror-pro__company-logo" href="https://egghead.io/" target="_blank">
+              <img src="{{ site.url | prepend: site.baseurl }}/assets/images/egghead-logo.png" alt="egghead logo">
+            </a>
+            <a class="ror-pro__company-name" href="https://egghead.io/" target="_blank">egghead.io</a>
+            <div class="ror-pro__performance-block">
+              <img class="ror-pro__arrow-down" src="{{ site.url | prepend: site.baseurl }}/assets/images/arrow-down.png" alt="decrease in server response time">
+              <span class="ror-pro__performance-gain">68%</span>
+            </div>
+            <p class="ror-pro__text">in server response time</p>
+            <a class="ror-pro__company-article" href="https://github.com/shakacode/react_on_rails/wiki/Egghead-React-on-Rails-Pro-Deployment-Highlights" target="_blank">read the article</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="service-build">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="service-section__title">Why should I use React on Rails Pro if ExecJS seems to work?</h2>
+          <p class="service-build__point">Caching is extremely useful to any server rendering you're doing, with or without ExecJS. React on Rails pro support caching at 2 levels:</p>
+          <p class="service-build__point">1 - Caching of rendering request to ExecJS (or the Node renderer). This avoids extra calls to ExecJS.</p>
+          <p class="service-build__point">2 - Fragment caching of server rendering. This avoids even the calculations of prop values from the database and the cost of converting the props to a string (lots of CPU there)</p>
+          <p class="service-build__point">By doing such caching, you will take a CPU load off your Ruby server as well as improving response time. And this is with virtually no code changes on your part.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="ror-pro__container-purchase">
+    <section class="container">
+      <div class="col-md-12">
+        <h2 class="ror-pro__section-title">How do I purchase React on Rails PRO?</h2>
+        <div class="row">
+          <div class="col-md-6 ror-pro__purchase-text">
+            <p>Get in touch to buy a license for $950/year.</p>
+            <p>We can do a free trial for select companies.</p>
+            <p>React on Rails PRO comes with a <a href="{{ site.url | prepend: site.baseurl }}/work/shakacode-pro-support.pdf">ShakaCode Pro Support Plan</a>.</p>
+          </div>
+          <div class="col-md-6">
+            <p class="ror-pro__purchase-title">Get in Touch</p>
+            <a class="ror-pro__purchase-email" href="mailto:{{ site.justin_email }}">{{ site.justin_email }}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

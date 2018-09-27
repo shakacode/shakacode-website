@@ -2,6 +2,7 @@
 title: ShakaCode
 email: your-email@domain.com #not used
 contact_email: contact@shakacode.com
+justin_email: justin@shakacode.com
 description: > # this means to ignore newlines until "baseurl:"
   We build web and mobile applications using React, React-Native, and Ruby on Rails.
 baseurl: "" # the subpath of your site, e.g. /blog/

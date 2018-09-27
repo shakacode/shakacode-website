@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include fb-sdk.html %}
+
+    {% include header.html %}
+
+    <div class="page-content">
+      {{ content }}
+    </div>
+
+    {% include mailerlite.html %}
+
+    {% include footer.html %}
+
+    {% js_asset_tag %}
+  </body>
+
+</html>
