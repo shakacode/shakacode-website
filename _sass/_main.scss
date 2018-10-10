@@ -437,8 +437,8 @@ body {
 
 .home-we-build {
   background-color: $color-fcfcfc;
-  padding-bottom: 90px;
-  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-top: 60px;
 
   @media (max-width: $screen-sm-max) {
     padding-bottom: 50px;
@@ -619,14 +619,36 @@ body {
 }
 
 .home-our-services {
+  background-color: $color-fcfcfc;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: $color-333;
+}
+
+.home-our-services--ror-pro {
   background-color: $color-react-sec;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   color: $color-react-title;
 }
 
-.home-our-services__statement {
+.home-our-services__ror-pro-statement {
   color: $color-fcfcfc;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.home-our-services__statement {
+  color: $color-333;
   font-size: 27px;
   font-weight: 300;
   line-height: 50px;
