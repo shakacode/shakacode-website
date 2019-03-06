@@ -74,17 +74,6 @@ team:
     dribbble:
     personal:
   - member:
-    name: Ali Pearson
-    image_path: ali.jpg
-    description: Ali loves code, but only as a spectator for now. Meanwhile, she manages everything else at ShakaCode, so the coders can stay in THE ZONE. Ali also orchestrates all aspects of <a href="https://www.facebook.com/SugarRanch" target="_blank">Sugar Ranch Maui</a>, helps at the kids' school. She has no free time. :-)
-    facebook: alipearso
-    twitter: alipearso
-    wikipedia:
-    github: shakagirl
-    linkedin: ali-pearson-9437b94
-    dribbble:
-    personal:
-  - member:
     name: Andrey Ashgaliev
     image_path: andrey.jpg
     description: Andrey is a software developer from Kazakhstan. He has been engaged in various technologies in his career, from sysadmin tasks and developing scripts on VBA, to developing websites on the PHP / JS stack. Recently, he got passionate about React technology and everything connected to it. In his free time, he likes to spend with his family and friends.
@@ -117,18 +106,6 @@ team:
     instagram:
     github: Judahmeek
     linkedin:
-    dribbble:
-    personal:
-  - member:
-    name: Marcus Sá
-    image_path: marcus.jpg
-    description: Marcus is a Software Engineer from Brazil who loves to transform code into products that make people more productive and less stressed. He also loves working remotely, watching American football, reading horror books, and playing with his Arduino.
-    facebook: marcus.m.sa
-    twitter: sa_vini
-    wikipedia:
-    instagram:
-    github: mamute
-    linkedin: marcus-sá-29125a32
     dribbble:
     personal:
   - member:
