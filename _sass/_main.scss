@@ -1766,9 +1766,6 @@ body {
 }
 
 .work-consulting {
-  border-bottom: 1px solid lighten($color-333, 70%);
-  padding-bottom: 40px;
-
   @at-root #{&}__featured {
     background-color: $color-fff;
     border-bottom: 1px solid $color-fcfcfc;
@@ -2036,7 +2033,6 @@ body {
 }
 
 .work-products {
-  border-top: 1px solid lighten($color-333, 70%);
   padding-bottom: 60px;
   padding-top: 30px;
 
@@ -2673,6 +2669,20 @@ body {
 
 .service-book-time__job {
   font-size: 18px;
+}
+
+.service-prosupport {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.service-consulting {
+  padding-top: 50px;
+}
+
+.case-study-link {
+  margin-left: 20px;
 }
 
 // #-React on Rails Pro
