@@ -618,6 +618,26 @@ body {
   }
 }
 
+.home-testimonial {
+  display: flow-root;
+  margin-bottom: 60px;
+
+  a {
+    border-bottom: 1px solid $color-fff;
+    color: $color-fff;
+    transition: border-bottom 0.2s;
+
+    &:link,
+    &:visited {
+      color: $color-fff;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-fff;
+    }
+  }
+}
+
 .home-our-services {
   background-color: $color-fcfcfc;
   padding-top: 80px;
@@ -733,7 +753,7 @@ body {
 .home-react-rails__testimonial-group {
   background-color: #454545;
   border-radius: 5px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   padding: 20px;
   position: relative;
 
